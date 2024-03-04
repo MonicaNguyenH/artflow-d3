@@ -1,6 +1,7 @@
 # ArtFlow
 
 ## Created by 
+- Shirin Forouzan
 - Monica Nguyen
 
 ## Description 
