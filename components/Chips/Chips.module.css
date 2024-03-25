@@ -1,0 +1,16 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.firstRow, .secondRow, .thirdRow, .fourthRow {
+    display: flex;
+    gap: 1rem;
+    background-color: none;
+    border: none;
+}
+
+
+
