@@ -15,7 +15,5 @@
     --light-blue: #4CC9F0;
 
     /*gradient*/
-    --gradient-rv: linear-gradient(85deg, var(--rose) 5%, var(--violet) 95%);
-    --gradient-bb: linear-gradient(85deg, var(--dark-blue) 2%, var(--violet) 113%);
-    --gradient-vb: linear-gradient(85deg, var(--violet) 5%, var(--blue) 95%);
+    --gradient-rv: linear-gradient(80deg, var(--rose) 5%, var(--violet) 95%);
 }
