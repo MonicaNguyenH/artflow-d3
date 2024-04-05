@@ -1,0 +1,43 @@
+.projectWrap {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    background-image: url("/images/gradient_1.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 10px;
+
+    font-size: var(--font-regular);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.prompt {
+    height: 20px;
+    width: fit-content;
+    background-color: var(--black);
+    border-radius: 25px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    mix-blend-mode: luminosity;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    height: 20px;
+    width: fit-content;
+    background-color: var(--black);
+    border-radius: 25px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    mix-blend-mode: luminosity;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
