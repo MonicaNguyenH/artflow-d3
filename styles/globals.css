@@ -14,3 +14,13 @@
   --blue: #687FE9;
   --light-blue: #4CC9F0;
 } 
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
