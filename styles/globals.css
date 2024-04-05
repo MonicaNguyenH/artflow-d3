@@ -9,7 +9,7 @@
 
   --black: #141414;
   --white: #FFFFFC;
-  --grey: rgba(135,135,135,0.2); /*make this 20% opacity*/
+  --grey: #878787; /*make this 20% opacity*/
   --light-grey: #A6A7B3;
   --medium-grey: #545458;
   --dark-grey: #333333;
@@ -18,9 +18,19 @@
   --dark-blue: #4A10D1;
   --blue: #687FE9;
   --light-blue: #4CC9F0;
-
-  /*gradient*/
+  
+    /*gradient*/
   --gradient-rv: linear-gradient(85deg, var(--rose) 5%, var(--violet) 95%);
   --gradient-bb: linear-gradient(85deg, var(--dark-blue) 2%, var(--violet) 113%);
   --gradient-vb: linear-gradient(85deg, var(--violet) 5%, var(--blue) 95%);
+} 
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
