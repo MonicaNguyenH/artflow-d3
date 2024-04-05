@@ -16,7 +16,7 @@
   width: 95%;
   display: block;
   background-color: transparent;
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
   padding: .5rem 1rem;
   border-radius: 99px;
   cursor: pointer;
