@@ -37,7 +37,7 @@ export default function QuestionTwo() {
       <p><span className={styles.pinkNumber}>2</span>/5</p>
     </nav>
       {answerSubmitted &&
-        <div className={styles.overlay}>  
+        <div className={styles.overlay2}>  
           <h3>The verdict is...</h3>
           <h4>Henri Matisse</h4>    
           <p>He used bold colors and simplified forms to capture the exoticism and beauty of these places, aiming to evoke a sense of paradise and spiritual harmony.</p>
@@ -50,7 +50,7 @@ export default function QuestionTwo() {
       <div className={styles.quiz}>      
         <h1>Question 2</h1>
         <p>Which artist is famous for his use of vibrant, colorful patterns in his paintings, often depicting Tahitian landscapes and Polynesian women?</p>
-        <div>
+        <div className={styles.questions}>
           <input type="radio" id="a" name="question_2" value="A" onChange={handleRadioChange} />
           <label htmlFor="a" className={selectedValues.question_2 === 'A' ? styles.selected : ''}>A. Vincent van Gogh</label>
           <input type="radio" id="b" name="question_2" value="B" onChange={handleRadioChange} />
@@ -59,7 +59,7 @@ export default function QuestionTwo() {
           <label htmlFor="c" className={selectedValues.question_2 === 'C' ? styles.selected : ''}>C. Pablo Picasso</label>  
           <input type="radio" id="d" name="question_2" value="D" onChange={handleRadioChange} />
           <label htmlFor="d" className={selectedValues.question_2 === 'D' ? styles.selected : ''}>D. Paul Gauguin</label>  
-          <button onClick={() => {selectedValues.question_2 && setAnswerSubmitted(true)}}>Submit</button>        
+          <button className={styles.button} onClick={() => {selectedValues.question_2 && setAnswerSubmitted(true)}}>Next</button>        
         </div>
       </div>      
     </div>
