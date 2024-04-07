@@ -1,0 +1,6 @@
+.projectWrap {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    background-image: url("/images/gradient_1.png");
+}
