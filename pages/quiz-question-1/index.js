@@ -43,7 +43,7 @@ export default function QuestionOne() {
       <div className={styles.quiz}>      
         <h1>Question 1</h1>
         <p>What primary colors are used in subtractive color mixing?</p>
-        <div>
+        <div className={styles.questions}>
           <input type="radio" id="a" name="question_1" value="A" onChange={handleRadioChange} />
           <label htmlFor="a" className={selectedValues.question_1 === 'A' ? styles.selected : ''}>A. Red, Green, Blue</label>
           <input type="radio" id="b" name="question_1" value="B" onChange={handleRadioChange} />
@@ -52,7 +52,7 @@ export default function QuestionOne() {
           <label htmlFor="c" className={selectedValues.question_1 === 'C' ? styles.selected : ''}>C. Red, Yellow, Blue</label>  
           <input type="radio" id="d" name="question_1" value="D" onChange={handleRadioChange} />
           <label htmlFor="d" className={selectedValues.question_1 === 'D' ? styles.selected : ''}>D. Green, Yellow, Violet</label>  
-          <button onClick={() => {selectedValues.question_1 && setAnswerSubmitted(true)}}>Submit</button>        
+          <button className={styles.button} onClick={() => {selectedValues.question_1 && setAnswerSubmitted(true)}}>Next</button>        
         </div>
       </div>      
     </div>

@@ -46,13 +46,13 @@ export default function QuestionThree() {
             <Link href={{
               pathname: '/quiz-question-4',
               query: selectedValues
-            }}><button>Next</button></Link>
+            }}><button className={styles.button3}>Next</button></Link>
           </div>
       </div>}
       <div className={styles.quiz}>      
         <h1>Question 3</h1>
         <p>In which painting does Leonardo da Vinci depict a woman with a mysterious smile against a colorful backdrop?</p>
-        <div>
+        <div className={styles.questions}>
           <input type="radio" id="a" name="question_3" value="A" onChange={handleRadioChange} />
           <label htmlFor="a" className={selectedValues.question_3 === 'A' ? styles.selected : ''}>A. The Starry Night</label>
           <input type="radio" id="b" name="question_3" value="B" onChange={handleRadioChange} />
@@ -61,7 +61,7 @@ export default function QuestionThree() {
           <label htmlFor="c" className={selectedValues.question_3 === 'C' ? styles.selected : ''}>C. The Scream</label>  
           <input type="radio" id="d" name="question_3" value="D" onChange={handleRadioChange} />
           <label htmlFor="d" className={selectedValues.question_3 === 'D' ? styles.selected : ''}>D. Mona Lisa</label>  
-          <button onClick={() => {selectedValues.question_3 && setAnswerSubmitted(true)}}>Submit</button>        
+          <button className={styles.button} onClick={() => {selectedValues.question_3 && setAnswerSubmitted(true)}}>Next</button>        
         </div>
       </div>      
     </div>

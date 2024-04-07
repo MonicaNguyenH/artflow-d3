@@ -50,7 +50,7 @@ export default function QuestionFive() {
       <div className={styles.quiz}>      
         <h1>Question 5</h1>
         <p>Vincent van Gogh is famous for his series of paintings depicting which flower?</p>
-        <div>
+        <div className={styles.questions}>
           <input type="radio" id="a" name="question_5" value="A" onChange={handleRadioChange} />
           <label htmlFor="a" className={selectedValues.question_5 === 'A' ? styles.selected : ''}>A. Daises</label>
           <input type="radio" id="b" name="question_5" value="B" onChange={handleRadioChange} />
@@ -59,7 +59,7 @@ export default function QuestionFive() {
           <label htmlFor="c" className={selectedValues.question_5 === 'C' ? styles.selected : ''}>C. Roses</label>  
           <input type="radio" id="d" name="question_5" value="D" onChange={handleRadioChange} />
           <label htmlFor="d" className={selectedValues.question_5 === 'D' ? styles.selected : ''}>D. Tulips</label>  
-          <button onClick={() => {selectedValues.question_5 && setAnswerSubmitted(true)}}>Submit</button>        
+          <button className={styles.button} onClick={() => {selectedValues.question_5 && setAnswerSubmitted(true)}}>Next</button>        
         </div>
       </div>      
     </div>
