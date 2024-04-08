@@ -170,7 +170,6 @@
 }
 
 .button:hover {
-  background-image: var( --gradient-rv);
   background-position: right center;
 }
 
