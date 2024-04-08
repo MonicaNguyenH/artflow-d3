@@ -6,7 +6,7 @@ export default function quizIntro() {
   return (
     <div className={`${styles.quiz} ${styles.quizIntro}`}>
       <nav className={`${styles.quizNav} ${styles.quizIntroNav}`}>
-        <Image className={`${styles.quizNavIcon}`} src='/images/quiz/close-button.png' alt="close button" height={30} width={30} tabIndex={1}/>
+        <Image className={`${styles.quizNavIcon}`} src='/images/quiz/close-button.png' alt="close button" height={30} width={30} />
       </nav>
       <div className={`${styles.quizHeading}`}>
         <h2 className={`${styles.quizHeadingH1}`}>
@@ -29,7 +29,7 @@ export default function quizIntro() {
         <p className={`${styles.quizParagraphText}`}>Explore famous artists, iconic paintings, and unexpected facts in a quiz that celebrates creativity. </p>
       </div>
       <Link className={`${styles.quizStartButton}`} href={'/quiz-question-1'}>
-        <button className={styles.startQuiz} tabIndex={2}>
+        <button className={styles.startQuiz}>
           Start Quiz
         </button>
       </Link>
