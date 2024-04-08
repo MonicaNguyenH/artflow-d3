@@ -167,6 +167,11 @@
   justify-content: center;
   align-self: center;
   margin-top: 80px;
+
+  transition-property: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0s;
 }
 
 .button:hover {

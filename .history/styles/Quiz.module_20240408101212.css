@@ -171,7 +171,6 @@
 
 .button:hover {
   background-image: var( --gradient-rv);
-  background-position: right center;
 }
 
 .questions {
@@ -189,8 +188,7 @@
 }
 
 .questions label:hover {
-  background-image: var(--gradient-rv);
-  transition: 1s ease-in;
+  background-image: ;
 }
 
 .quiz p{

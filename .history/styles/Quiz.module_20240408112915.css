@@ -157,7 +157,7 @@
   flex-shrink: 0;
   border-radius: 35.5px;
   border: none;
-  background-image: var(--gradient-bb);
+  background-image: linear-gradient(to right, #F7CAC9 0%, #92A8D1  51%, #F7CAC9  100%);
   color: var(--white);
   font-size: var(--font-medium);
   font-weight: bold;
@@ -167,6 +167,11 @@
   justify-content: center;
   align-self: center;
   margin-top: 80px;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 
 .button:hover {
