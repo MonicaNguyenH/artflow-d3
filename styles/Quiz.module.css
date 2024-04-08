@@ -88,7 +88,7 @@
 
 /* Question One Styling */
 .quiz h1{
-  color: #4CC9F0;
+  color: var(--light-blue);
 }
 .button {
   display: flex;
@@ -142,7 +142,7 @@
 
 /* Question Two Styling */
 .quiz h1{
-  color: #4CC9F0;
+  color: var(--light-blue);
 }
 
 .overlay2 {
