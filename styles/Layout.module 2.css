@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  background-color: black;  
+  min-height: 932px;
+  font-family: sans-serif;
+  margin: auto;
+}
