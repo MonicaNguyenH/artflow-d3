@@ -15,11 +15,8 @@ export default function quizIntro() {
           <br/>
           WITH 
           <div className={`${styles.logo}`}>
-            <span className={styles.artflowLogoPink}>
-              <Image src='/images/logo-pink.svg' alt="logo icon" height={40} width={40} />
-            </span>
             <span className={styles.artflow}>
-              <Image src='/images/ArtFlow.svg' alt="logo Text" height={42} width={240} />
+              <Image className={styles.logoWordmark} src='/images/logo.svg' alt="logo wordmark" height={79} width={450} />
             </span>
           </div>
         </h2>
