@@ -157,7 +157,7 @@
   color: var(--white);
   font-size: var(--font-medium);
   font-weight: bold;
-
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
