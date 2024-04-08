@@ -147,6 +147,7 @@
     font-size: var(--font-regular-figma);
     font-weight: bold;
     color: var(--white);
+    cursor: pointer;
 }
 
 .buttonRetake:hover {
@@ -165,7 +166,7 @@
     font-size: var(--font-regular-figma);
     font-weight: bold;
     color: var(--white);
-
+    cursor: pointer;
     background: linear-gradient(var(--dark-grey), var(--dark-grey)) padding-box,
               var(--gradient-rv) border-box;
     border: 2px solid transparent;
