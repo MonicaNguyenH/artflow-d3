@@ -1,4 +1,4 @@
-import styles from "@/styles/Quiz.module.css";
+import styles from "@/styles/QuizIntro.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ export default function quizIntro() {
         <Image className={`${styles.quizNavIcon}`} src='/images/quiz/close-button.png' alt="close button" height={30} width={30} />
       </nav>
       <div className={`${styles.quizHeading}`}>
-        <h1 className={`${styles.quizHeadingH1}`}>
+        <h2 className={`${styles.quizHeadingH1}`}>
           LEVEL UP <br/>YOUR <br/>
           <span className={`${styles.quizHeadingArtistry}`}>ARTISTRY</span>
           <br/>
@@ -22,7 +22,7 @@ export default function quizIntro() {
               <Image src='/images/ArtFlow.svg' alt="logo Text" height={42} width={240} />
             </span>
           </div>
-        </h1>
+        </h2>
       </div>
       <div className={`${styles.quizParagraph}`}>
         <p className={`${styles.quizParagraphText}`}>Get ready to brush up on your art knowledge with Art Trivia Fun! </p>
