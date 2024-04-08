@@ -314,7 +314,9 @@
   width: 390px;
 }
 /* Quiz Outtro*/
-
+.outtro1Heading {
+  color: var(--white);
+}
 /* Quiz Results */
 
 .quizResults .question_title {
