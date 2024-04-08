@@ -59,7 +59,7 @@ export default function QuizOutro() {
               <Link className={styles.resultButtonLink} href={{
                   pathname: '/quiz-results',
                   query: selectedValues
-                }}><button className={styles.resultButton} tabIndex={1}>View My Result</button></Link>
+                }}><button className={styles.resultButton} >View My Result</button></Link>
             </div>
             :
             <div className={styles.progress}>

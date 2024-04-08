@@ -168,8 +168,8 @@ export default function QuizOutro() {
       <div className={styles.quizButtons}>
         <Link href={{
             pathname: '/quiz-intro',
-          }}><button className={styles.buttonRetake} tabIndex={4}>Retake the Quiz</button></Link>
-          <button className={styles.buttonShare} tabIndex={5}>Share with Friends</button>
+          }}><button className={styles.buttonRetake}>Retake the Quiz</button></Link>
+          <button className={styles.buttonShare}>Share with Friends</button>
       </div>
     </div>
   );
