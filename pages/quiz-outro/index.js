@@ -5,7 +5,7 @@ import answers from '@/data/quiz-answers';
 import Image from 'next/image';
 import GradientMesh from "@/components/GradientMesh";
 
-import styles from "@/styles/Quiz.module.css";
+import styles from "@/styles/QuizOuttro.module.css";
 
 export default function QuizOutro() {
 
@@ -35,20 +35,20 @@ export default function QuizOutro() {
           {loadingDone ?  
           <div>
             <div className={styles.outtro2}>
-              <h1 className={styles.outtro2Heading}>
+              <h2 className={styles.outtro2Heading}>
                 GOOD JOB!
-              </h1>
+              </h2>
               <p className={styles.outtro2Paragragh}>Check out your score and let's keep the creative vibes flowing!</p>
             </div>
           </div>
           :
           <div className={styles.outtro1}>
-            <h1 className={styles.outtro1Heading}>
+            <h2 className={styles.outtro1Heading}>
               <span className={styles.outtro1HeadingArt}>Art</span> is the <br/>only way 
               <br/>
               to run away without 
               <br/>leaving <br/>home
-            </h1>
+            </h2>
             <p className={styles.outtro1Paragragh}>Twyla Tharp</p>
           </div>}
         </div>
