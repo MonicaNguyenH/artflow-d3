@@ -2,6 +2,7 @@
 
 :root {
   --font-regular: 12px;
+  --font-regular-figma: 16px;
   --font-small: 10px;
   --font-small-14px: 14px;
   --font-medium-16px: 16px;
@@ -9,6 +10,8 @@
   --font-large: 40px;
   --font-extra-large: 50px;
   --font-family: "Roboto", sans-serif;
+
+  --font-30: 30px;
 
   --black: #141414;
   --white: #FFFFFC;
@@ -24,7 +27,7 @@
   
     /*gradient*/
   --gradient-rv: linear-gradient(85deg, var(--rose) 5%, var(--violet) 95%);
-  --gradient-bb: linear-gradient(85deg, var(--dark-blue) 2%, var(--violet) 113%);
+  --gradient-bb: linear-gradient(85deg, var(--light-blue) 2%, var(--dark-blue) 113%);
   --gradient-vb: linear-gradient(85deg, var(--violet) 5%, var(--blue) 95%);
 } 
 
