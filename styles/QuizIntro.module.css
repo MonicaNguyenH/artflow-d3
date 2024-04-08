@@ -5,6 +5,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     position: relative;
+    font-family: var(--font-family);
   }
   
   .quiz input {
@@ -47,6 +48,7 @@
   .pinkNumber {
     color: var(--rose);
   }
+  
   .progress {
     box-sizing: content-box;
     background: rgba(0, 0, 0, 0.25);
@@ -103,15 +105,22 @@
     margin-left: 30px;
     margin-top: 60px;
   }
+
   .quizHeadingH1 {
-    font-size: var(--font-large);
+    font-size: var(--font-extra-large);
     color: var(--white);
+    line-height: 90%;
   }
   
   .quizHeadingArtistry {
     color: var(--rose)
   }
   
+  .logoWordmark {
+    width: 19rem;
+
+  }
+
   .quizParagraph {
     width: 340px;
     margin: 30px 10px 30px 30px;
@@ -141,7 +150,6 @@
     margin-bottom: 52px;
     cursor: pointer;
     transition: background-color 3s;
-  
   }
 
   .startQuiz:hover {

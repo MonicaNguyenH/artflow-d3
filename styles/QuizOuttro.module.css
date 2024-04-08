@@ -5,6 +5,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     position: relative;
+    font-family: var(--font-family);
   }
   
   
