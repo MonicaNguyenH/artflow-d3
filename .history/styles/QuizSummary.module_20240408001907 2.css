@@ -1,0 +1,158 @@
+.quiz {
+    min-height: 932px;
+    color: var(--white);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    overflow-y: auto;
+}
+
+.resultGraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+}
+
+/* Quiz Intro Styling */
+.quizIntroNav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Quiz Results */
+.resultContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.quizResults h1 {
+    font-size: var(--font-large);
+    color: var(--rose);
+    margin: 20px 0 20px 0;
+}
+
+.quizResults p {
+    max-width: 340px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.resultCaption {
+    font-size: var(--font-medium);
+    font-weight: bold;
+}
+
+.resultContent {
+    font-size: var(--font-regular-figma);
+}
+
+.quizResults .question_title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.quizResults .question_title img {
+    height: 100%;
+    max-height: 20px;
+    width: auto;
+}
+
+.quizResults .question_title .incorrect {
+    height: 100%;
+    max-height: 30px;
+    width: auto;
+}
+
+/* Quiz Dopdown */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    max-width: 390px;
+}
+
+.dropdown img {
+    max-height: 16px;
+    width: auto;
+}
+
+.dropdown h4 {
+    font-size: var(--font-medium);
+}
+
+/* Quiz Summary */
+
+.quizSummary {
+    background-color: var(--dark-grey);
+    padding: 15px 20px;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    min-height: 50px;
+}
+
+.quizSummary h4 {
+    margin: 0;
+}
+
+.summaryText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.summaryText h4, 
+.summaryText p {
+    text-align: left;
+}
+
+.summaryText h4 {
+    font-size: var(--font-medium);
+}
+
+.summaryText p {
+    font-size: var(--font-regular-figma);
+}
+
+@keyframes quiz_1 {
+    0% { width: 20%; }
+    100% { width: 20%; }
+}
+
+@keyframes quiz_2 {
+    0% { width: 20%; }
+    100% { width: 40%; }
+}
+
+@keyframes quiz_3 {
+    0% { width: 40%; }
+    100% { width: 60%; }
+}
+
+@keyframes quiz_4 {
+    0% { width: 60%; }
+    100% { width: 80%; }
+}
+
+@keyframes quiz_5 {
+    0% { width: 80%; }
+    100% { width: 100%; }
+}
+
+@keyframes quiz_outro {
+    0% { width: 10%; }
+    100% { width: 100%; }
+}
+  
+  
+  
