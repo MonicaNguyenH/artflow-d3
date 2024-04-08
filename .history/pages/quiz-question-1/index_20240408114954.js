@@ -38,7 +38,7 @@ export default function QuestionOne() {
             <Link href={{
               pathname: '/quiz-question-2',
               query: selectedValues
-            }}><button tabIndex={7}>Next</button></Link>
+            }}><button>Next</button></Link>
         </div>}
         <div className={styles.quiz}>      
           <h1>Question 1</h1>

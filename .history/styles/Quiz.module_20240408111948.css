@@ -137,7 +137,11 @@
   height: 100%;
 }
 
-
+/* Quiz Intro Styling */
+.quizIntroNav {
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* Question One Styling */
 .quiz h1 {
@@ -163,6 +167,8 @@
   justify-content: center;
   align-self: center;
   margin-top: 80px;
+
+  transition: 1s ease-in;
 }
 
 .button:hover {
@@ -387,10 +393,7 @@
 .quizOutro .progress {
   width: 390px;
 }
-/* Quiz Outtro*/
-.outtro1Heading {
-  color: var(--white);
-}
+
 /* Quiz Results */
 
 .quizResults .question_title {
@@ -467,4 +470,5 @@
   0% { width: 10%; }
   100% { width: 100%; }
 }
+
 

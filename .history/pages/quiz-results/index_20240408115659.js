@@ -122,7 +122,7 @@ export default function QuizOutro() {
           <div className={styles.dropdown} onClick={() => {setDropdownOpen(!dropdownOpen)}}>
             <h4>See your results</h4>
             {dropdownOpen ? <Image src={'/images/quiz/minimize.png'} alt="minimize" height={5} width={19} tabIndex={2}/> :
-            <Image src={'/images/quiz/down-arrow.png'} alt="arrow down" height={13} width={20} tabIndex={3}/>}
+            <Image src={'/images/quiz/down-arrow.png'} alt="arrow down" height={13} width={20} />}
           </div>
           { dropdownOpen &&
           <div className={styles.summaryText}>
@@ -168,8 +168,8 @@ export default function QuizOutro() {
       <div className={styles.quizButtons}>
         <Link href={{
             pathname: '/quiz-intro',
-          }}><button className={styles.buttonRetake} tabIndex={4}>Retake the Quiz</button></Link>
-          <button className={styles.buttonShare} tabIndex={5}>Share with Friends</button>
+          }}><button className={styles.buttonRetake}>Retake the Quiz</button></Link>
+          <button className={styles.buttonShare}>Share with Friends</button>
       </div>
     </div>
   );
