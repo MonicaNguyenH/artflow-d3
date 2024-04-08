@@ -15,6 +15,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+  font-family: var(--font-family);
 }
 
 .quiz input {
@@ -50,7 +51,6 @@
   height: 565px;
   max-height: 565px;
   border: 5px solid var(--rose);
-
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -178,8 +178,6 @@
   height: 260px;
   flex-direction: column;
   flex-shrink: 0;
-
-
   font-size: var(--font-medium);
   font-weight: bold;
 }
@@ -230,7 +228,6 @@
   height: 565px;
   max-height: 565px;
   border: 5px solid var(--rose);
-
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -265,7 +262,6 @@
   color: var(--white);
   border: none;
   cursor: pointer;
-
   margin-left: 230px;
   height: 50px;
   width: 110px;
@@ -302,7 +298,6 @@
   height: 565px;
   max-height: 565px;
   border: 5px solid var(--rose);
-
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -346,7 +341,6 @@
   border: none;
   cursor: pointer;
   margin-bottom: 25px;
-
   font-size: var(--font-regular-figma);
   font-weight: bold;
 }
