@@ -50,7 +50,7 @@ export default function QuestionFour() {
       <div className={styles.quiz}>      
         <h1>Question 4</h1>
         <p>What is the color of the pigment derived from crushed insects, historically used to create a vibrant red dye?</p>
-        <div>
+        <div className={styles.questions}>
           <input type="radio" id="a" name="question_4" value="A" onChange={handleRadioChange} />
           <label htmlFor="a" className={selectedValues.question_4 === 'A' ? styles.selected : ''}>A. Carmine</label>
           <input type="radio" id="b" name="question_4" value="B" onChange={handleRadioChange} />
@@ -59,7 +59,7 @@ export default function QuestionFour() {
           <label htmlFor="c" className={selectedValues.question_4 === 'C' ? styles.selected : ''}>C. Sienna</label>  
           <input type="radio" id="d" name="question_4" value="D" onChange={handleRadioChange} />
           <label htmlFor="d" className={selectedValues.question_4 === 'D' ? styles.selected : ''}>D. Ochre</label>  
-          <button onClick={() => {selectedValues.question_4 && setAnswerSubmitted(true)}}>Submit</button>        
+          <button className={styles.button} onClick={() => {selectedValues.question_4 && setAnswerSubmitted(true)}}>Next</button>        
         </div>
       </div>      
     </div>
