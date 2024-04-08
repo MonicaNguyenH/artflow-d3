@@ -3,6 +3,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import answers from '@/data/quiz-answers';
 import Image from 'next/image';
+import GradientMesh from "@/components/GradientMesh";
 
 import styles from "@/styles/Quiz.module.css";
 
@@ -28,39 +29,47 @@ export default function QuizOutro() {
   }, []);
 
   return (
-    <div className={`${styles.quizOutro} ${styles.quiz}`}> 
-
-      <div className={styles.top}>
-        {loadingDone ?  
-        <div>
-          <h1>
-            GOOD JOB!
-          </h1>
-          <p>Check out your score and let's keep the creative vibes flowing!</p>
+    <div className={`${styles.quizOutro} ${styles.quiz}`} style={{position:'relative'}}>
+      <div className={styles.textElements}>
+        <div className={styles.top}>
+          {loadingDone ?  
+          <div>
+            <div className={styles.outtro2}>
+              <h1 className={styles.outtro2Heading}>
+                GOOD JOB!
+              </h1>
+              <p className={styles.outtro2Paragragh}>Check out your score and let's keep the creative vibes flowing!</p>
+            </div>
+          </div>
+          :
+          <div className={styles.outtro1}>
+            <h1 className={styles.outtro1Heading}>
+              <span className={styles.outtro1HeadingArt}>Art</span> is the <br/>only way 
+              <br/>
+              to run away without 
+              <br/>leaving <br/>home
+            </h1>
+            <p className={styles.outtro1Paragragh}>Twyla Tharp</p>
+          </div>}
         </div>
-        :
-        <div>
-          <h1>
-            Art is the only way to run away without leaving home
-          </h1>
-          <p>Twyla Tharp</p>
-        </div>}
-      </div>
 
-      <div className={styles.bottom}>
-      {loadingDone ?  
-        <div>
-          <Link href={{
-              pathname: '/quiz-results',
-              query: selectedValues
-            }}><button>View My Result</button></Link>
+        <div className={styles.bottom}>
+          {loadingDone ?  
+            <div>
+              <Link className={styles.resultButtonLink} href={{
+                  pathname: '/quiz-results',
+                  query: selectedValues
+                }}><button className={styles.resultButton} >View My Result</button></Link>
+            </div>
+            :
+            <div className={styles.progress}>
+              <div className={styles['progress-value']}></div>
+            </div>}      
         </div>
-        :
-        <div className={styles.progress}>
-          <div className={styles['progress-value']}></div>
-        </div>}      
       </div>
-
-    </div>
+        <div className={styles.background}>
+          <GradientMesh/>
+        </div>
+      </div>
   );
 }
