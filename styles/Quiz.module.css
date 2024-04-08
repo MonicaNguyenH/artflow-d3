@@ -7,7 +7,6 @@
   position: relative;
 }
 
-
 .quiz input {
   display: none;
 }
@@ -85,78 +84,7 @@
   height: 100%;
 }
 
-/* Quiz Intro Styling */
-.quizIntroNav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100px;
-}
 
-.quizNavIcon {
-  margin-top: 43.8px;
-  margin-right: 13.79px;
-}
-
-.quizHeading {
-  width: 361px;
-  margin-left: 30px;
-  margin-top: 60px;
-}
-.quizHeadingH1 {
-  font-size: var(--font-large);
-}
-
-.quizHeadingArtistry {
-  color: var(--rose)
-}
-
-.quizParagraph {
-  width: 340px;
-  margin: 30px 10px 30px 30px;
-}
-
-.startQuiz {
-  display: flex;
-  width: 390px;
-  height: 50px;
-  padding: 8px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0; 
-  border: none;
-  border-radius: 25px; 
-  background-color: var(--rose);
-  color: var(--white);
-  font-weight: bold;
-  margin-top: 290px;
-  margin-bottom: 52px;
-  cursor: pointer;
-
-}
-
-.quizStartButton {
-  text-decoration: none;
-}
-
-
-.artflowLogoPink {
-  margin-right: 0;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.quizParagraphText {
-  line-height: 1.2;
-  letter-spacing: 0.25px;
-  font-size: var(--font-small-14px);
-  width: 310px;
-}
 
 /* Question One Styling */
 .quiz h1{
@@ -394,100 +322,3 @@
   100% { width: 100%; }
 }
 
-/*Outtro*/
-
-.quizOutro {
-  position: relative;
-  z-index: 20;
-
-}
-
-
-.textElements {
-  position: relative;
-  z-index: 20;
-}
-
-.backgroundMesh {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.outtro1 {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-
-}
-
-.outtro1Heading {
-  width: 380px; 
-  line-height: 45px; /* 90% */
-  text-transform: uppercase;
-  font-size: var(--font-large); 
-  margin-top: 204px;
-  margin-left: 31px;
-  margin-bottom: 0;
-}
-
-.outtro1Paragragh {
-  margin-left: 31px;
-  color: var(--light-blue);
-  font-weight: bold;
-  margin-top: 13px;
-  font-size: var(--font-medium-16px);
-}
-
-.outtro1HeadingArt {
-  color: var(--rose);
-}
-
-.outtro2 {
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 350px;
-}
-.outtro2Heading {
-  font-size: var(--font-large);
-}
-.outtro2Paragragh {
-  width: 300px;
-  text-align: center;
-  font-size: var(--font-medium-16px);
-  font-weight: bold;
-  margin-top: 0px;
-}
-
-.resultButton {
-  display: flex;
-  width: 390px;
-  height: 50px;
-  padding: 8px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 25px;
-  background: var(--rose);
-  border: none;
-  color: var(--white);
-  font-weight: bold;
-  margin-top: 304px;
-  margin-bottom: 52px;
-  cursor: pointer;
-}
-
-.resultButtonLink {
-  text-decoration: none;
-}
-
-.progress {
-  margin-top: 300px;
-  margin-bottom: 52px;
-}
