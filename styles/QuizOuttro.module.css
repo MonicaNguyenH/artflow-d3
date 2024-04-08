@@ -71,6 +71,7 @@
     height: 30px;
     width: 0;
   }
+
 /* Quiz Outro */
 .quizOutro .progress-value {
     animation: quiz_outro 4s normal forwards;  
@@ -79,10 +80,13 @@
   .quizOutro .progress {
     width: 390px;
   }
+
   /* Quiz Outtro*/
   .outtro1Heading {
     color: var(--white);
+    line-height: 80%;
   }
+
   /* Quiz Results */
   
   .quizResults .question_title {
