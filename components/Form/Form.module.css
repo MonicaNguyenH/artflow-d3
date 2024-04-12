@@ -3,37 +3,15 @@
     display: flex;
     flex-direction: column;
     color: white;
+    margin-top: 4.5rem;
 }
 
-.email {
-    width: 280px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: var(--Gray, rgba(135, 135, 135, 0.20));
+.fill a {
+    text-decoration: none;
 }
 
-.password {
-    width: 280px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: var(--Gray, rgba(135, 135, 135, 0.20));
-}
-
-.pass {
-    margin-top: 10px;
-}
-
-.submit {
-    width: 285px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    margin-top: 20px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #910BEA -2.96%, #F94E9B 99.84%);
-    color: white;
+.fields {
+    padding-bottom: 1rem;
 }
 
 .instructions {
@@ -42,37 +20,56 @@
    font-size: var(--font-medium);
 }
 
-.google {
-    width: 280px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    margin-top: 0px;
-    border-radius: 10px;
-    background: var(--Gray);
-    color: white;
-}
-
-.apple {
-    width: 280px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    background: var(--Gray);
-    color: white;
-}
-
 .name {
     font-size: var(--font-medium);
 }
 
 .form h2 {
     font-size: var(--font-large);
+    text-align: left;
+    margin: 0;
+    padding-bottom: 9px;
 }
+
+.form p {
+    margin: 0;
+    font-size: var(--font-regular-figma);
+    padding-bottom: 2rem;
+} 
 
 .noAccount {
     display: flex;
     justify-content: center;
+    padding-top: 15px;
 }
+
+.noAccount a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    margin-left: 6px;
+}
+
+.input {
+    font-size: var(--font-medium);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.input input {
+    width: 100%;
+    background-color: var(--grey);
+    padding: .75rem .75rem;
+    border-radius: 10px;
+    color: var(--light-grey);
+    border: none;
+    font-size: var(--font-regular-figma);
+    font-weight: 400;
+}
+
+.input label {
+    font-size: var(--font-regular-figma);  
+    font-weight: 700;
+    padding: .25rem .75rem;
+} 

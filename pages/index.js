@@ -2,7 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Form from "@/components/Form";
-import Chips from "@/components/Chips";
+import Link from "next/link";
+import {SigninButton, SignupButton} from '@/components/Buttons';
+import LoginBtn from "@/components/LoginBtn";
 
 
 export default function Home() {
@@ -16,6 +18,15 @@ export default function Home() {
       </Head>
 
       <main className={`${styles.main}`}>
+        <div>
+          <Image className={styles.logoWordmark} src="/images/logo.png" height={72} width={350} />
+          <Link href="/signin">
+            <SigninButton />
+          </Link>
+          <Link href="/signup">
+            <SignupButton />
+          </Link>
+        </div>
       </main>
     </>
   );
