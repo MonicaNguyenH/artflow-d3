@@ -6,6 +6,10 @@
     margin-top: 4.5rem;
 }
 
+.fill a {
+    text-decoration: none;
+}
+
 .fields {
     padding-bottom: 1rem;
 }
