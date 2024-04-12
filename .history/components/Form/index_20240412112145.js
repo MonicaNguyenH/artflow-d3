@@ -30,7 +30,7 @@ export default function SigninForm() {
     )
 }
 
-export default function SignupForm() {
+export function SignupForm() {
     return (
         <div className={styles.form}>
         <h2>Sign up</h2>

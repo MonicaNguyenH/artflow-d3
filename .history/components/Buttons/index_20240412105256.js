@@ -2,7 +2,7 @@ import styles from './Buttons.module.css';
 import { signIn } from "next-auth/react";
 import Link from 'next/link';
 
-export default function SigninButton() {
+export function SigninButton() {
     return (
         <div className={styles.gradientContainer}>
             <button type='button' className={styles.gradientButton}>Sign In</button>
@@ -10,7 +10,7 @@ export default function SigninButton() {
     );
 }
 
-export default function SignupButton() {
+export function SignupButton() {
     return (
         <div className={styles.gradientContainer}>
             <button className={styles.gradientButton}>Sign Up</button>
@@ -18,7 +18,7 @@ export default function SignupButton() {
     );
 }
 
-export default function ContinueButton() {
+export function ContinueButton() {
     return (
         <div className={styles.ContinueButton}>
             <button className={styles.gradientContinueButton}>Continue</button>
@@ -26,7 +26,7 @@ export default function ContinueButton() {
     );
 }
 
-export default function GoogleSigninButton() {
+export function GoogleSigninButton() {
 
     return (
         <div className={styles.socialContainer}>
@@ -38,7 +38,7 @@ export default function GoogleSigninButton() {
     );
 }
 
-export default function AppleSigninButton() {
+export function AppleSigninButton() {
     return (
         <div className={styles.socialContainer}>
             <button className={styles.socialButton}>

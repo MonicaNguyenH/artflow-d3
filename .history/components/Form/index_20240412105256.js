@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SigninButton, SignupButton, GoogleSigninButton, AppleSigninButton } from "../Buttons";
 
 
-export default function SigninForm() {
+export function SigninForm() {
     return (
         <div className={styles.form}>
         <h2>Sign in</h2>
@@ -30,7 +30,7 @@ export default function SigninForm() {
     )
 }
 
-export default function SignupForm() {
+export function SignupForm() {
     return (
         <div className={styles.form}>
         <h2>Sign up</h2>
