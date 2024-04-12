@@ -1,4 +1,4 @@
-import styles from "/styles/SignIn.module.css";
+import styles from "/styles/signin.module.css";
 import { SigninForm } from "@/components/Form";
 import { useSession } from "next-auth/react";
 import { useRouter } from 'next/router';
