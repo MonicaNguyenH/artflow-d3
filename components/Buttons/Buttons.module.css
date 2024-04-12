@@ -11,6 +11,7 @@
     background: var(--gradient-rv);
     border: none;
     font-size: var(--font-regular);
+    cursor: pointer;
 }
 
 .gradientButton button {
@@ -22,17 +23,15 @@
     background: var( --gradient-vb);
 }
 
-
-
 .gradientContainer,
 .socialContainer,
 .gradientContinueButton,
 .gradientButton {
-   padding: 20px;
-   font-size: var(--font-regular);
+   font-size: var(--font-regular-figma);
    font-family: var(--font-family);
    font-weight: bold;
    color: var(--white);
+   margin: auto;
 }
 /* Continue Button */
 .gradientContinueButton {
@@ -47,6 +46,7 @@
     border-radius: 25px;
     background: var(--gradient-rv);   
     border: 0;
+    cursor: pointer;
 }
 
 .socialButton {
@@ -55,24 +55,32 @@
     flex-shrink: 0;
     border-radius: 25px;
     border: 1px solid var(--white, #FFFFFC);
-    background: var(--grey, rgba(135, 135, 135, 0.20));
+    background: transparent;
     padding: 0;
     color: var(--white);
-    font-family: var(--font);
-    font-size: var(--font-regular);
+    font-family: var(--font-family);
+    font-size: var(--font-regular-figma);
     font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+    margin-bottom: 1rem;
 }
 
 .socialButton:hover {
-    background: rgba(255, 255, 252, 0.6);
+    background: rgba(255, 255, 252, 0.2);
 }
 
-.socialIcon {
-    margin-right: 20px;;
+.googleIcon {
+    margin-right: 20px;
+    width: auto;
+    height: 22px;
+}
+
+.appleIcon {
+    margin-right: 20px;
+    width: auto;
+    height: 25px;
 }
