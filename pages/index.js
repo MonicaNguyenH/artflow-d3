@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.css";
 import Form from "@/components/Form";
 import Link from "next/link";
 import {SigninButton, SignupButton} from '@/components/Buttons';
+import LoginBtn from "@/components/LoginBtn";
 
 
 export default function Home() {

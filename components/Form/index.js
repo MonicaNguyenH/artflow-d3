@@ -19,7 +19,9 @@ export function SigninForm() {
                     <input type="password" id="password" placeholder="Enter your password" className={styles.password}/>
                 </div>
             </div>
-            <SigninButton />
+            <Link href="/quiz-intro">
+                <SigninButton />
+            </Link>
             <p className={styles.noAccount}>Don't have an account? <Link href="/signup"> Sign up</Link></p>
             <GoogleSigninButton />
             <AppleSigninButton />
@@ -48,7 +50,9 @@ export function SignupForm() {
                     <input type="password" id="password" placeholder="Enter your password" className={styles.password}/>
                 </div>
             </div>
-            <SignupButton />
+            <Link href="/quiz-intro">
+                <SignupButton />
+            </Link>
             <p className={styles.noAccount}>Already have an account? <Link href="/signin"> Sign in</Link></p>
             <GoogleSigninButton />
             <AppleSigninButton />
