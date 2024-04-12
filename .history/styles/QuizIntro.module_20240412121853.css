@@ -1,0 +1,193 @@
+/* Global Quiz Styling */
+.quiz {
+    min-height: 932px;
+    color: var(--white);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    font-family: var(--font-family);
+  }
+  
+  .quiz input {
+    display: none;
+  }
+  
+  .quiz label {
+    width: 95%;
+    display: block;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    padding: .5rem 1rem;
+    border-radius: 99px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .quiz .selected {
+    background: linear-gradient(to right, #F94E9B, #910BEA);
+  }
+  
+  .overlay {
+    position: absolute;
+    background-color: var(--dark-grey);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    z-index: 9999;
+    border-radius: 25px;
+    width: 100%;
+    max-width:390px;
+  }
+  
+  .overlay img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .pinkNumber {
+    color: var(--rose);
+  }
+  
+  .progress {
+    box-sizing: content-box;
+    background: rgba(0, 0, 0, 0.25);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 0;
+    display: flex;
+    height: 30px;
+    width: 250px;
+    z-index: 999;
+    border: var(--white) 2px solid;
+  }
+  
+  .progress-value {  
+    animation: load 3.5s normal forwards;  
+    border-radius: 100px;
+    background: linear-gradient(to right, #F94E9B, #910BEA);
+    height: 30px;
+    width: 0;
+  }
+
+
+/* Quiz Question Nav */
+.quizQuestionNav {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    padding: 1rem 1rem;
+    align-items: center;
+  }
+  
+  .quizQuestionNav img {
+    max-width: 22px;
+    height: 100%;
+  }
+  
+  /* Quiz Intro Styling */
+  .quizIntroNav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .quizNavIcon {
+    margin-top: 43.8px;
+    margin-right: 13.79px;
+  }
+  
+  .quizHeading {
+    width: 361px;
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+
+  .quizHeadingH1 {
+    font-size: var(--font-extra-large);
+    color: var(--white);
+    line-height: 90%;
+  }
+  
+  .quizHeadingArtistry {
+    color: var(--rose)
+  }
+  
+  .logoWordmark {
+    width: 19rem;
+
+  }
+
+  .quizParagraph {
+    width: 340px;
+    margin: 30px 10px 30px 30px;
+  }
+
+  .quizStartButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 235.7px;
+    margin-bottom: 52px;
+  }
+  
+  .startQuiz {
+    display: flex;
+    width: 390px;
+    height: 50px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0; 
+    border: none;
+    border-radius: 25px; 
+    background-color: var(--rose);
+    color: var(--white);
+    font-weight: bold;
+    margin-top: 235.7px;
+    margin-bottom: 52px;
+
+    cursor: pointer;
+    transition: background-color 3s;
+  }
+
+  .startQuiz:hover {
+    background-image: var(--gradient-rv);
+    animation: changeColor 1s linear slidein;
+  }
+
+  @keyframes changeColor {
+  0% {
+    background-color: var(--rose);
+  }
+  100% {
+    background-color: var(--gradient-rv);
+  }
+}
+
+  .quizStartButton {
+    text-decoration: none;
+  }
+  
+  
+  .artflowLogoPink {
+    margin-right: 0;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .quizParagraphText {
+    line-height: 1.2;
+    letter-spacing: 0.25px;
+    font-size: var(--font-small-14px);
+    width: 310px;
+  }
+  

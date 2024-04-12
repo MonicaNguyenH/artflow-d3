@@ -1,0 +1,132 @@
+/* GradientMesh.module.css */
+.gradientMesh {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+<<<<<<< HEAD
+    margin-top: -915px;
+    margin-left: -16px;
+    opacity: 0.8;
+=======
+    opacity: 0.8;
+    z-index: -100;
+>>>>>>> d8b0b582ebed856ecfb4a8536f84745ff1cad434
+
+    /* Add more gradient colors or adjust gradient direction as needed */
+    /* You can also use radial gradients or other gradient types */
+  }
+  
+  #noise {
+    width: 100%;
+    height:100%;
+  }
+<<<<<<< HEAD
+  .grainyContainer {
+    background-color: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDMwIiBoZWlnaHQ9IjkzMiIgdmlld0JveD0iMCAwIDQzMCA5MzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MzAiIGhlaWdodD0iOTMyIiBmaWxsPSIjRDlEOUQ5Ii8+Cjwvc3ZnPgo=");
+=======
+
+  .grainyContainer {
+    margin-top: -915px;
+    margin-left: -16px;
+>>>>>>> d8b0b582ebed856ecfb4a8536f84745ff1cad434
+  }
+
+.gradientShape {
+  max-width: 220px;
+  max-height: 500px;
+  text-align: center;
+}
+.Shape1,
+.Shape2,
+.Shape3,
+.Shape5,
+.Shape7,
+.Shape9 {
+  position: relative;
+  z-index: 10;
+  filter: blur(50px);
+  animation: one 10s infinite;
+}
+
+.Shape2,
+.Shape4,
+.Shape6,
+.Shape8 {
+    position: relative;
+    z-index: 10;
+    filter: blur(50px);
+    animation: two 10s infinite;
+}
+
+
+.Shape1 {
+  transform: rotate(50deg);
+  flex-shrink: 0; 
+  margin-top: -300px;
+  opacity: 0.9;
+  z-index: 3;
+}
+
+.Shape2 {
+  transform: rotate(-22.796deg);
+  flex-shrink: 0; 
+  margin: -510px 66px 156px 48px;
+  opacity: 0.6;
+}
+
+.Shape3 {
+  transform: rotate(59.042deg);
+  flex-shrink: 0; 
+  margin: -462px 225px 46px 190px;
+  opacity: 0.9;
+}
+
+.Shape4 {
+  transform: rotate(59.042deg);
+  flex-shrink: 0; 
+  margin-top: -200px;
+  opacity: 0.9;
+}
+
+.Shape5 {
+  z-index: 9;
+  margin: -420px 36px -20px 20px;
+}
+
+.Shape6 {
+    margin-top: -115px;
+    margin-left: 50px;
+    opacity: 0.5;
+}
+.Shape7 {
+    transform: rotate(-22.796deg);
+    flex-shrink: 0; 
+    margin-top: -520px;
+    margin-left: 40px;
+    opacity: 0.5;
+}
+.Shape8{
+    margin-top: -100px;
+    z-index: 4;
+    opacity: 0.5;
+   
+}
+
+.Shape9 {
+  margin-left: 90px;
+}
+@keyframes one {
+    0%{left: 0px; top: 0px}
+    25%{left: -0px; top: 70px}
+    50%{left: 20px; top: 90px}
+    75%{left: 50px; top: 90px}
+    100%{left: 0px; top: 0px}
+  }
+
+  @keyframes two {
+    0%{left: 0px; top: 0px}
+    25%{left: 50px; top: 10px}
+    50%{left: 60px; top: 50px}
+    75%{left: 50px; top: 100px}
+    100%{left: 0px; top: 0px}
+  }
