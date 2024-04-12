@@ -67,9 +67,8 @@ export default function QuizOutro() {
             </div>}      
         </div>
       </div>
-        <div className={styles.background}>
-          <GradientMesh/>
-        </div>
+          <GradientMesh className={`${styles.gradientMeshBG}`}/>
+      
       </div>
   );
 }
