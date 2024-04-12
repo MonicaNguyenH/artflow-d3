@@ -52,7 +52,7 @@ export default function QuestionFive() {
         <p>Vincent van Gogh is famous for his series of paintings depicting which flower?</p>
         <div className={styles.questions} style={{ marginTop : '200px' }}>
           <input type="radio" id="a" name="question_5" value="A" onChange={handleRadioChange} />
-          <label htmlFor="a" className={selectedValues.question_5 === 'A' ? styles.selected : ''} tabIndex={1}>A. Daises</label>
+          <label htmlFor="a" className={selectedValues.question_5 === 'A' ? styles.selected : ''} tabIndex={1}>A. Daisies</label>
           <input type="radio" id="b" name="question_5" value="B" onChange={handleRadioChange} />
           <label htmlFor="b" className={selectedValues.question_5 === 'B' ? styles.selected : ''} tabIndex={2}>B. Sunflowers</label>
           <input type="radio" id="c" name="question_5" value="C" onChange={handleRadioChange} />

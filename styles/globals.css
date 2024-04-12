@@ -23,7 +23,7 @@
 
   --black: #141414;
   --white: #FFFFFC;
-  --grey: #878787; /*make this 20% opacity*/
+  --grey: rgba(135, 135, 135, .2); /* this is 20% opacity*/
   --light-grey: #A6A7B3;
   --medium-grey: #545458;
   --dark-grey: #333333;
