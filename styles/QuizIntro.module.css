@@ -130,6 +130,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 235.7px;
+    margin-bottom: 52px;
   }
   
   .startQuiz {
@@ -148,6 +150,7 @@
     font-weight: bold;
     margin-top: 235.7px;
     margin-bottom: 52px;
+
     cursor: pointer;
     transition: background-color 3s;
   }

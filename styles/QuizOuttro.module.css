@@ -278,3 +278,9 @@
       background-image: var(--gradient-rv);
     }
   }
+
+  .gradientMeshBG {
+    width: 430px;
+    height: 932px;
+    background-size: cover;
+  }
