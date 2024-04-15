@@ -86,14 +86,6 @@
   font-weight: bold;
 }
 
-.overlay button:hover,
-.overlay2 button:hover, 
-.overlay3 button:hover {
-  background: linear-gradient(var(--dark-grey), var(--dark-grey)) padding-box,
-              var(--gradient-rv) border-box;
-  border: 2px solid transparent;
-} 
-
 .overlay button:active {
   background-image: var(--gradient-rv);
 } 
@@ -196,10 +188,8 @@
 
 .questions label:focus {
   background-image: var(--gradient-rv);
-  border-radius: 100px;
-  border: 2px solid var(--rose);
-  background-size: cover;
-  background-repeat: no-repeat;
+  border: 2px solid transparent;
+  background-clip: border-box;
 }
 
 .quiz p{

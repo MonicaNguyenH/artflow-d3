@@ -86,12 +86,8 @@
   font-weight: bold;
 }
 
-.overlay button:hover,
-.overlay2 button:hover, 
-.overlay3 button:hover {
-  background: linear-gradient(var(--dark-grey), var(--dark-grey)) padding-box,
-              var(--gradient-rv) border-box;
-  border: 2px solid transparent;
+.overlay button:hover {
+  background-image: var(--gradient-rv);
 } 
 
 .overlay button:active {

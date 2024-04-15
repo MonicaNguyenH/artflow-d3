@@ -173,7 +173,7 @@
 }
 
 .buttonShare:hover {
-    background-image: var(--gradient-bb);
+    background-image: var(--gradient-rv);
 }
 
 @keyframes quiz_1 {

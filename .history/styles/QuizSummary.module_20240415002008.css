@@ -168,12 +168,12 @@
     color: var(--white);
     cursor: pointer;
     background: linear-gradient(var(--dark-grey), var(--dark-grey)) padding-box,
-              var(--gradient-bb) border-box;
+              var(--gradient-rv) border-box;
     border: 2px solid transparent;
 }
 
 .buttonShare:hover {
-    background-image: var(--gradient-bb);
+    background-image: var(--gradient-rv);
 }
 
 @keyframes quiz_1 {
