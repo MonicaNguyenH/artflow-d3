@@ -1,4 +1,4 @@
-import styles from './Buttons.module.css';
+/*import styles from './Buttons.module.css';
 import { signIn } from "next-auth/react";
 import Link from 'next/link';
 
@@ -47,3 +47,4 @@ export function AppleSigninButton() {
         </div>
     );
 }
+*/

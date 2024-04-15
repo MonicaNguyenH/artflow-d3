@@ -17,13 +17,14 @@ export function SignupButton() {
         </div>
     );
 }
-export function ContinueButton() {
+
+/*export function ContinueButton() {
     return (
         <div className={styles.ContinueButton}>
             <button className={styles.gradientContinueButton}>Continue</button>
         </div>
     );
-}
+}*/
 
 export function GoogleSigninButton() {
 

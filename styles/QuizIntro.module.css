@@ -131,11 +131,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 235.7px;
-    margin-bottom: 2px;
-  }
-
-  .quizStartButton a {
-    text-decoration: none;
+    margin-bottom: 52px;
   }
   
   .startQuiz {
@@ -152,6 +148,9 @@
     background-color: var(--rose);
     color: var(--white);
     font-weight: bold;
+    margin-top: 235.7px;
+    margin-bottom: 52px;
+
     cursor: pointer;
     transition: background-color 3s;
   }

@@ -2,9 +2,10 @@ import styles from "./Form.module.css";
 import Link from "next/link";
 import {
     SigninButton,
-    SignupButton, 
+    //SignupButton, 
     GoogleSigninButton, 
     AppleSigninButton } from "../Buttons";
+
 
 export function SigninForm() {
     return (
@@ -23,7 +24,7 @@ export function SigninForm() {
                 </div>
             </div>
             <Link href="/quiz-intro">
-                <SigninButton/>
+                <SigninButton text="hello"/>
             </Link>
             <p className={styles.noAccount}>Don't have an account? <Link href="/signup"> Sign up</Link></p>
             <GoogleSigninButton />

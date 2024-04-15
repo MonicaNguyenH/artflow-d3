@@ -5,6 +5,7 @@ import {
     SignupButton, 
     GoogleSigninButton, 
     AppleSigninButton } from "../Buttons";
+import { SigninButton } from "../SignInButton";
 
 export function SigninForm() {
     return (
@@ -23,7 +24,7 @@ export function SigninForm() {
                 </div>
             </div>
             <Link href="/quiz-intro">
-                <SigninButton/>
+                <SigninButton text="hello"/>
             </Link>
             <p className={styles.noAccount}>Don't have an account? <Link href="/signup"> Sign up</Link></p>
             <GoogleSigninButton />
