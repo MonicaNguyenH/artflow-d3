@@ -1,0 +1,10 @@
+.gradientContainer,
+.socialContainer,
+.gradientContinueButton,
+.gradientButton {
+   font-size: var(--font-regular-figma);
+   font-family: var(--font-family);
+   font-weight: bold;
+   color: var(--white);
+   margin: auto;
+}

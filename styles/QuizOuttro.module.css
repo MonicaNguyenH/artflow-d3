@@ -74,7 +74,7 @@
 
 /* Quiz Outro */
 .quizOutro .progress-value {
-    animation: quiz_outro 10s normal forwards;  
+    animation: quiz_outro 4s normal forwards;  
   }
   
   .quizOutro .progress {
@@ -277,10 +277,4 @@
     100% {
       background-image: var(--gradient-rv);
     }
-  }
-
-  .gradientMeshBG {
-    width: 430px;
-    height: 932px;
-    background-size: cover;
   }

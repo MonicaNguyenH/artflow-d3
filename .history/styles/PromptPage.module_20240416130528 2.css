@@ -1,0 +1,54 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+    height: 932px;
+}
+
+.promptCard {
+    background-color: var(--dark-grey);
+    height: 240px;
+    width: 390px;
+    color: var(--white);
+    border-radius: 25px;
+    margin: 40px 20px;
+    padding: 30px 50px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    font-size: var(--font-medium);
+    font-weight: bold;
+    text-align: center;
+}
+
+.quotation1, 
+.quotation2 {
+    font-size: var(--font-large);
+    font-weight: bold;
+    margin: 0;
+}
+
+.quotation1 {
+    align-self: flex-start;
+}
+
+.quotation2 {
+    align-self: flex-end;
+}
+
+.regenerateButton {
+    color: var(--white);
+    font-size: var(--font-regular-figma);
+    font-weight: bold;
+    border-radius: 25px;
+    background: linear-gradient(var(--black), var(--black)) padding-box,
+              var(--gradient-rv) border-box;
+    border: 2px solid transparent;
+    width: 390px;
+    height: 50px;
+    margin : 30px 20px;
+}

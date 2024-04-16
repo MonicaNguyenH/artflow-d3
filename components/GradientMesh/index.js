@@ -5,7 +5,7 @@ import styles from './GradientMesh.module.css';
 const GradientMesh = () => {
   return (
     <div className={styles.gradientMesh}>
-        <div className={styles.grainyContainer}>
+        <div  className={styles.grainyContainer}>
             <svg width="430" height="932" viewBox="0 0 430 950" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <filter id="grainy">
                     <feTurbulence 
