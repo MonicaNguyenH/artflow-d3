@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/jumiTest.module.css";
 import NavBar from "@/components/NavBar";
-import Buttons from "@/components/Buttons"
+import Chips from "@/components/Chips";
 
 export default function jumiTest() {
   return (
@@ -14,9 +14,7 @@ export default function jumiTest() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <Buttons/>
         <NavBar/>
-        
       </main>
     </>
   );

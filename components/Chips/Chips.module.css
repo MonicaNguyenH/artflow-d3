@@ -1,16 +1,33 @@
-.Container {
+.chipContainer {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: content-box;
 }
 
-.firstRow, .secondRow, .thirdRow, .fourthRow {
-    display: flex;
-    gap: 1rem;
-    background-color: none;
+.chip {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin: 8px 8px 0px 0;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+    border-radius: 35.5px; 
+}
+
+.chip:hover {
+    border: solid 1px var(--violet); /* Define border properties */
+}
+
+.chip.selected {
+    background: var(--violet);
     border: none;
 }
+
 
 
 
