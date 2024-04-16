@@ -1,0 +1,195 @@
+/* This Gradient Mesh will use for generating prompt page and prompt page*/
+.BoundingBox {
+    position: fixed; 
+    width: 430px; 
+    height: 932px; 
+    overflow: hidden;
+    z-index:-1;
+}
+
+.GradientMeshTwo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+}
+
+.GradientShape1,
+.GradientShape2,
+.GradientShape3,
+.GradientShape4,
+.GradientShape5,
+.GradientShape6 {
+    position: absolute;
+    filter: blur(60px);
+}
+
+/* Shape 1*/
+.GradientShape1 {  
+    left: 116px;
+    animation: one 10s infinite;
+}
+
+@keyframes one {
+    0% {
+        left: 116px;
+        top: -75px; 
+    }
+    25% {
+        left: -23.19px;
+        top: 270.19px;
+    }
+    50% {
+        left: 120px;
+        top: 204.16px;
+    }
+
+    100% {
+        left: 116px;
+        top: -75px;
+    }
+}
+
+/* Shape 2*/
+.GradientShape2 {
+    left: 100px;
+    top: 127px;
+    animation: two 10s infinite;
+}
+
+@keyframes two {
+    0% {
+        left: 110.41px;
+        top: 127px; 
+    }
+    25% {
+        left: 207.27px;
+        top: 270.29px;
+    }
+    50% {
+        left: 58.32px;
+        top: -58.32px;
+    }
+
+    100% {
+        left: 116px;
+        top: 127px;
+    }
+}
+
+/* Shape 3*/
+.GradientShape3 {
+    right: 253px;
+    top: 253px;
+    animation: three 10s infinite;
+}
+
+@keyframes three {
+    0% {
+        left: -23.47px;
+        top: 253.54px; 
+    }
+    25% {
+        left: -54.9px;
+        top: 64.49px;
+    }
+    50% {
+        left: 144.74px;
+        top: 16.24px;
+    }
+
+    100% {
+        left: -23px;
+        top: 253px;
+    }
+}
+
+/* Shape 4*/
+.GradientShape4 {
+    left: 120px;
+    animation: four 10s infinite;
+}
+
+@keyframes four {
+    0% {
+        left: 120.68px;
+        top: -23.34px; 
+    }
+    25% {
+        left: -3.51px;
+        top: 168.61x;
+    }
+    50% {
+        left: -86.42px;
+        top: -103.42px;
+    }
+
+    100% {
+        left: 115px;
+        top: -13px;
+    }
+}
+
+/* Shape 5*/
+.GradientShape5 {
+    left: 115px;
+    top: 168px;
+    animation: five 10s infinite;
+}
+@keyframes five {
+    0% {
+        left: 115px;
+        top: 168px; 
+    }
+    25% {
+        left: 201.65px;
+        top: -202.16x;
+    }
+    50% {
+        left: 90.64px;
+        top: -1px;
+    }
+
+    100% {
+        left: 115px;
+        top: 168px;
+    }
+}
+
+/* Shape 6*/
+.GradientShape6 {
+    left: -13px;
+    bottom: -20px;
+    animation: six 10s infinite;
+}
+
+@keyframes six {
+    0% {
+        left: -12.63px;
+        top: -289.47px; 
+    }
+    25% {
+        left: 0px;
+        top: -72.65x;
+    }
+    50% {
+        left: 248.73px;
+        top: -291.04px;
+    }
+
+    100% {
+        left: -13px;
+        top: -20px;
+    }
+}
+
+.grainyTexture {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+}

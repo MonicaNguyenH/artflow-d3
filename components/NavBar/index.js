@@ -12,6 +12,7 @@ export default function NavBar() {
 
     return (
         <>
+        <div className={styles.navBarBehindBG}>
             <div className={styles.navBar}>
                 <ul className={styles.navList}>
                     <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' ? styles.active : ''}>
@@ -32,7 +33,7 @@ export default function NavBar() {
                     </li>
                     <li className={styles.navBarIcons}>
                         <div className={styles.circleBehindPlus}></div>
-                        <Link className={styles.link} href="/New"> 
+                        <Link className={styles.link} href="/NewPrompt"> 
                             <img className={`${styles.plusIcon}`} src="/images/plus-icon.png"
                                 alt="Create Post Icon" 
                                 width="60" 
@@ -57,6 +58,7 @@ export default function NavBar() {
                     </li>
                 </ul>
             </div>
+        </div>
         </>
     )
 }
