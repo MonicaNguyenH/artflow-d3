@@ -59,7 +59,11 @@
     background-image: var(--gradient-rv);
 }
 
+/*
 .footer {
+    display: flex;
+    align-items: center;
     position: fixed;
     bottom: 0;
-}
+    width: 100%;
+}*/
