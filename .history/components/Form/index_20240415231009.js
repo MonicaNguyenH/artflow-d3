@@ -58,7 +58,7 @@ export function SignupForm() {
             </Link>
             <p className={styles.noAccount}>Already have an account? <Link href="/signin"> Sign in</Link></p>
             <GoogleButton GoogleButtonText="Sign up with Google" />
-            <AppleButton AppleButtonText="Sign up with Apple" />
+            <AppleButton AppleButtonText="Sign uup with Apple" />
         </form>
     </div>
     )

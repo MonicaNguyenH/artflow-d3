@@ -3,8 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Form from "@/components/Form";
 import Link from "next/link";
-//import {SigninButton, SignupButton} from '@/components/Buttons';
-import GradientButton from "@/components/GradientButton";
+import {SigninButton, SignupButton} from '@/components/Buttons';
 
 
 
@@ -22,11 +21,13 @@ export default function Home() {
         <div>
           <Image className={styles.logoWordmark} src="/images/logo.png" height={72} width={350} />
           <Link href="/signin">
-            <GradientButton buttonText="Sign In"/>
+            <SigninButton />
           </Link>
           <Link href="/signup">
-            <GradientButton buttonText="Sign Up"/>
+            <SignupButton />
           </Link>
+          <div>
+          </div>
         </div>
       </main>
     </>

@@ -1,9 +1,7 @@
 import styles from "./Form.module.css";
 import Link from "next/link";
-//import { SigninButton, SignupButton, GoogleSigninButton, AppleSigninButton } from "../Buttons";
+import { SigninButton, SignupButton, GoogleSigninButton, AppleSigninButton } from "../Buttons";
 import GradientButton from "../GradientButton";
-import GoogleButton from "../GoogleButton";
-import AppleButton from "../AppleButton";
 
 
 export function SigninForm() {
@@ -26,8 +24,8 @@ export function SigninForm() {
                 <GradientButton buttonText="Sign In"/>
             </Link>
             <p className={styles.noAccount}>Don't have an account? <Link href="/signup"> Sign up</Link></p>
-            <GoogleButton GoogleButtonText="Sign in with Google" />
-            <AppleButton AppleButtonText="Sign in with Apple" />
+            <GoogleSigninButton />
+            <AppleSigninButton />
         </form>
     </div>
     )
@@ -57,8 +55,8 @@ export function SignupForm() {
                 <GradientButton buttonText="Sign Up"/>
             </Link>
             <p className={styles.noAccount}>Already have an account? <Link href="/signin"> Sign in</Link></p>
-            <GoogleButton GoogleButtonText="Sign up with Google" />
-            <AppleButton AppleButtonText="Sign up with Apple" />
+            <GoogleSigninButton />
+            <AppleSigninButton />
         </form>
     </div>
     )
