@@ -11,7 +11,7 @@ export default function PromptDesc() {
 
     return (
         <>
-            <div className={styles.promptDescContainer}>
+            <div>
                 <div className={styles.container}>
                     <div className={styles.mainContent}>
                         <div className={styles.subHead}>

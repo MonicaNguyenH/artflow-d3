@@ -1,12 +1,6 @@
-.promptDescContainer {
-    position: relative;
-    height: 390px;
-    height: 310px;
-}
-
 .container {
     width: 390px;
-    height: 310px;
+    height: 290px;
     background-color: var(--dark-grey);
     border-radius: 25px;
     position: absolute;
@@ -25,7 +19,7 @@
 
 .mainContent {
     box-sizing: content-box;
-    margin: 60px 20px 20px 20px;
+    margin: 60px 30px 20px 30px;
 }
 
 .subHead {
@@ -45,7 +39,7 @@
 
 .header p, 
 .description p {
-    margin: 5px 0;
+    margin: 5px 0 10px 0;
 }
 
 .description {
@@ -56,7 +50,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 30px 0;
 }
 
 .chip {
@@ -73,14 +67,13 @@
 
 .chip p {
     margin: 0;
-    font-size: var(--font-small-14px);
+    font-size: var(--font-regular);
 }
 
 .buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    cursor: pointer;
+    gap: 20px;
 }
 
 .startButton button{
@@ -88,38 +81,14 @@
     height: 50px;
     border-radius: 25px;
     border: none;
-    background: var(--gradient-bb);
+    background: var(--gradient-rv);
     color: var(--white);
     font-weight: bold;
-    cursor: pointer;
 }
-
-.startButton button:hover, 
-.startButton button:focus {
-    background: var(--gradient-rv);
-}
-
 
 .icon {
     background-color: var(--black);
     border-radius: 50px;
     width: 50px;
     height: 50px;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    padding: 0;
-}
-
-.icon:hover {
-    box-sizing: border-box;
-    border: 2px solid var(--rose);
-}
-
-.iconSaved {
-    box-sizing: content-box;
-    background-color: var(--rose);
 }
