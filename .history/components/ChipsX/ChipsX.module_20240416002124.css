@@ -1,0 +1,15 @@
+.chipsContainer {
+    display: flex;
+    min-width:  118px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: auto 24px auto 24px;
+    border-radius: 25px;
+    font: var(--font-regular-figma);
+
+    background: linear-gradient(var(--dark-grey), var(--dark-grey)) padding-box,
+              var(--gradient-rv) border-box;
+    border: 2px solid transparent;
+}

@@ -1,18 +1,16 @@
-.promptDescContainer {
-    position: relative;
-    height: 390px;
-    height: 310px;
-}
-
 .container {
     width: 390px;
     height: 310px;
     background-color: var(--dark-grey);
     border-radius: 25px;
-    position: absolute;
+    /*position: absolute;*/
     color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--font-regular);
+
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
 }
 
 .topContainer {
@@ -88,7 +86,7 @@
     height: 50px;
     border-radius: 25px;
     border: none;
-    background: var(--gradient-bb);
+    background: var(--gradient-rv);
     color: var(--white);
     font-weight: bold;
     cursor: pointer;
@@ -96,7 +94,7 @@
 
 .startButton button:hover, 
 .startButton button:focus {
-    background: var(--gradient-rv);
+    background: var(--gradient-bb);
 }
 
 
@@ -114,7 +112,7 @@
     padding: 0;
 }
 
-.icon:hover {
+.icon:hover:not {
     box-sizing: border-box;
     border: 2px solid var(--rose);
 }

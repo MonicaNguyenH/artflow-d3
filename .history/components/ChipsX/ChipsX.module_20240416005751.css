@@ -1,0 +1,48 @@
+.chipsContainerRV, 
+.chipsContainerBB {
+    box-sizing: content-box;
+    display: flex;
+    min-width:  118px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 10px;
+    border-radius: 25px;
+    font: var(--font-regular-figma);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.chipsContainerBB {
+    background: linear-gradient(var(--black), var(--black)) padding-box,
+              var(--gradient-bb) border-box;
+    border: 2px solid transparent;
+}
+
+.chipsContainerRV {
+    background: linear-gradient(var(--black), var(--black)) padding-box,
+              var(--gradient-rv) border-box;
+    border: 2px solid transparent;
+    width: 135px;
+}
+
+.chipsContainer:hover {
+    border: 2px solid var(--white);
+    background-image: var(--gradient-bb);
+}
+
+.chipsContainer:focus {
+    border: 2px solid var(--white);
+    background-image: var(--black);
+}
+
+.addGenre button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: var(--white);
+    font-size: var(--font-regular-figma);
+}

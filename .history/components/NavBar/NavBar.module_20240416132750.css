@@ -16,14 +16,10 @@
     justify-content: center;
     margin-left: 0;
     padding-left: 0;
-    gap: 35px; 
-    height: 70px;
 }
 
 .icons {
     padding: 0;
-    width: 28px;
-    height: 28px;
 }
 
 /* NavBar.module.css */
@@ -51,7 +47,7 @@
 
 .plusIcon {
     transition: transform 0.2s ease;
-    top: -10px;
+    top: 30%;
     position: relative;
 }
 .plusIcon:hover {

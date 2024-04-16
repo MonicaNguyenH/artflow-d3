@@ -88,7 +88,7 @@
     height: 50px;
     border-radius: 25px;
     border: none;
-    background: var(--gradient-bb);
+    background: var(--gradient-rv);
     color: var(--white);
     font-weight: bold;
     cursor: pointer;
@@ -96,7 +96,7 @@
 
 .startButton button:hover, 
 .startButton button:focus {
-    background: var(--gradient-rv);
+    background: var(--gradient-bb);
 }
 
 

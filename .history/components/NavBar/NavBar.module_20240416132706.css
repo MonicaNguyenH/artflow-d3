@@ -16,14 +16,10 @@
     justify-content: center;
     margin-left: 0;
     padding-left: 0;
-    gap: 35px; 
-    height: 70px;
 }
 
 .icons {
     padding: 0;
-    width: 28px;
-    height: 28px;
 }
 
 /* NavBar.module.css */
@@ -33,7 +29,7 @@
 
 .circleBehindPlus {
     position: absolute;
-    top: 30%;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90px; 
@@ -51,8 +47,6 @@
 
 .plusIcon {
     transition: transform 0.2s ease;
-    top: -10px;
-    position: relative;
 }
 .plusIcon:hover {
     transform: translateY(-10px);
