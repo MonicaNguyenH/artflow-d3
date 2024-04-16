@@ -46,7 +46,7 @@ export default function QuestionFive() {
             pathname: '/quiz-outro',
             query: selectedValues
           }}><button tabIndex={6}>Next</button></Link>
-        </div>}
+      </div>}
       <div className={styles.quiz}>      
         <h1>Question 5</h1>
         <p>Vincent van Gogh is famous for his series of paintings depicting which flower?</p>

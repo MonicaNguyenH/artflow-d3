@@ -12,7 +12,7 @@ export default function SignIn() {
     router.push('/quiz-intro');
     return null;
   }
-
+   
   return (
     <>
       <div className={styles.auth}>

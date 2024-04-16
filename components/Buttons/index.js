@@ -17,6 +17,7 @@ export function SignupButton() {
         </div>
     );
 }
+
 export function ContinueButton() {
     return (
         <div className={styles.ContinueButton}>

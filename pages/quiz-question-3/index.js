@@ -52,7 +52,7 @@ export default function QuestionThree() {
       <div className={styles.quiz}>      
         <h1>Question 3</h1>
         <p>In which painting does Leonardo da Vinci depict a woman with a mysterious smile against a colorful backdrop?</p>
-        <div className={styles.questions} style={{ marginTop : '200px' }}>
+        <div className={styles.questions} style={{ marginTop : '177px' }}>
           <input type="radio" id="a" name="question_3" value="A" onChange={handleRadioChange} />
           <label htmlFor="a" className={selectedValues.question_3 === 'A' ? styles.selected : ''} tabIndex={1}>A. The Starry Night</label>
           <input type="radio" id="b" name="question_3" value="B" onChange={handleRadioChange} />

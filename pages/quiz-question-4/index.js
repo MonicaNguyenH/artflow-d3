@@ -50,7 +50,7 @@ export default function QuestionFour() {
       <div className={styles.quiz}>      
         <h1>Question 4</h1>
         <p>What is the color of the pigment derived from crushed insects, historically used to create a vibrant red dye?</p>
-        <div className={styles.questions} style={{ marginTop : '200px' }}>
+        <div className={styles.questions} style={{ marginTop : '177px' }}>
           <input type="radio" id="a" name="question_4" value="A" onChange={handleRadioChange} />
           <label htmlFor="a" className={selectedValues.question_4 === 'A' ? styles.selected : ''} tabIndex={1}>A. Carmine</label>
           <input type="radio" id="b" name="question_4" value="B" onChange={handleRadioChange} />
