@@ -16,6 +16,7 @@
     height: 70px;
     background-color: var(--dark-grey);
     border-radius: 25px;
+    position: fixed;
     z-index: 100;
     bottom: 50px;
     box-sizing: content-box;
@@ -31,7 +32,6 @@
     padding-left: 0;
     gap: 35px; 
     height: 70px;
-    margin: 0;
 }
 
 .icons {

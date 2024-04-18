@@ -10,12 +10,12 @@
     bottom: 0;
 }*/
 
-
 .navBar {
     width: 390px;
     height: 70px;
     background-color: var(--dark-grey);
     border-radius: 25px;
+    position: fixed;
     z-index: 100;
     bottom: 50px;
     box-sizing: content-box;
@@ -31,7 +31,6 @@
     padding-left: 0;
     gap: 35px; 
     height: 70px;
-    margin: 0;
 }
 
 .icons {
@@ -47,7 +46,7 @@
 
 .circleBehindPlus {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90px; 
