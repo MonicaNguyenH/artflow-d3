@@ -31,9 +31,7 @@ const NewPrompt = () => {
                 <p className={styles.continueParagraph}>Click continue to get a prompt</p>
                 <button className={styles.continueButton}>Continue</button>
             </div>
-            <div className={styles.footer}> 
-                <NavBar/>
-            </div>
+            <NavBar/>
         </div>
     );
 };

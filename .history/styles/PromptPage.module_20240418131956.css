@@ -52,13 +52,15 @@
     border: 2px solid transparent;
     width: 390px;
     height: 50px;
-    margin : 30px 20px 160px 20px;
+    margin : 30px 20px;
 }
 
 .regenerateButton:hover {
     box-sizing: border-box;
     background-image: var(--gradient-rv);
 }
+
+
 
 .footer {
     position: fixed;

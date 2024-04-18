@@ -3,18 +3,8 @@
     width: 390px;
     height: 105px;
     border-radius: 25px 25px 0 0;
-    
-    display: flex;
 }
 
-.gradientBlur {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(20, 20, 20, 0.5) 20%);
-    width: 390px;
-    height: 120px;
-    position: absolute;
-    top: -50%;
-    filter: blur(15px)
-}
 
 .navBar {
     width: 390px;

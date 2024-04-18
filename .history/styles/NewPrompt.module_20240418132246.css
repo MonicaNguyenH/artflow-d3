@@ -5,15 +5,15 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     max-width: 430px;
     min-height: 932px;
-    background-color: var(--black);
+    margin-top: 60px;
+    padding-bottom: 170px;
 }
 
 .chipsContainerHeading {
-    margin-top: 60px;
     width: 330px; 
     font-size: var(--font-large);
     color: var(--white);
@@ -30,7 +30,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 160px;
 }
 
 .continueParagraph {
