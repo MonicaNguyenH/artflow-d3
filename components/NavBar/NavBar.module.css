@@ -76,3 +76,7 @@
 .plusIcon:hover {
     transform: translateY(-10px);
 }
+
+.icons:hover {
+    transform: translateY(-5px);
+}

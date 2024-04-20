@@ -1,8 +1,24 @@
 import styles from "@/styles/GeneratingPrompt.module.css"
-import React from 'react';
+import React, {useEffect} from 'react';
 import GradientMeshTwo from "@/components/GradientMeshTwo";
+import { useRouter } from "next/router";
 
 export default function GeneratingPrompt(){
+    const router = useRouter();
+    useEffect(() => {
+        const categories = localStorage.getItem('Categories');
+        console.log(categories);
+        (async function() {
+            const response = await fetch('api/gpt', {
+                method: 'POST',
+                body: JSON.stringify(categories),
+              })
+              const data = await response.json();
+              console.log(data);
+              localStorage.setItem('Prompt', data);
+              router.push('/prompt-page');
+        })();
+    }, []);
     return(
         <>
         <div className={styles.GeneratingPrompt}>

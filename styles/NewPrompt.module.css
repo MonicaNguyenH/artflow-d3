@@ -33,6 +33,10 @@
     margin-bottom: 160px;
 }
 
+.continueContainer a {
+    text-decoration: none;
+}
+
 .continueParagraph {
     font-size: var( --font-regular-figma);
     color: var(--white);

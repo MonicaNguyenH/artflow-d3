@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 430px;
-    min-height: 932px;
+    min-height: 100vh;
     background-color: var(--black);
 }
 
@@ -52,7 +52,12 @@
     border: 2px solid transparent;
     width: 390px;
     height: 50px;
+    cursor: pointer;
+}
+
+.regenerateButtonContainer {
     margin : 30px 20px 160px 20px;
+    position: relative;
 }
 
 .regenerateButton:hover {

@@ -4,9 +4,19 @@ import styles from "@/styles/PromptPage.module.css"
 import PromptDesc from "@/components/PromptDesc";
 import ChipsX from "@/components/ChipsX";
 import NavBar from "@/components/NavBar";
+import { useState,useEffect } from "react";
+import Link from "next/link";
 
 
 export default function Home() {
+
+  const [drawingPrompt, setDrawingPrompt] = useState([]);
+  useEffect(() => {
+    console.log(localStorage.getItem('Prompt'));
+    const prompt = localStorage.getItem('Prompt').trim().split('%');
+    console.log(prompt);
+    setDrawingPrompt(prompt);
+  }, [])
   return (
     <>
       <Head>
@@ -21,14 +31,16 @@ export default function Home() {
         </div>
         <div className={styles.promptCard}>
           <p className={styles.quotation1}>“</p>
-          <p className={styles.prompt}>A chase with a happy dog, a wagging tail, and an adventurous pursuit </p>
+          <p className={styles.prompt}>{drawingPrompt[1]}</p>
           <p className={styles.quotation2}>”</p>
         </div>
         <div>
-          <PromptDesc/>
+          <PromptDesc title={drawingPrompt[0]} description={drawingPrompt[2]}/>
         </div>
-        <div>
-          <button className={styles.regenerateButton}>Regenerate</button>
+        <div className={styles.regenerateButtonContainer}>
+          <Link href="/NewPrompt">
+            <button className={styles.regenerateButton}>Regenerate</button>
+          </Link>
         </div>
         <div className={styles.footer}>
           <NavBar/>
