@@ -62,12 +62,6 @@
     z-index: -1;
 }
 
-.homeIcon,
-.activityIcon,
-.chatIcon,
-.profileIcon {
-}
-
 .plusIcon {
     transition: transform 0.2s ease;
     top: -10px;

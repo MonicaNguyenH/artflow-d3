@@ -58,7 +58,7 @@
     font-weight: 700;
     border: none;
     cursor: pointer;
-    font-size: var(--font-regular-figma)
+    font-size: var(--font-regular-figma);
 }
 .continueButton:hover {
     background-image: var(--gradient-bb);
