@@ -1,4 +1,4 @@
-import styles from "@/styles/GeneratingPrompt.module.css"
+import styles from "@/styles/GeneratingPrompt.module.css";
 import React, {useEffect} from 'react';
 import GradientMeshTwo from "@/components/GradientMeshTwo";
 import { useRouter } from "next/router";
