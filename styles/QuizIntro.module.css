@@ -65,7 +65,7 @@
   }
   
   .progress-value {  
-    animation: load 3.5s normal forwards;  
+    animation: load normal 3.5s forwards;  
     border-radius: 100px;
     background: linear-gradient(to right, #F94E9B, #910BEA);
     height: 30px;
@@ -154,7 +154,7 @@
 
   .startQuiz:hover {
     background-image: var(--gradient-rv);
-    animation: changeColor 1s linear slidein;
+    animation: changeColor linear 1s slidein;
   }
 
   @keyframes changeColor {
