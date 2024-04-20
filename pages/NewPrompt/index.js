@@ -3,6 +3,7 @@ import styles from "@/styles/NewPrompt.module.css";
 import Chips from "@/components/Chips";
 import React from 'react';
 import NavBar from "@/components/NavBar"
+import Link from "next/link";
 
 const NewPrompt = () => {
     const labels = [
@@ -14,7 +15,7 @@ const NewPrompt = () => {
         'Indoor', 'Fashion', 'Insects',
         'Impressionism', 'Mythical', 'Birds',
         'Historical', 'Dinosaurs', 'Futuristic',
-        'Cloud', 'Cat', 'Flowers',
+        'Cloud', 'Cat', 'Flowers',  
         'Countryside', 'Plants', 'Earth',
         'Universe', 'Robots', 'Fantasy',
         'Surrealism', 'Ocean', 'Sports'
@@ -29,7 +30,9 @@ const NewPrompt = () => {
             </div>
             <div className={styles.continueContainer}>
                 <p className={styles.continueParagraph}>Click continue to get a prompt</p>
-                <button className={styles.continueButton}>Continue</button>
+                <Link href="/GeneratingPrompt">
+                    <button className={styles.continueButton}>Continue</button>
+                </Link>
             </div>
             <div className={styles.footer}> 
                 <NavBar/>
