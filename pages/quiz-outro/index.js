@@ -4,7 +4,6 @@ import Link from 'next/link';
 import answers from '@/data/quiz-answers';
 import Image from 'next/image';
 import GradientMesh from "@/components/GradientMesh";
-
 import styles from "@/styles/QuizOuttro.module.css";
 
 export default function QuizOutro() {
@@ -68,8 +67,8 @@ export default function QuizOutro() {
         </div>
       </div>
         <div className={styles.background}>
-          <GradientMesh className={`${styles.gradientMeshBG}`}/>
-      </div>
+          <GradientMesh/>
+        </div>
       </div>
   );
 }

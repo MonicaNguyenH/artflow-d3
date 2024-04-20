@@ -1,0 +1,10 @@
+.chipsContainer {
+    display: flex;
+    min-width:  118px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: auto 24px auto 24px;
+    border-radius: 25px;
+}

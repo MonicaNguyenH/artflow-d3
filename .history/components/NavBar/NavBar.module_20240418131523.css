@@ -1,0 +1,73 @@
+/*
+.navBarBehindBG {
+    display:flex;
+    justify-content: center;
+    width: 430px;
+    height: 100px;
+    background-color: black;
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+}*/
+
+
+.navBar {
+    width: 390px;
+    height: 70px;
+    background-color: var(--dark-grey);
+    border-radius: 25px;
+    z-index: 100;
+    bottom: 50px;
+    box-sizing: content-box;
+}
+
+.navList {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin-left: 0;
+    padding-left: 0;
+    gap: 35px; 
+    height: 70px;
+    margin: 0;
+}
+
+.icons {
+    padding: 0;
+    width: 28px;
+    height: 28px;
+}
+
+/* NavBar.module.css */
+.navBarIcons {
+    position: relative; 
+}
+
+.circleBehindPlus {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px; 
+    height: 90px; 
+    background-color: var(--dark-grey); 
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.homeIcon,
+.activityIcon,
+.chatIcon,
+.profileIcon {
+}
+
+.plusIcon {
+    transition: transform 0.2s ease;
+    top: -10px;
+    position: relative;
+}
+.plusIcon:hover {
+    transform: translateY(-10px);
+}

@@ -1,4 +1,4 @@
-import styles from './ThemeCards.module.css'
+import styles from './ThemeCards.module.css';
 
 export default function ThemeCards() {
   return (

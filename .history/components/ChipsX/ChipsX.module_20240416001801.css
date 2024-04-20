@@ -1,0 +1,6 @@
+.chipsContainer {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    gap: 15px;
+}

@@ -1,0 +1,26 @@
+.chipsContainer {
+    box-sizing: content-box;
+    display: flex;
+    min-width:  118px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 10px;
+    border-radius: 25px;
+    font: var(--font-regular-figma);
+    color: var(--white);
+
+    background: linear-gradient(var(--black), var(--black)) padding-box,
+              var(--gradient-bb) border-box;
+    border: 2px solid transparent;
+}
+
+.chipsContainer:hover {
+    border: 2px solid var(--white);
+    background-image: var(--gradient-bb);
+}
+
+.chipsContainer:focus {
+    background-image: var(--black);
+}

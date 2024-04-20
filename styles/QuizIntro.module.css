@@ -65,7 +65,7 @@
   }
   
   .progress-value {  
-    animation: load 3.5s normal forwards;  
+    animation: load normal 3.5s forwards;  
     border-radius: 100px;
     background: linear-gradient(to right, #F94E9B, #910BEA);
     height: 30px;
@@ -113,7 +113,7 @@
   }
   
   .quizHeadingArtistry {
-    color: var(--rose)
+    color: var(--rose);
   }
   
   .logoWordmark {
@@ -130,8 +130,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 235.7px;
-    margin-bottom: 52px;
   }
   
   .startQuiz {
@@ -150,14 +148,13 @@
     font-weight: bold;
     margin-top: 235.7px;
     margin-bottom: 52px;
-
     cursor: pointer;
     transition: background-color 3s;
   }
 
   .startQuiz:hover {
     background-image: var(--gradient-rv);
-    animation: changeColor 1s linear slidein;
+    animation: changeColor linear 1s slidein;
   }
 
   @keyframes changeColor {
