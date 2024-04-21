@@ -51,7 +51,7 @@ export default function HorizontalChart(){
                 legend: {
                     position: 'bottom',
                     labels: {
-                        size: 12
+                        size: 10
                     }
                 },
                 title: {
@@ -81,7 +81,7 @@ export default function HorizontalChart(){
                     ticks: {
                         color: '#FFFFFC',
                         font: {
-                            size: 12
+                            size: 10
                         }
                     }
                 }

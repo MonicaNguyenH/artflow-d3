@@ -81,7 +81,7 @@ export default function HorizontalChart(){
                     ticks: {
                         color: '#FFFFFC',
                         font: {
-                            size: 12
+                            size: 14
                         }
                     }
                 }
