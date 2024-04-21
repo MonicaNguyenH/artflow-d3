@@ -30,34 +30,28 @@ export default function VerticalBar(){
     
     useEffect(() => {
         setChartData({
-            labels: ["Mental Health", "Volunteer", "Trapped in Routine", "Stress", "Life Satisfaction"],
+            labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
             datasets: [
                 {
-                    label: 'Art gallery visitors',
-                    data:[67,50,30,37,62],
-                    backgroundColor: '#F94E9B'
-                },
-                {
-                    label: 'Non-visitors',
-                    data:[58,31,37,38,58],
-                    backgroundColor: '#4CC9F0'
+                    label: 'Sale $',
+                    data:[10,30,14,15,5,12,25,17],
+                    borderClor: 'rgb(53, 162, 235 )',
+                    backgroundColor: 'rgba(53, 162, 235, 0.4)'
                 }
             ]
         })
         
         setChartOptions({
             plugins: {
-                legend: {
-                    position: 'top',
-                    labels: {
-                        color: '#FFFFFC'
-                    }
+                Legend: {
+                    position: 'top'
                 },
                 title: {
-                    display: true,
-                    text: "Health, well-being, and social connections of art gallery visitors",
-                    color: '#FFFFFC'
+                    dispaly: true,
+                    text: "Daily Revenue"
                 },
+                maintainAspectRatio: false,
+                reponsive: true,
                 scales: {
                     x: {
                         grid: {
@@ -69,24 +63,20 @@ export default function VerticalBar(){
                     },
                     y: {
                         grid: {
-                            color: 'rgba(255, 255, 255, 0.2)'
+                            color: 'rgba(255, 50, 255, 0.2)'
                         },
                         ticks: {
-                            color: '#FFFFFC'
+                            color: 'red'
                         }
                     }
-                },
-                maintainAspectRatio: false,
-                responsive: true,
+                }
             }
         })
     }, [])
     
     return(
         <>
-        <div className={styles.graphContainer}>
-            <Bar data={chartData} options={chartOptions} className={styles.verticalBAr} legend={{ labels: { className: styles.legendLabels } }}/>
-        </div>
+        <Bar data={chartData} options={chartOptions}/>
         </>
     )
 }

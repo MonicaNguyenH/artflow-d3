@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/HealthGraph.module.css";
 import HorizontalChart from "@/components/HorizontalChart";
-import NavBar from "@/components/NavBar";
 
 
 export default function HealthGraph() {
@@ -17,9 +16,7 @@ export default function HealthGraph() {
       <main className={styles.main}>
         <div className={styles.header}>
             <img className={styles.return} src="/images/return-icon.svg" alt="Google Logo" width="24.98" height="16`.03"/>
-            <div className={styles.learnMore}>
-                <p>Learn more</p>
-            </div>
+            <p>Learn more</p>
         </div>
         <div className={styles.graphCaption}>
             <p>Health, well-being, and social connections of art gallery visitors</p>
@@ -35,9 +32,6 @@ export default function HealthGraph() {
                 Less likely to feel trapped in routine (30% vs. 37%)
                 More likely to help neighbours (69% vs. 63%) </p>
             <p className={styles.p3}>These differences are statistically significant, while art gallery visitors show similar levels of stress (37% vs. 38%) compared to non-visitors.</p>
-        </div>
-        <div className={styles.footer}>
-            <NavBar/>
         </div>
       </main>
     </>

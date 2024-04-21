@@ -1,4 +1,4 @@
-import styles from './VerticalBar.module.css';
+import styles from './HorizontalChart.module.css';
 import { Bar } from 'react-chartjs-2';
 
 import {
@@ -21,7 +21,7 @@ ChartJS.register(
     Legend
 )
 
-export default function VerticalBar(){
+export default function HorizontalChart(){
     const [chartData, setChartData] = useState({
         datasets: []
     })
@@ -46,47 +46,44 @@ export default function VerticalBar(){
         })
         
         setChartOptions({
+            indexAxis: 'x',
             plugins: {
-                legend: {
-                    position: 'top',
-                    labels: {
+                Legend: {
+                    position: 'top'
+                },
+                title: {
+                    dispaly: true,
+                    text: "Daily Revenue"
+                },
+                maintainAspectRatio: true,
+                reponsive: true
+            },
+            scales: {
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
                         color: '#FFFFFC'
                     }
                 },
-                title: {
-                    display: true,
-                    text: "Health, well-being, and social connections of art gallery visitors",
-                    color: '#FFFFFC'
-                },
-                scales: {
-                    x: {
-                        grid: {
-                            display: false
-                        },
-                        ticks: {
-                            color: '#FFFFFC'
-                        }
+                y: {
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.2)'
                     },
-                    y: {
-                        grid: {
-                            color: 'rgba(255, 255, 255, 0.2)'
-                        },
-                        ticks: {
-                            color: '#FFFFFC'
-                        }
+                    ticks: {
+                        color: '#FFFFFC'
                     }
-                },
-                maintainAspectRatio: false,
-                responsive: true,
+                }
             }
         })
     }, [])
     
     return(
         <>
-        <div className={styles.graphContainer}>
-            <Bar data={chartData} options={chartOptions} className={styles.verticalBAr} legend={{ labels: { className: styles.legendLabels } }}/>
-        </div>
+            <div>
+                <Bar data={chartData} options={chartOptions} style={{ width: "800px", height: "500px"}}/>
+            </div>
         </>
     )
 }

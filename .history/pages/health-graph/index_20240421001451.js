@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/HealthGraph.module.css";
 import HorizontalChart from "@/components/HorizontalChart";
-import NavBar from "@/components/NavBar";
 
 
 export default function HealthGraph() {
@@ -35,9 +34,6 @@ export default function HealthGraph() {
                 Less likely to feel trapped in routine (30% vs. 37%)
                 More likely to help neighbours (69% vs. 63%) </p>
             <p className={styles.p3}>These differences are statistically significant, while art gallery visitors show similar levels of stress (37% vs. 38%) compared to non-visitors.</p>
-        </div>
-        <div className={styles.footer}>
-            <NavBar/>
         </div>
       </main>
     </>

@@ -30,25 +30,10 @@
 .graphCaption {
     font-size: var(--font-large-30px);
     font-weight: bold;
-    margin: 40px 20px 20px 20px;
+    margin: 40px 20px;
 }
 
-.graphCaption p {
-    margin: 0;
-}
 
 .chartContainer {
     width: 390px;
-    margin-bottom: 30px;
-}
-
-.paragraphs {
-    font-size: var(--font-regular-figma);
-    color: var(--light-grey);
-    margin: 0 20px 150px 20px;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
 }

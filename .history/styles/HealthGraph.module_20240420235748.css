@@ -1,0 +1,7 @@
+.main {
+    font-family: var(--font-family);
+}
+
+.chartContainer {
+    width: 390px;
+}

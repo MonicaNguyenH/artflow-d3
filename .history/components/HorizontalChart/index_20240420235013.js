@@ -1,4 +1,4 @@
-import styles from './VerticalBar.module.css';
+import styles from './HorizontalChart.module.css';
 import { Bar } from 'react-chartjs-2';
 
 import {
@@ -21,7 +21,7 @@ ChartJS.register(
     Legend
 )
 
-export default function VerticalBar(){
+export default function HorizontalChart(){
     const [chartData, setChartData] = useState({
         datasets: []
     })
@@ -35,58 +35,64 @@ export default function VerticalBar(){
                 {
                     label: 'Art gallery visitors',
                     data:[67,50,30,37,62],
-                    backgroundColor: '#F94E9B'
+                    backgroundColor: '#F94E9B',
+                    barThickness: 8,
                 },
                 {
                     label: 'Non-visitors',
                     data:[58,31,37,38,58],
-                    backgroundColor: '#4CC9F0'
+                    backgroundColor: '#4CC9F0',
+                    barThickness: 8,
                 }
             ]
         })
         
         setChartOptions({
+            indexAxis: 'y',
             plugins: {
                 legend: {
-                    position: 'top',
-                    labels: {
-                        color: '#FFFFFC'
-                    }
+                    position: 'bottom'
                 },
                 title: {
-                    display: true,
+                    display: false,
                     text: "Health, well-being, and social connections of art gallery visitors",
                     color: '#FFFFFC'
                 },
-                scales: {
-                    x: {
-                        grid: {
-                            display: false
-                        },
-                        ticks: {
-                            color: '#FFFFFC'
-                        }
+                maintainAspectRatio: true,
+                responsive: true
+            },
+            scales: {
+                x: {
+                    grid: {
+                        display: false
                     },
-                    y: {
-                        grid: {
-                            color: 'rgba(255, 255, 255, 0.2)'
-                        },
-                        ticks: {
-                            color: '#FFFFFC'
+                    ticks: {
+                        color: '#FFFFFC',
+                        font: {
+                            size: 10
                         }
                     }
                 },
-                maintainAspectRatio: false,
-                responsive: true,
+                y: {
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.2)'
+                    },
+                    ticks: {
+                        color: '#FFFFFC',
+                        font: {
+                            size: 10
+                        }
+                    }
+                }
             }
         })
     }, [])
     
     return(
         <>
-        <div className={styles.graphContainer}>
-            <Bar data={chartData} options={chartOptions} className={styles.verticalBAr} legend={{ labels: { className: styles.legendLabels } }}/>
-        </div>
+            <div className={styles.graphContainer}>
+                <Bar data={chartData} options={chartOptions} style={{ width: "350px", height: "300px"}}/>
+            </div>
         </>
     )
 }

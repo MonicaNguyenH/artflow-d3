@@ -44,11 +44,5 @@
 
 .paragraphs {
     font-size: var(--font-regular-figma);
-    color: var(--light-grey);
-    margin: 0 20px 150px 20px;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
+    color: var(--light-grey)
 }
