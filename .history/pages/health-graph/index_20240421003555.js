@@ -1,17 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import styles from "@/styles/HealthGraph.module.css";
 import HorizontalChart from "@/components/HorizontalChart";
 import NavBar from "@/components/NavBar";
 
 
 export default function HealthGraph() {
-    const router = useRouter();
-    const handleIconClick = () => {
-        router.push('/activity-tracking')
-    }
- 
   return (
     <>
       <Head>
@@ -22,9 +16,7 @@ export default function HealthGraph() {
       </Head>
       <main className={styles.main}>
         <div className={styles.header}>
-            <a href="/activity-tracking" onClick={handleIconClick}>
-                <img className={styles.return} src="/images/return-icon.svg" alt="return icon" width="24.98" height="16.03"/>
-            </a>
+            <img className={styles.return} src="/images/return-icon.svg" alt="return icon" width="24.98" height="16.03"/>
             <div className={styles.learnMore}>
                 <p>Learn more</p>
             </div>
