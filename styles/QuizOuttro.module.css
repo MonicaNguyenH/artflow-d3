@@ -65,7 +65,7 @@
   }
   
   .progress-value {  
-    animation: load 3.5s normal forwards;  
+    animation: load normal 3.5s forwards;  
     border-radius: 100px;
     background: linear-gradient(to right, #F94E9B, #910BEA);
     height: 30px;
@@ -74,7 +74,7 @@
 
 /* Quiz Outro */
 .quizOutro .progress-value {
-    animation: quiz_outro 4s normal forwards;  
+    animation: quiz_outro normal 4s forwards;  
   }
   
   .quizOutro .progress {
@@ -253,7 +253,7 @@
     margin-top: 304px;
     margin-bottom: 52px;
     cursor: pointer;
-    transition: background-image 3s ;
+    transition: background-image 3s;
   }
   
   .resultButtonLink {
@@ -267,7 +267,7 @@
 
   .resultButton:hover {
     background-image: var(--gradient-rv);
-    animation: changeColor 3s linear ease-in;
+    animation: changeColor linear 3s ease-in;
   }
 
   @keyframes changeColor {

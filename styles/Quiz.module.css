@@ -205,7 +205,7 @@
 }
 
 .question_1 .progress-value {
-  animation: quiz_1 1.5s normal forwards;
+  animation: quiz_1 normal 1.5s forwards;
 }
 
 /* Question Two Styling */
@@ -274,13 +274,13 @@
 
 .question_2
 .progress-value {
-  animation: quiz_2 1.5s normal forwards;  
+  animation: quiz_2 normal 1.5s forwards;  
 }
 
 /* Question Three Styling */
 .question_3
 .progress-value {
-  animation: quiz_3 1.5s normal forwards;  
+  animation: quiz_3 normal 1.5s forwards;  
 }
 
 .overlay3 {
@@ -352,7 +352,7 @@
 
 .question_4
 .progress-value {
-  animation: quiz_4 1.5s normal forwards;  
+  animation: quiz_4 normal 1.5s forwards;  
 }
 
 .question_4 .overlay button {
@@ -364,7 +364,7 @@
 
 .question_5
 .progress-value {
-  animation: quiz_5 1.5s normal forwards;  
+  animation: quiz_5 normal 1.5s forwards;  
 }
 
 .question_5 .overlay button {
@@ -374,7 +374,7 @@
 
 /* Quiz Outro */
 .quizOutro .progress-value {
-  animation: quiz_outro 4s normal forwards;  
+  animation: quiz_outro normal 4s forwards;  
 }
 
 .quizOutro .progress {

@@ -1,13 +1,22 @@
 import styles from './PromptDesc.module.css';
 import Image from 'next/image';
-import React, {useState} from 'react';
+import React, {useState, useEffect } from 'react';
 
-export default function PromptDesc() {
+export default function PromptDesc({title, description}) {
     const [saved, setSaved] = useState(false);
+    const [tagsArr, setTagsArr] = useState([]);
 
     const handleClickSaved = () => {
         setSaved(!saved);
     }
+
+    useEffect(() => {
+        const tags = localStorage.getItem('Categories');
+        console.log(tags);     
+        setTagsArr(tags.split(','));   
+      }, [])
+
+    const tagStyling = ["var(--rose)", "var(--light-blue)", "var(--blue)", "var(--light-pink)"];
 
     return (
         <>
@@ -18,23 +27,21 @@ export default function PromptDesc() {
                             <p>New Prompt</p>
                         </div>
                         <div className={styles.header}>
-                            <p>Playful Paws</p>
+                            <p>{title}</p>
                         </div>
                         <div className={styles.description}>
                             <p>
-                            Draw a dog in action, his paws poised to spring into action as he leaps into the air, the wind ruffling his fur as he darts across the grass with unwavering determination. 
+                            {description}
                             </p>
                         </div>
                         <div className={styles.tags}>
-                            <div className={styles.chip} style={{ color: 'var(--rose)' }}>
-                                <p>Dog</p>
-                            </div>
-                            <div className={styles.chip} style={{ color: 'var(--light-blue)' }}>
-                                <p>Adventure</p>
-                            </div>
-                            <div className={styles.chip} style={{ color: 'var(--blue)' }}>
-                                <p>Animal</p>
-                            </div>
+                            {tagsArr.map((tag, index) => {
+                                return (
+                                    <div className={styles.chip} style={{ color: tagStyling[index]}}>
+                                        <p>{tag}</p>
+                                    </div>
+                                )
+                            })}                            
                         </div>
                         <div className={styles.buttons}>
                             <div className={styles.startButton}>

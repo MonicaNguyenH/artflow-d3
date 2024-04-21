@@ -1,0 +1,65 @@
+.chipsContainer {
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 430px;
+    min-height: 932px;
+    background-color: var(--black);
+}
+
+.chipsContainerHeading {
+    margin-top: 60px;
+    width: 330px; 
+    font-size: var(--font-large);
+    color: var(--white);
+}
+
+.chipsContainerParagraph {
+    color: var(--light-blue);
+    font-weight: bold;
+    font-size: var(--font-regular-figma);
+}
+
+.continueContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.continueParagraph {
+    font-size: var( --font-regular-figma);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.continueButton {
+    display: flex;
+    width: 110px;
+    height: 40px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0; 
+    border-radius: 25px; 
+    background-image: var(--gradient-rv);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-regular-figma)
+}
+.continueButton:hover {
+    background-image: var(--gradient-bb);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}

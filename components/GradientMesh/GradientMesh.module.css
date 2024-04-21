@@ -6,9 +6,6 @@
     margin-top: -915px;
     margin-left: -16px;
     opacity: 0.8;
-
-    /* Add more gradient colors or adjust gradient direction as needed */
-    /* You can also use radial gradients or other gradient types */
   }
   
   #noise {
@@ -104,17 +101,17 @@
   margin-left: 90px;
 }
 @keyframes one {
-    0%{left: 0px; top: 0px}
-    25%{left: -0px; top: 70px}
-    50%{left: 20px; top: 90px}
-    75%{left: 50px; top: 90px}
-    100%{left: 0px; top: 0px}
+    0%{left: 0px; top: 0px;}
+    25%{left: -0px; top: 70px;}
+    50%{left: 20px; top: 90px;}
+    75%{left: 50px; top: 90px;}
+    100%{left: 0px; top: 0px;}
   }
 
   @keyframes two {
-    0%{left: 0px; top: 0px}
-    25%{left: 50px; top: 10px}
-    50%{left: 60px; top: 50px}
-    75%{left: 50px; top: 100px}
-    100%{left: 0px; top: 0px}
+    0%{left: 0px; top: 0px;}
+    25%{left: 50px; top: 10px;}
+    50%{left: 60px; top: 50px;}
+    75%{left: 50px; top: 100px;}
+    100%{left: 0px; top: 0px;}
   }
