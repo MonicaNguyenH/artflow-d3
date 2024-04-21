@@ -7,7 +7,6 @@ import NavBar from "@/components/NavBar";
 import { useState,useEffect } from "react";
 import Link from "next/link";
 
-
 export default function Home() {
 
   const [drawingPrompt, setDrawingPrompt] = useState([]);
@@ -17,6 +16,7 @@ export default function Home() {
     console.log(prompt);
     setDrawingPrompt(prompt);
   }, [])
+  
   return (
     <>
       <Head>

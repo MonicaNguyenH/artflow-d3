@@ -1,0 +1,9 @@
+.graphContainer,
+.verticalBAr {
+    width: 100%;
+    height: 800px;
+}
+
+.graphContainer canvas {
+    height: 200px;
+}
