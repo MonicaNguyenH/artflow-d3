@@ -30,7 +30,7 @@ const NewPrompt = () => {
             </div>
             <div className={styles.continueContainer}>
                 <p className={styles.continueParagraph}>Click continue to get a prompt</p>
-                <Link href="/GeneratingPrompt">
+                <Link href="/generating-prompt">
                     <button className={styles.continueButton}>Continue</button>
                 </Link>
             </div>
