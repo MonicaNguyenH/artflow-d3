@@ -1,0 +1,505 @@
+.main {
+    background-color: var(--black);
+    max-width: 430px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 932px;
+}
+.body {
+    min-height: 932px;
+    margin-bottom: 150px;
+}
+.header {
+    width: 430px;
+    height: 170px; 
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+}
+.headerElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 342px;
+    height: 97px;
+    margin: 63px 45px 10px 45px;
+
+}
+.headerElements h1 {
+    font-size: var( --font-medium);
+    margin: 0;
+    padding: 0;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 342px;
+    margin: 0px 45px 0px 45px;
+  }
+  
+  .calendar-day {
+    padding: 10px;
+    text-align: center;
+    color: var(--light-grey);
+}
+  
+  .calendar-date {
+    font-weight: normal;
+
+  }
+  
+  .calendar-dayOfWeek {
+    margin-top: 5px;
+    font-size: var(--font-medium-16px);
+  }
+
+  .current-day {
+    background-color: var(--rose); 
+    color: var(--white); 
+    border-radius: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 70px; 
+  }
+  
+  .graphCard {
+    display: flex;
+    width: 390px;
+    height: 229px; 
+    border-radius: 10px; 
+    background-color: var(--black);
+    margin-top: 29px;
+  }
+  .graphElements {
+    display: flex;
+    flex-direction: column;
+    width: 291.632px;
+    margin-top: 50px;
+    margin-left: 47px;
+    position: absolute;
+  }
+  .graphCard h1 {
+    font-size: 64px;
+    margin: 0;
+  }
+
+  .graphCard p {
+    font-size: var(--font-small-14px);
+    margin: 0px;
+  }
+
+  .graphCard span {
+    font-weight: bold;
+  }
+
+  .graphCard button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 127.632px;
+    height: 29px; 
+    border-radius: 25px; 
+    border: 1px solid var(--white);
+    background-color: var(--grey);
+    color: var(--white);
+    font-size: var(--font-regular);
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left: 20px;
+    margin-left: 160px;
+    cursor: pointer;
+  }
+
+  .NextArrow {
+    margin-left: 24px;
+    width: 8px;
+    height: 11px;
+  }
+
+  .BgCard1 {
+    position:relative;
+    overflow: hidden;
+    width: 390px;
+    height: 229px; 
+    border-radius: 10px;
+  }
+
+  .Shape1,
+  .Shape2,
+  .Shape3,
+  .Shape4,
+  .Shape5,
+  .Shape6 {
+    position: absolute;
+    filter: blur(60px);
+  }
+
+  .Shape1 {
+    top: 71px;
+    animation: one 10s infinite;
+  }
+
+    @keyframes one {
+        0% {
+            left: 0px;
+            top: 71px;
+        }
+        25% {
+            left: 0px;
+            top: 0px;
+        }
+        50% {
+            left: 100px;
+            top: 50px;
+        }
+        100% {
+            left: 0px;
+            top: 71px;
+        }
+    }
+
+.Shape2 {
+    left: 103px;
+    top: 57px;
+    animation: two 10s infinite;
+}
+@keyframes two {
+    0% {
+        left: 103px;
+        top: 57px;
+    }
+    25% {
+        left: 10px;
+        top: 20px;
+    }
+    50% {
+        left: 190px;
+        top: 70px;
+    }
+    100% {
+        left: 103px;
+        top: 57px;
+    }
+}
+
+.Shape3 {
+    left: 109px;
+    animation: three 10s infinite;
+}
+
+    @keyframes three {
+        0% {
+            left: 109px;
+            top: 0px;
+        }
+        25% {
+            left: 195px;
+            top: 50px;
+        }
+        50% {
+            left: 0px;
+            top: -10px;
+        }
+        100% {
+            left: 109px;
+            top: 0px;
+        }
+    }
+
+.Shape4 {
+    left: 105px;
+    top: -17px;
+    animation: four 10s infinite;
+}
+@keyframes four {
+    0% {
+        left: 105px;
+        top: -17px;
+    }
+    25% {
+        left: -20px;
+        top: 50px;
+    }
+    50% {
+        left: 190px;
+        top: 90px;
+    }
+    100% {
+        left: 105px;
+        top: -7px;
+    }
+}
+
+.Shape5{
+    left: 100px;
+    top: 30px;
+    animation: five 10s infinite;
+}
+    @keyframes five {
+        0% {
+            left: 100px;
+            top: 30px;
+        }
+        25% {
+            left: 195px;
+            top: 0px;
+        }
+        50% {
+            left: 10px;
+            top: 190px;
+        }
+        100% {
+            left: 100px;
+            top: 30px;
+        }
+    }
+
+
+.Shape6{
+        animation: six 10s infinite;
+    }
+        @keyframes six {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                left: 100px;
+                top: 80px;
+            }
+            50% {
+                left: 230px;
+                top: 40px;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+.activityContributes {
+    margin-top: 24px;
+}
+.activityGraph {
+    width: 390px;
+    height: 250px; 
+    border-radius: 10px;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+.activityContributes h2 {
+    font-size: var(--font-medium-16px);
+}
+
+.streaks {
+    width: 390px;
+    border-radius: 10px; 
+    background-color: var(--black);
+}
+.streakCard {
+    position: relative;
+    overflow: hidden;
+    width: 390px;
+    height: 129px; 
+    border-radius: 10px;
+}
+
+.Shape7,
+.Shape8,
+.Shape9,
+.Shape10,
+.Shape11,
+.Shape12 {
+    position: absolute;
+    filter: blur(60px);
+}
+
+.Shape7 {
+    animation: seven 10s infinite;
+}
+  @keyframes seven {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 100px;
+        top: 20px;
+    }
+    50% {
+        left: 190px;
+        top: 10px;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+  }
+.Shape8 {
+    left: 226px;
+    animation: eight 10s infinite;
+}
+
+    @keyframes eight {
+        0% {
+            left: 226px;
+            top: 0;
+        }
+        25% {
+            left: 100px;
+            top: -20px;
+        }
+        50% {
+            left: 0px;
+            top: 100px;
+        }
+        100% {
+            left: 226px;
+            top: 0;
+        }
+    }
+
+.Shape9 {
+    left: 36px;
+    top: 37px;
+    animation: nine 10s infinite;
+}
+    @keyframes nine {
+        0% {
+            left: 36px;
+            top: 37px;
+        }
+        25% {
+            left: 195px;
+            top: 0px;
+        }
+        50% {
+            left: 0px;
+            top: 60px;
+        }
+        100% {
+            left: 36px;
+            top: 37px;
+        }
+    }
+.Shape10 {
+    left: 236px;
+    top: -41px;
+    animation: ten 10s infinite;
+}
+    @keyframes ten {
+        0% {
+            left: 236px;
+            top: -41px;
+        }
+        25% {
+            left: 105px;
+            top: 0px;
+        }
+        50% {
+            left: 0px;
+            top: 20px;
+        }
+        100% {
+            left: 236px;
+            top: -41px;
+        }
+    }
+.Shape11 {
+    left: -72px;
+    top: -81px;
+    animation: eleven 10s infinite;
+}
+    @keyframes eleven {
+        0% {
+            left: -72px;
+            top: -81px;
+        }
+         25% {
+            left: 230px;
+            top: 0px;
+        }
+        50% {
+            left: 100px;
+            top: 40px;
+        }
+        100% {
+            left: -72px;
+            top: -81px;
+        }
+    }
+.Shape12{
+    left: -56px;
+    top: -82px;
+    animation: twelve 10s infinite;
+}
+    @keyframes twelve {
+        0% {
+            left: -56px;
+            top: -82px;
+        }
+        25% {
+            left: 30px;
+            top: 0px;
+        }
+        50% {
+            left: 198px;
+            top: 50px;
+        }
+        100% {
+            left: -56px;
+            top: -82px;
+        }
+    }
+
+.streakText,
+.entriesText {
+    margin-top: 32px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+.streakText h2,
+.entriesText h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.streakText p,
+.entriesText p {
+    font-size: var(--font-small-14px);
+    margin: 0;
+    margin-top: 9px;
+    padding: 0;
+}
+
+.entries {
+    width: 390px;
+    height: 129px; 
+    border-radius: 10px; 
+    background-color: var(--black);
+    margin-top: 24px;
+    margin-bottom: 50px;
+    
+}
+.entriesCard {
+    position: relative;
+    overflow: hidden;
+    width: 390px;
+    height: 129px; 
+    border-radius: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+}

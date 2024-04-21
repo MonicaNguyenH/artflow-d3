@@ -25,7 +25,7 @@ export default function NavBar() {
                         </Link>
                     </li>
                     <li onClick ={() => handleIconClick('activity')} className={activeIcon === 'activity' ? styles.active : ''}>
-                        <Link className={styles.link} href="/Activity"> 
+                        <Link className={styles.link} href="/activity-tracking"> 
                             <img className={`${styles.activityIcon} ${styles.icons}`} 
                                 src={activeIcon === 'activity' ? "/images/activity-active-icon.png" : "/images/activity-icon.png"}  
                                 alt="Activity Icon" 
@@ -34,7 +34,7 @@ export default function NavBar() {
                     </li>
                     <li className={styles.navBarIcons}>
                         <div className={styles.circleBehindPlus}></div>
-                        <Link className={styles.link} href="/NewPrompt"> 
+                        <Link className={styles.link} href="/new-prompt"> 
                             <img className={`${styles.plusIcon}`} src="/images/plus-icon.png"
                                 alt="Create Post Icon" 
                                 width="60" 
