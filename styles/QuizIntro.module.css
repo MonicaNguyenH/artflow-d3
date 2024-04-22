@@ -154,7 +154,7 @@
 
   .startQuiz:hover {
     background-image: var(--gradient-rv);
-    animation: changeColor linear 1s slidein;
+    animation: changeColor linear 1s ease-in;
   }
 
   @keyframes changeColor {
