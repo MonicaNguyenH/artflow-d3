@@ -7,6 +7,7 @@ export default function UserCard() {
            <h1>Hello, Dog!</h1> 
            <p>0 Entries</p>
            <p>0 Day Streak</p>
+           <button>Art Trivia</button>
         </div>
     </>
   )
