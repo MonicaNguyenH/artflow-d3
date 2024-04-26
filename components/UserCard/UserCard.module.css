@@ -21,3 +21,17 @@
     font-size: var(--font-large);
     margin-top: 3.5rem;
 }
+
+.cardContainer button {
+    width: 160px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    border: none;
+    border: solid white;
+    border-radius: 30px;
+    margin-left: 150px;
+    margin-top: -40px;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--font-small-14px)
+}

@@ -3,6 +3,7 @@ import styles from './ThemeCards.module.css';
 export default function ThemeCards() {
   return (
     <>
+        <p className={styles.title}>Trending Challenges</p>
         <div className={styles.parentContainer}>
             <div className={styles.card1}>
                 <p className={styles.cardTitle}>Magical Creatures</p>
