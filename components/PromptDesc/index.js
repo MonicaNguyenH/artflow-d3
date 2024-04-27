@@ -1,6 +1,7 @@
 import styles from './PromptDesc.module.css';
 import Image from 'next/image';
 import React, {useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function PromptDesc({title, description}) {
     const [saved, setSaved] = useState(false);
@@ -45,7 +46,9 @@ export default function PromptDesc({title, description}) {
                         </div>
                         <div className={styles.buttons}>
                             <div className={styles.startButton}>
-                                <button>Start Now</button>
+                                <Link href="/drawing-page">
+                                    <button>Start Now</button>
+                                </Link>
                             </div>
                             <button 
                                 className={`${styles.icon} ${saved ? styles.iconSaved : ''}`}

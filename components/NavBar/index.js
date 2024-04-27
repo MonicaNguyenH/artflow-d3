@@ -17,7 +17,7 @@ export default function NavBar() {
             <div className={styles.navBar}>
                 <ul className={styles.navList}>
                     <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' ? styles.active : ''}>
-                        <Link className={styles.link} href="/"> 
+                        <Link className={styles.link} href="/home-page"> 
                             <img className={`${styles.homeIcon} ${styles.icons}`} 
                                 src={activeIcon === 'home' ? "/images/home-active-icon.png" : "/images/home-icon.png"} 
                                 alt="Activity Icon"
