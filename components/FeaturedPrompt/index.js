@@ -27,27 +27,27 @@ export default function FeaturedPrompt() {
             </div>
             <div className={styles.firstrow}>
               <div className={styles.cabin01}>
-                <img src="/images/cabin1.jpg" width={110} height={110} />
+                <img src="/images/cabin1.jpg" width={110} height={110} alt="user drawing entry"/>
               </div>
               <div className={styles.cabin02}>
-                <img src="/images/cabin2.jpg" width={110} height={110} />
+                <img src="/images/cabin2.jpg" width={110} height={110} alt="user drawing entry"/>
               </div>
               <div className={styles.cabin03}>
-                <img src="/images/cabin3.jpg" width={110} height={110} />
+                <img src="/images/cabin3.jpg" width={110} height={110} alt="user drawing entry"/>
               </div>
             </div>
             <div className={styles.secondrow}>
               <div className={styles.cabin04}>
-                <img src="/images/cabin4.jpg" width={110} height={110} />
+                <img src="/images/cabin4.jpg" width={110} height={110} alt="user drawing entry"/>
               </div>
               <div className={styles.cabin05}>
-                <img src="/images/cabin5.jpg" width={110} height={110} />
+                <img src="/images/cabin5.jpg" width={110} height={110} alt="user drawing entry"/>
               </div>
               <div className={styles.cabin06}>
                 <div className={styles.overlay}>
                   <p>+50 Entries</p>
                 </div>
-                <img src="/images/cabin6.jpg" width={110} height={110} />
+                <img src="/images/cabin6.jpg" width={110} height={110} alt="user drawing entry"/>
               </div>
             </div>
             <div className={styles.buttonContainer}>

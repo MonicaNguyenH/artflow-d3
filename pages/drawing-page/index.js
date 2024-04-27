@@ -82,22 +82,22 @@ export default function DrawingPage() {
         <div>
           <Link href={paramsValue.homePage ? "/home-page" : "/prompt-page"}>
             <button>
-              <Image src="/images/back-arrow.png" width={100} height={100} />
+              <Image src="/images/back-arrow.png" width={100} height={100} alt="back arrow"/>
             </button>
           </Link>
           <button onClick={handleUndoClick}>
-            <Image src="/images/undo.png" width={100} height={100} />
+            <Image src="/images/undo.png" width={100} height={100} alt="undo" />
           </button>
           <button onClick={handleRedoClick}>
-            <Image src="/images/redo.png" width={100} height={100} />
+            <Image src="/images/redo.png" width={100} height={100} alt="redo"/>
           </button>
           <button onClick={handleClearClick}>
-            <Image src="/images/clear.png" width={100} height={100} />
+            <Image src="/images/clear.png" width={100} height={100} alt="clear canvas"/>
           </button>
         </div>
         <div>          
           <label className={styles.strokeWidth} htmlFor="strokeWidth" onClick={() => setStrokeSelection(!strokeSelection)}>
-            <Image src="/images/strokewidth.png" width={100} height={100} />
+            <Image src="/images/strokewidth.png" width={100} height={100} alt="stroke width"/>
           </label>
           {strokeSelection &&
           <input
@@ -111,7 +111,7 @@ export default function DrawingPage() {
             onChange={handleStrokeWidthChange}
           />}
           <label htmlFor='color'>
-            <Image src="/images/colourtool.png" width={100} height={100} />     
+            <Image src="/images/colourtool.png" width={100} height={100} alt="colour picker"/>     
           </label>
         </div>
       </div>
@@ -119,24 +119,24 @@ export default function DrawingPage() {
       <div className={styles.bottom}>
         <div className={styles.tools}>
           <button className={tool == "pen" && styles.selected} onClick={handlePenClick}>
-            <Image src={tool == "pen" ? "/images/Penselected.svg" : "/images/Pen.svg"} width={800} height={800} />
+            <Image src={tool == "pen" ? "/images/Penselected.svg" : "/images/Pen.svg"} width={800} height={800} alt="pen tool"/>
           </button>
           <button className={tool == "brush" && styles.selected} onClick={handleBrushClick}>
-            <Image src={tool == "brush" ? "/images/Brushselected.svg" : "/images/Brush.svg"} className={styles.brush} width={800} height={800} />
+            <Image src={tool == "brush" ? "/images/Brushselected.svg" : "/images/Brush.svg"} className={styles.brush} width={800} height={800} alt="brush tool"/>
           </button>
           <button className={tool == "eraser" && styles.selected} onClick={handleEraserClick}>
-            <Image src={tool == "eraser" ? "/images/Eraserselected.svg" : "/images/Eraser.svg"} className={styles.eraser} width={800} height={800} />
+            <Image src={tool == "eraser" ? "/images/Eraserselected.svg" : "/images/Eraser.svg"} className={styles.eraser} width={800} height={800} alt="eraser tool"/>
           </button>          
         </div>
         <div className={styles.utils}>
         <button>
-            <Image src="/images/camera.png" width={100} height={100} />
+            <Image src="/images/camera.png" width={100} height={100} alt="camera icon" />
           </button>   
           <button>
-            <Image src="/images/save.png" width={100} height={100} />
+            <Image src="/images/save.png" width={100} height={100} alt="save icon" />
           </button>   
           <button>
-            <Image src="/images/check.png" width={100} height={100} />
+            <Image src="/images/check.png" width={100} height={100} alt="submit icon" />
           </button>   
         </div>
       </div>

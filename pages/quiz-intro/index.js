@@ -10,7 +10,11 @@ export default function quizIntro() {
   return (
     <div className={`${styles.quiz} ${styles.quizIntro}`}>
       <nav className={`${styles.quizNav} ${styles.quizIntroNav}`}>
-        <Image className={`${styles.quizNavIcon}`} src='/images/quiz/close-button.png' alt="close button" height={30} width={30} tabIndex={1}/>
+        <Link href="/home-page">
+          <button className={styles.closeButton}>
+            <Image className={`${styles.quizNavIcon}`} src='/images/quiz/close-button.png' alt="close button" height={30} width={30} tabIndex={1}/>
+          </button>
+        </Link>
       </nav>
       <div className={`${styles.quizHeading}`}>
         <h2 className={`${styles.quizHeadingH1}`}>
