@@ -24,13 +24,7 @@
 }
 
 .header h1 {
-    font-size: var(--font-large);
-}
-
-.header p {
-    font-size: var(--font-small-14px);
-    font-weight: bold;
-    color: var(--light-blue);
+    font-size: var(----font-large);
 }
 
 
