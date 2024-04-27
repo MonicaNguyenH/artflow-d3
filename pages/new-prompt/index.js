@@ -15,10 +15,10 @@ const NewPrompt = () => {
         'Indoor', 'Fashion', 'Insects',
         'Impressionism', 'Fantasy', 'Birds',
         'Historical', 'Dinosaurs', 'Futuristic',
-        'Dog', 'Cat', 'Flowers',  'Adventure',
-        'Sad', 'Happy', 'Music',
+        'Dog', 'Cat', 'Flowers', 'Fish', 'Adventure',
+        'Sad', 'Happy', 'Portrait',
         'Space', 'Robots', 'Horror',
-        'Surrealism', 'Ocean', 'Aliens', 'Weather'
+        'Surrealism', 'Ocean', 'Aliens', 'Celestial', 'Plants'
     ];
 
     return (
