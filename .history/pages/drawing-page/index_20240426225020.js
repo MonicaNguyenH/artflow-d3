@@ -32,50 +32,41 @@ export default function DrawingPage() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [sliderRef]);
-
   useEffect(() => {
     // Convert searchParams to an object
     const params = Object.fromEntries(searchParams);
     // Setting the state to have the object that carried over from the last page(s)
     setParamsValue(params);
   }, [searchParams]);
-  
   if(tool == "") {
     drawingstyles.pointerEvents = "none";
   } else {
     drawingstyles.pointerEvents = "auto";
   }
-
   const handleStrokeColorChange = (event) => {
     setStrokeColor(event.target.value);
   };
-
   const handleStrokeWidthChange = (event) => {
     let width = event.target.value;
     setStrokeWidth(+width);
   };
-
   const handleEraserClick = () => {
     setTool("eraser");
     canvasRef.current?.eraseMode(true);
   };
-
   const handlePenClick = () => {
     setStrokeWidth(5);
     setTool("pen");
     canvasRef.current?.eraseMode(false);
   };
-
   const handleBrushClick = () => {
     setTool("brush");
     setStrokeWidth(15);
     canvasRef.current?.eraseMode(false);
   };
-
   const handleClearClick = () => {
     canvasRef.current?.resetCanvas();
-  };
-
+  }
   const handleUndoClick = () => {
     canvasRef.current?.undo();
   };
