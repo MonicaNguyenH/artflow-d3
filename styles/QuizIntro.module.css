@@ -166,25 +166,30 @@
   }
 }
 
-  .quizStartButton {
-    text-decoration: none;
-  }
+.quizStartButton {
+  text-decoration: none;
+}
   
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
   
-  .artflowLogoPink {
-    margin-right: 0;
-  }
+.artflowLogoPink {
+  margin-right: 0;
+}
   
-  .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
   
-  .quizParagraphText {
-    line-height: 1.2;
-    letter-spacing: 0.25px;
-    font-size: var(--font-small-14px);
-    width: 310px;
-  }
+.quizParagraphText {
+  line-height: 1.2;
+  letter-spacing: 0.25px;
+  font-size: var(--font-small-14px);
+  width: 310px;
+}
   
