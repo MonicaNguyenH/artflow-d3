@@ -241,7 +241,7 @@
 }
 
 .regenerateButtonContainer {
-    margin : 30px 20px 160px 20px;
+    margin : 20px 20px 160px 20px;
     position: relative;
 }
 
@@ -253,5 +253,4 @@
 .footer {
     position: fixed;
     bottom: 0;
-    /*margin-bottom: 40px;*/
 }

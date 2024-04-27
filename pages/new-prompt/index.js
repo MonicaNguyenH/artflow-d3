@@ -9,16 +9,16 @@ const NewPrompt = () => {
     const labels = [
         'People', 'Scenery', 'Food',
         'Cityscape', 'Animal', 'Nature',
-        'Kids', 'Still Life', 'Mythology',
+        'Landscape', 'Still Life', 'Mythology',
         'Cartoon', 'Seasons', 'Architecture',
-        'Skies', 'Abstract', 'Adventure',
+        'Dreams', 'Abstract', 'Creatures',
         'Indoor', 'Fashion', 'Insects',
-        'Impressionism', 'Mythical', 'Birds',
+        'Impressionism', 'Fantasy', 'Birds',
         'Historical', 'Dinosaurs', 'Futuristic',
-        'Cloud', 'Cat', 'Flowers',  
-        'Countryside', 'Plants', 'Earth',
-        'Universe', 'Robots', 'Fantasy',
-        'Surrealism', 'Ocean', 'Sports'
+        'Dog', 'Cat', 'Flowers',  'Adventure',
+        'Sad', 'Happy', 'Music',
+        'Space', 'Robots', 'Horror',
+        'Surrealism', 'Ocean', 'Aliens', 'Weather'
     ];
 
     return (

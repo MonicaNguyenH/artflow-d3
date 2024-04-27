@@ -6,7 +6,7 @@
 
 .container {
     width: 390px;
-    min-height: 310px;
+    min-height: 280px;
     background-color: var(--dark-grey);
     border-radius: 25px;
     position: absolute;
@@ -107,7 +107,6 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
