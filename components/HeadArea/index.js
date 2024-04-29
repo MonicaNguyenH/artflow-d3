@@ -7,9 +7,9 @@ export default function HeaderArea({ title, description }) {
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
-                <meta name="author" content="Monica Nguyen" />
+                <meta name="author" content="Artflow Team" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.svg" />
+                <link rel="icon" href="/favicon1.svg" />
             </Head>
         </>
     )
