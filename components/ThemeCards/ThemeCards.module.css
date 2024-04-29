@@ -24,13 +24,36 @@
     padding-top: 0;
     background-size: cover;
     position: relative;
-    border: solid 2px transparent;
+    /* border: solid 1.2px transparent; */
 }
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover {
-    border: solid 1px var(--rose);
+    /* border: solid 1.2px var(--rose); */
     border-radius: 15px;
     cursor: pointer;
+    animation-duration: 0.7s;
+    animation-name: zoomin;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease; 
+    animation-delay: 0s;
+}
+
+@keyframes zoomin {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 105%;
+  }
+}
+  
+@-webkit-keyframes zoomin {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 105%;
+  }
 }
 
 .card1 { 
