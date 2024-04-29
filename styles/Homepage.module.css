@@ -5,6 +5,7 @@
 .prompt {
     margin-top: 40px;
     margin-left: 20px;
+    margin-bottom: 160px;
 }
 
 .user {
@@ -13,6 +14,8 @@
 }
 
 .bar {
-    margin-top: 40px;
-    margin-left: 17px;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    margin-left: 20px;
 }

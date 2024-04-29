@@ -8,19 +8,20 @@ import FeaturedPrompt from "@/components/FeaturedPrompt"
 
 export default function Homepage() {
     return (
-        <>
+      <>
         <div className={styles.user}>
-            <UserCard />
+          <UserCard />
         </div>
-       <div className={styles.cards}>
-        <ThemeCards />
+        <div className={styles.cards}>
+          <ThemeCards />
         </div>
         <div className={styles.prompt}>
-            <FeaturedPrompt />
+          <FeaturedPrompt />
         </div>
         <div className={styles.bar}>
-        <NavBar />
-       </div>
-       </>
-    )
-}
+          <NavBar />
+        </div>
+      </>
+    );
+  }
+  
