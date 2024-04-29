@@ -4,6 +4,7 @@ import GradientMeshTwo from "@/components/GradientMeshTwo";
 import ActivityGraph from "@/components/ActivityGraph";
 import NavBar from "@/components/NavBar";
 import HeaderArea from "@/components/HeadArea";
+import Link from "next/link";
 
 const ActivityTracking = () => {
   // Get current date
@@ -101,12 +102,14 @@ const ActivityTracking = () => {
                                     <br/>
                                     <span> better mental health </span>
                                 </p>
-                                <button> Learn more 
-                                    <svg className={styles.NextArrow} width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 0.999884L6.10526 5.28852L1 9.57715"
-                                        stroke="#FFFFFC" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </button>
+                                <Link href="/health-graph">
+                                    <button> Learn more 
+                                        <svg className={styles.NextArrow} width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.999884L6.10526 5.28852L1 9.57715"
+                                            stroke="#FFFFFC" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         {/*Gradient Mesh card*/}
