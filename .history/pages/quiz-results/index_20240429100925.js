@@ -41,7 +41,7 @@ export default function QuizOutro() {
 
   return (
     <>
-      <HeaderArea title="Quiz result" description="Quiz result summary"/>
+      <HeaderArea title="Quiz" description="Quiz result summary"/>
       <div className={`${styles.quizResults} ${styles.quiz}`}> 
         <nav className={`${styles.quizNav} ${styles.quizIntroNav}`}>
           <Image src='/images/quiz/close-button.png' alt="close button" height={30} width={30} tabIndex={1}/>

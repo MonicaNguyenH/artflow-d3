@@ -1,4 +1,5 @@
 import { title } from 'process';
+import styles from './HeaderArea.module.css';
 import Head from 'next/head';
 
 export default function HeaderArea({ title, description }) {

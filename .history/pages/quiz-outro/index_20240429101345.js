@@ -30,7 +30,7 @@ export default function QuizOutro() {
 
   return (
     <>
-      <HeaderArea title="Quiz Outro" description="Quiz outro/onhold page"/>
+      <HeaderArea title="Quiz outro" description="Quiz outro/onhold page"/>
       <div className={`${styles.quizOutro} ${styles.quiz}`} style={{position:'relative'}}>
         <div className={styles.textElements}>
           <div className={styles.top}>
