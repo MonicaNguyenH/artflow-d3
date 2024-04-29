@@ -7,10 +7,9 @@
     max-width: 390px;
     height: 240px;
     margin: 1.5rem;
-    margin-top: 60px;
     color: var(--white);
     border-radius: 25px;
-    padding: 0.3rem 1.5rem;
+    padding-top: 0.3rem 1.5rem;
 }
 
 .cardContainer p {

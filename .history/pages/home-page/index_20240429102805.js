@@ -13,7 +13,7 @@ export default function Homepage() {
             <div className={styles.main}>
                 <HeaderArea title="Home Page" description="Home page"/>
                 <div className={styles.user}>
-                    <UserCard />
+                        <UserCard />
                 </div>
                 <div className={styles.cards}>
                     <ThemeCards />

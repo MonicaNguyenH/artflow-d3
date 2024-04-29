@@ -13,16 +13,17 @@
 }
 
 .prompt {
-    margin: 40px 20px 150px 20px;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 .user {
+    margin-top: 10px;
     margin-bottom: -50px;
 }
 
 .bar {
     position: fixed;
     bottom: 0px;
-    z-index: 999;
 }
 

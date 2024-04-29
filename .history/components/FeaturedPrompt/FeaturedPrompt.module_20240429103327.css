@@ -40,7 +40,6 @@
     margin: 0;
     margin-left: 10px;
     margin-bottom: 15px;
-    margin-top: 30px;
 }
 
 .header {
@@ -140,7 +139,7 @@
     height: 100%;
     width: 100%;
     background-color: #0000008a;
-    z-index: 10;    
+    z-index: 100;    
     display: flex;
     justify-content: center;
     align-items: center;

@@ -10,20 +10,18 @@ import HeaderArea from "@/components/HeadArea"
 export default function Homepage() {
     return (
         <>
-            <div className={styles.main}>
-                <HeaderArea title="Home Page" description="Home page"/>
-                <div className={styles.user}>
+            <HeaderArea title="Home Page" description="Home page"/>
+            <div className={styles.user}>
                     <UserCard />
-                </div>
-                <div className={styles.cards}>
-                    <ThemeCards />
-                </div>
-                <div className={styles.prompt}>
-                    <FeaturedPrompt />
-                </div>
-                <div className={styles.bar}>
-                    <NavBar />
-                </div>
+            </div>
+            <div className={styles.cards}>
+                <ThemeCards />
+            </div>
+            <div className={styles.prompt}>
+                <FeaturedPrompt />
+            </div>
+            <div className={styles.bar}>
+                <NavBar />
             </div>
        </>
     )

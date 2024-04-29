@@ -10,11 +10,10 @@
     min-height: 440px;
     background-color: var(--dark-grey);
     border-radius: 25px;
-    /*position: absolute;*/
+    position: absolute;
     color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--font-regular);
-    padding: 20px;
 }
 
 .topContainer {
@@ -26,6 +25,7 @@
 
 .mainContent {
     box-sizing: content-box;
+    margin: 20px 20px 20px 20px;
 }
 
 .subHead {
@@ -40,7 +40,6 @@
     margin: 0;
     margin-left: 10px;
     margin-bottom: 15px;
-    margin-top: 30px;
 }
 
 .header {
@@ -140,7 +139,7 @@
     height: 100%;
     width: 100%;
     background-color: #0000008a;
-    z-index: 10;    
+    z-index: 999;    
     display: flex;
     justify-content: center;
     align-items: center;
