@@ -1,0 +1,21 @@
+.main {
+    max-width: 430px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: none;
+}
+
+.tab button {
+    background-color: var(--black);
+    border: none;
+    padding: 20px;
+}
+
+.active {
+    border: 1px solid var(--white);
+}
