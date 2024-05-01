@@ -25,8 +25,7 @@
     transition: transform 2s; 
 }*/
 
-.active:active,
-.active:focus {
+.active:active {
     border-bottom: 2px solid var(--white);
     box-sizing: border-box;
     transition: transform 2s; 

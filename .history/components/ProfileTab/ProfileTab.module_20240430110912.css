@@ -8,7 +8,6 @@
     justify-content: space-around;
     align-items: center;
     background-color: none;
-    margin-bottom: 20px;
 }
 
 .tab button {
@@ -18,18 +17,9 @@
     width: 190px;
 }
 
-/*
 .tab button:focus {
     border-bottom: 2px solid var(--white);
     box-sizing: border-box;
-    transition: transform 2s; 
-}*/
-
-.active:active,
-.active:focus {
-    border-bottom: 2px solid var(--white);
-    box-sizing: border-box;
-    transition: transform 2s; 
 }
 
 .tabContent {

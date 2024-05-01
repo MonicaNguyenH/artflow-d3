@@ -22,14 +22,19 @@
 .tab button:focus {
     border-bottom: 2px solid var(--white);
     box-sizing: border-box;
-    transition: transform 2s; 
-}*/
+    transition: 1s; 
+}
+*/
 
-.active:active,
-.active:focus {
-    border-bottom: 2px solid var(--white);
-    box-sizing: border-box;
-    transition: transform 2s; 
+.tab button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with no width */
+    height: 2px; /* Height of the border */
+    background-color: var(--white);
+    transition: width 0.3s ease; /* Transition for the width */
 }
 
 .tabContent {
