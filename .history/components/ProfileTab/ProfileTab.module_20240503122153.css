@@ -17,9 +17,7 @@
     border: none;
     padding: 20px;
     width: 190px;
-    position: relative;
-    transition: transform 0.3s ease;
-    transform-origin: bottom left;
+    border-bottom: 2px solid var(--white);
 }
 
 /*
@@ -29,16 +27,11 @@
     transition: transform 2s; 
 }*/
 
-.active,
-.buttonTab:active {
-    background-color: var(--black);
-    border: none;
-    padding: 20px;
-    width: 190px;
+.active:active,
+.active:focus {
     border-bottom: 2px solid var(--white);
     box-sizing: border-box;
-    transition: transform 0.3s ease;
-    transform-origin: bottom left;
+    transition: transform 2s; 
 }
 
 .tabContent {

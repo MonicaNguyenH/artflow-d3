@@ -14,12 +14,12 @@ export default function ProfileTab() {
         <div className={styles.main}> 
             <div className={styles.tab}>
                 <button
-                    className={activeTab === 1 ? styles.active : styles.buttonTab}
+                    className={activeTab === 1 ? styles.active : ''}
                     onClick={() => handleTabChange(1)}>
                     <img className={styles.girdIcon} src="/images/grid-profile.svg" width={18} height={20} alt="gird icon"/>
                 </button>
                 <button
-                    className={activeTab === 2 ? styles.active : styles.buttonTab}
+                    className={activeTab === 2 ? styles.active : ''}
                     onClick={() => handleTabChange(2)}>
                     <img className={styles.heartIcon} src="/images/heart-white-profile.svg" width={20} height={19} alt="liked icon"/>
                 </button>
