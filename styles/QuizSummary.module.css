@@ -27,6 +27,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 50px;
+    margin-top: -2rem;
 }
 
 .quizResults h1 {
@@ -129,6 +130,19 @@
 }
 
 /* Button */
+.closeBtn {
+    background: none;
+    background-color: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.closeBtn img {
+    height: 40px;
+    width: auto;
+}
+
 .quizButtons {
     display: flex;
     flex-direction: column;
