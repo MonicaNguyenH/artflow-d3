@@ -78,3 +78,7 @@
 .icons:hover {
     transform: translateY(-5px);
 }
+
+.profileIcon {
+    border-radius: 999px;
+}

@@ -1,16 +1,28 @@
 import styles from './ProfileTab.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function ProfileTab() {
     const [activeTab, setActiveTab] = useState(1);
+    const [drawing, setDrawing] = useState('');
     const handleTabChange = (tabIndex) => {
         setActiveTab(tabIndex);
     };
 
+    useEffect(() => { 
+        const localStorageDrawing = localStorage.getItem('Drawing');
+        setDrawing(localStorageDrawing);
+    }, [])
+
     return (
     <>
+    <Link href={{
+                    pathname: '/',
+                    query: {signOut: 'true'}
+                }}>
+                Sign Out
+                </Link>
         <div className={styles.main}> 
             <div className={styles.tab}>
                 <button
@@ -27,6 +39,7 @@ export default function ProfileTab() {
             <div className={styles.tabContent}>
                 {activeTab === 1 && 
                     <div className={styles.gridContainer}>
+                        {drawing && <div className={styles.squareImage}><img className={styles.img} src={drawing} alt="profile image"/></div>}
                         <img className={styles.img} src="/images/profile/profile-img-1.png" alt="profile image"/>
                         <img className={styles.img} src="/images/profile/profile-img-2.png" alt="profile image"/>
                         <img className={styles.img} src="/images/profile/profile-img-3.png" alt="profile image"/>
