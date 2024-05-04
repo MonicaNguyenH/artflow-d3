@@ -67,7 +67,9 @@ export default function SubmitPrompt() {
               <p>All</p>
             </div>
             <div className={styles.contactItem}>
-              <Image src="/images/cat.png" width={100} height={100} alt="user contact"></Image>
+              <Link href="/chat-room">
+                <Image src="/images/cat.png" width={100} height={100} alt="user contact"></Image>
+              </Link>
               <p>Cat</p>
             </div>
             <div className={styles.contactItem}>
