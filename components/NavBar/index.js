@@ -39,7 +39,7 @@ export default function NavBar() {
                     <li className={styles.navBarIcons}>
                         <div className={styles.circleBehindPlus}></div>
                         <Link className={styles.link} href="/new-prompt"> 
-                            <img className={`${styles.plusIcon}`} src="/images/plus-icon1.png"
+                            <img className={`${styles.plusIcon}`} src="/images/plusicon1.png"
                                 alt="Create Post Icon" 
                                 width="60" 
                                 height="60"/>
