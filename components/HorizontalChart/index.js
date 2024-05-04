@@ -35,7 +35,7 @@ export default function HorizontalChart(){
                 {
                     label: 'Art gallery visitors',
                     data:[67,50,30,37,62],
-                    backgroundColor: '#F94E9B'
+                    backgroundColor: '#ED3FB3'
                 },
                 {
                     label: 'Non-visitors',
