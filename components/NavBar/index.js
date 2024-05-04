@@ -48,7 +48,7 @@ export default function NavBar() {
                     <li onClick ={() => handleIconClick('chat')} className={activeIcon === 'chat' ? styles.active : ''}>
                         <Link className={styles.link} href="/community-page"> 
                             <img className={`${styles.chatIcon} ${styles.icons}`} 
-                                src={activeIcon === 'chat' || router.pathname == "/chat" ? "/images/chat-active-icon.png" : "/images/chat-icon.png"}  
+                                src={activeIcon === 'chat' || router.pathname == "/community-page" ? "/images/chat-active-icon.png" : "/images/chat-icon.png"}  
                                 alt="Chat Icon" 
                                 width="25" height="25"/> 
                         </Link>
