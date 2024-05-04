@@ -44,10 +44,6 @@
     margin-top: -10px;
 }
 
-.emoji {
-    cursor: pointer;
-}
-
 .replyMessage {
     display: flex;
     flex-direction: column;
@@ -96,7 +92,7 @@
 }
 
 .input {
-    width: 270px;
+    width: 80%;
     height: 50px; 
     background: var(--dark-grey);
     color: var(--white);

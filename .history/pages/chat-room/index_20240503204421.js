@@ -15,7 +15,7 @@ export default function HealthGraph() {
         <div>
             <div className={styles.header}>
                 <img className={styles.returnIcon} tabIndex={1} src="/images/return-icon.svg" width={23} height={30} alt="return icon"/>
-                <div className={styles.profile} tabIndex={2}> 
+                <div className={styles.profile} tabIndex={2}>
                     <img className={styles.profileImg} src="/images/cat-alexandra.jpeg" width={30} height={30} alt="user profile image"/>
                     <h1 className={styles.profileName}>Cat Alexandra</h1>
                 </div>

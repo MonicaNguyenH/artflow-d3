@@ -21,14 +21,14 @@ export default function ChatRoom() {
   return (
     <div className={styles.messageContainer}>
       <div className={styles.message}>
-        <div className={styles.text}>
+        <div className={styles.text} >
           <p>It looks like Doberdude alot</p>
         </div>
         <div className={styles.reactionText}>
           <div className={styles.text}>
             <p>Send it to him?</p>
           </div>
-          <div className={styles.emojiContainer} tabIndex={6}>
+          <div className={styles.emojiContainer}>
             <img className={styles.emoji} src="/images/chat/heart-emoji-ios.png" width={11} height={11} alt="heart emoji reaction"/>
           </div>
         </div>
@@ -52,7 +52,6 @@ export default function ChatRoom() {
       </div>
       <div className={styles.inputContainer}>
         <input
-          tabIndex={7}
           className={styles.input}
           placeholder="Send message..."
           type="text"
@@ -60,8 +59,8 @@ export default function ChatRoom() {
           onChange={(e) => setMessage(e.target.value)}
           onKeyDown={handleKeyDown}
         />
-        <img className={styles.emoji} tabIndex={8} src="/images/chat/emoji-icon.svg" width={30} height={30} alt="emoji icon"/>
-        <img className={styles.emoji} tabIndex={9} src="/images/chat/plus-icon.svg" width={30} height={30} alt="plus icon"/>
+        <img className={styles.emoji} src="/images/chat/emoji-icon.svg" width={30} height={30} alt="emoji icon"/>
+        <img className={styles.emoji} src="/images/chat/plus-icon.svg" width={30} height={30} alt="plus icon"/>
       </div>
 
       {/**<button onClick={handleMessageSend} className={styles.sendButton}>Send</button>*/}

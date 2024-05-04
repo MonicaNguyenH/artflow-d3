@@ -44,10 +44,6 @@
     margin-top: -10px;
 }
 
-.emoji {
-    cursor: pointer;
-}
-
 .replyMessage {
     display: flex;
     flex-direction: column;

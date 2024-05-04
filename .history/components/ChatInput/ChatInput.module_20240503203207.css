@@ -44,10 +44,6 @@
     margin-top: -10px;
 }
 
-.emoji {
-    cursor: pointer;
-}
-
 .replyMessage {
     display: flex;
     flex-direction: column;
@@ -80,31 +76,19 @@
 
 .inputContainer {
     width: 390px;
-    height: 50px;
     bottom: 0;
     position: fixed;
     margin-bottom: 30px;
-    border-radius: 25px; 
-    background: var(--dark-grey);
-    border: 0;
-    padding: 0 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
 }
 
 .input {
-    width: 270px;
+    width: 100%;
     height: 50px; 
+    border-radius: 25px; 
     background: var(--dark-grey);
     color: var(--white);
     border: 0;
-}
-
-.input:focus {
-    outline: 0;
+    padding: 0 20px;
 }
 
 .input::placeholder {
