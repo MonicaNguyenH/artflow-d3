@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useRouter } from "next/router";
 import styles from "@/styles/DrawingPage.module.css";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 import Image from 'next/image';
@@ -15,16 +16,19 @@ const drawingstyles = {
 
 export default function DrawingPage() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const canvasRef = useRef(null);
   const [tool, setTool] = useState("");
   const [strokeWidth, setStrokeWidth] = useState(5);
+  const [brushStrokeWidth, setBrushStrokeWidth] = useState(15);
   const [strokeColor, setStrokeColor] = useState("#000000");
   const [strokeSelection, setStrokeSelection] = useState(false);
   const [paramsValue, setParamsValue] = useState({});
   const sliderRef = useRef(null);
+  
   useEffect(() => {
     function handleClickOutside(event) {
-      if (event.target.type != "range") {
+      if (event.target.type != "range" && event.target.id != "strokeWidth") {
         setStrokeSelection(false);
       }
     }
@@ -40,7 +44,7 @@ export default function DrawingPage() {
     // Setting the state to have the object that carried over from the last page(s)
     setParamsValue(params);
   }, [searchParams]);
-  
+
   if(tool == "") {
     drawingstyles.pointerEvents = "none";
   } else {
@@ -53,7 +57,11 @@ export default function DrawingPage() {
 
   const handleStrokeWidthChange = (event) => {
     let width = event.target.value;
-    setStrokeWidth(+width);
+    if(tool == "brush") {
+      setBrushStrokeWidth(+width);
+    } else {
+      setStrokeWidth(+width);
+    }
   };
 
   const handleEraserClick = () => {
@@ -69,7 +77,7 @@ export default function DrawingPage() {
 
   const handleBrushClick = () => {
     setTool("brush");
-    setStrokeWidth(15);
+    setBrushStrokeWidth(15);
     canvasRef.current?.eraseMode(false);
   };
 
@@ -84,6 +92,22 @@ export default function DrawingPage() {
   const handleRedoClick = () => {
     canvasRef.current?.redo();
   };
+
+  const handleSaveDrawing = async () => {
+    const exportData = await canvasRef.current?.exportImage("png");
+    localStorage.setItem('Drawing', exportData);
+    const downloadImage = document.createElement("a");
+    downloadImage.href = exportData;
+    downloadImage.download = "ArtFlow-Export";
+    downloadImage.click();
+  }
+
+  const handleSubmitDrawing = async () => {
+    const exportData = await canvasRef.current?.exportImage("png");
+    localStorage.setItem('CurrentDrawing', canvasRef.current?.exportPaths());
+    localStorage.setItem('Drawing', exportData);
+    router.push('/submit-prompt');
+  }
 
   return (
     <>
@@ -108,26 +132,26 @@ export default function DrawingPage() {
             </button>
           </div>
           <div>          
-            <label className={styles.strokeWidth} htmlFor="strokeWidth" onClick={() => setStrokeSelection(!strokeSelection)}>
-              <Image src="/images/strokewidth.png" width={100} height={100} alt="stroke width"/>
+            <label className={styles.strokeWidth} htmlFor="strokeWidth" onClick={() => {setStrokeSelection(!strokeSelection)}}>
+              <Image id='strokeWidth' src="/images/strokewidth.png" width={100} height={100} alt="stroke width"/>
             </label>
             {strokeSelection &&
             <input
               type="range"
               className={styles.strokeWidthSlider}
-              min="1"
-              max="20"
+              min={tool == "brush" ? "15" : "5"}
+              max={tool == "brush" || tool == "eraser" ? "80" : "20"}
               step="1"
               id="strokeWidth"
-              value={strokeWidth}
-              onChange={handleStrokeWidthChange}
+              value={tool == "brush" ? brushStrokeWidth : strokeWidth}
+              onChange={handleStrokeWidthChange}              
             />}
             <label htmlFor='color'>
               <Image src="/images/colourtool.png" width={100} height={100} alt="colour picker"/>     
             </label>
           </div>
         </div>
-        <ReactSketchCanvas style={drawingstyles} width="600" height="400" ref={canvasRef} strokeWidth={strokeWidth} eraserWidth={strokeWidth} strokeColor={strokeColor} backgroundImage="/images/drawingbg.png" />
+        <ReactSketchCanvas style={drawingstyles} width="600" height="400" ref={canvasRef} strokeWidth={tool == "brush" ? brushStrokeWidth : strokeWidth} eraserWidth={strokeWidth} strokeColor={strokeColor} backgroundImage="/images/drawingbg.png" canvasColor="#fff" />
         <div className={styles.bottom}>
           <div className={styles.tools}>
             <button className={tool == "pen" && styles.selected} onClick={handlePenClick}>
@@ -144,12 +168,12 @@ export default function DrawingPage() {
           <button>
               <Image src="/images/camera.png" width={100} height={100} alt="camera icon" />
             </button>   
-            <button>
+            <button onClick={handleSaveDrawing}>
               <Image src="/images/save.png" width={100} height={100} alt="save icon" />
-            </button>   
-            <button>
+            </button>  
+            <button onClick={handleSubmitDrawing}>
               <Image src="/images/check.png" width={100} height={100} alt="submit icon" />
-            </button>   
+            </button>    
           </div>
         </div>
       </div>

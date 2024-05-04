@@ -1,10 +1,14 @@
 import styles from './NavBar.module.css';
 import Link from 'next/link';
 import { useState } from "react";
+import { useRouter } from 'next/router';
+import { useSession } from 'next-auth/react';
 
 
 export default function NavBar() {
     const [activeIcon, setActiveIcon] = useState('null');
+    const { data: session } = useSession();
+    const router = useRouter()
 
     const handleIconClick = (icon) => {
         setActiveIcon(icon);
@@ -16,18 +20,18 @@ export default function NavBar() {
             <div className={styles.gradientBlur}></div>
             <div className={styles.navBar}>
                 <ul className={styles.navList}>
-                    <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' ? styles.active : ''}>
+                    <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' || router.pathname == "/home-page" ? styles.active : ''}>
                         <Link className={styles.link} href="/home-page"> 
                             <img className={`${styles.homeIcon} ${styles.icons}`} 
-                                src={activeIcon === 'home' ? "/images/home-active-icon.png" : "/images/home-icon.png"} 
+                                src={activeIcon === 'home' || router.pathname == "/home-page" ? "/images/home-active-icon.png" : "/images/home-icon.png"} 
                                 alt="Activity Icon"
                                 width="25" height="25"/> 
                         </Link>
                     </li>
-                    <li onClick ={() => handleIconClick('activity')} className={activeIcon === 'activity' ? styles.active : ''}>
+                    <li onClick ={() => handleIconClick('activity')} className={activeIcon === 'activity' || router.pathname == "/activity-tracking" ? styles.active : ''}>
                         <Link className={styles.link} href="/activity-tracking"> 
                             <img className={`${styles.activityIcon} ${styles.icons}`} 
-                                src={activeIcon === 'activity' ? "/images/activity-active-icon.png" : "/images/activity-icon.png"}  
+                                src={activeIcon === 'activity' || router.pathname == "/activity-tracking" ? "/images/activity-active-icon.png" : "/images/activity-icon.png"}  
                                 alt="Activity Icon" 
                                 width="25" height="25"/> 
                         </Link>
@@ -44,7 +48,7 @@ export default function NavBar() {
                     <li onClick ={() => handleIconClick('chat')} className={activeIcon === 'chat' ? styles.active : ''}>
                         <Link className={styles.link} href="/community-page"> 
                             <img className={`${styles.chatIcon} ${styles.icons}`} 
-                                src={activeIcon === 'chat' ? "/images/chat-active-icon.png" : "/images/chat-icon.png"}  
+                                src={activeIcon === 'chat' || router.pathname == "/chat" ? "/images/chat-active-icon.png" : "/images/chat-icon.png"}  
                                 alt="Chat Icon" 
                                 width="25" height="25"/> 
                         </Link>
@@ -52,7 +56,7 @@ export default function NavBar() {
                     <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' ? styles.active : ''}>
                         <Link className={styles.link} href="/profile"> 
                             <img className={`${styles.profileIcon} ${styles.icons}`} 
-                                src="/images/profile-icon.png"
+                                src={session?.user.image ? session?.user.image : "/images/profile-icon.png"}
                                 alt="Profile Icon"  
                                 width="25" height="25"/> 
                         </Link>

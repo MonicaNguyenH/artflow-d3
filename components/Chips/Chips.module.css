@@ -18,6 +18,7 @@
     transition: background 0.3s ease-out;
     border-radius: 35.5px; 
     border: solid 1px transparent;
+    user-select: none;
 }
 
 .chip:hover {

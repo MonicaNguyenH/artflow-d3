@@ -115,7 +115,7 @@ const ActivityTracking = () => {
                         {/*Gradient Mesh card*/}
                     </div>
                     <div className={styles.activityContributes}>
-                        <h2>Activity Contributes</h2>
+                        <h2>Activity Tracker</h2>
                         <div className={styles.activityGraph}>
                             <ActivityGraph/>
                         </div>

@@ -111,6 +111,13 @@
     border-radius: 25px;
     width: 150px;
     height: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--gradient-rv);
+    border: 1px solid transparent;
+    background-size: 120%;
 }
 
 .tab {
