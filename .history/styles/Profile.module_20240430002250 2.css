@@ -1,0 +1,24 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+    min-height: 100vh;
+    background-color: var(--black);
+}
+
+.banner {
+    background-image: url("/images/dog-profile-banner.png");
+    background-position: bottom;
+    background-size: cover;
+    width: 430px;
+    height: 200px; 
+    padding: 60px 20px;
+}
+
+.hamburgerMenu {
+    width: 33px;
+    height: auto;
+    flex-shrink: 0;
+    cursor: pointer;
+}

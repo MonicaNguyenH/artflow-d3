@@ -1,0 +1,38 @@
+.main {
+    max-width: 100%;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: none;
+}
+
+.tab button {
+    background-color: var(--black);
+    border: none;
+    padding: 20px;
+}
+
+.tab button .active {
+    background-color: red;
+}
+
+.tabContent {
+    width: 100%;
+}
+
+.gridContainer, 
+.likedContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 10px;
+}
+
+.gridContainer {
+    justify-content: space-between;
+}

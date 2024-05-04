@@ -1,0 +1,6 @@
+.message {
+    color: var(--white);
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+}

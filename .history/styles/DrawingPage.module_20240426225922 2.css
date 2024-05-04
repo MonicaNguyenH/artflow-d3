@@ -1,0 +1,146 @@
+.parent {
+  color: var(--black);
+  background: var(--white);
+  height: 932px;
+  overflow: hidden;
+  position: relative;
+}
+
+.parent button, .parent label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.parent img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.parent button:focus {
+  outline: none;
+}
+
+.drawingNav {
+  background: var(--black);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 0 10px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative;
+}
+
+.drawingNav div:first-child {
+  display: flex;
+  gap: .25rem;
+}
+
+.drawingNav button {
+  background: none;
+  border: none;
+}
+
+.drawingNav button img, .drawingNav label img {
+  width: auto;
+  height: 25px;
+  cursor: pointer;
+}
+
+.strokeWidthSlider {
+  position: absolute;
+  right: -1px;
+  top: 170px;
+  transform: rotate(90deg) scale(1.5);
+  width: 120px;
+  height: 10px;
+  accent-color: black;
+}
+
+.colorPicker {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.strokeWidth {
+    margin-right: 0.5rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.tools {
+  margin-top: -170px;
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.tools button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0px;
+  transition: top .25s ease-in-out;
+}
+
+.tools button:nth-child(2){
+  top: 35px;
+  left: 60px;
+}
+
+.tools button:nth-child(3){
+  left: 125px;
+}
+
+.tools button img {
+  width: 30px;
+  height: auto;
+}
+
+.tools .brush {
+  width: 38px;
+}
+
+.tools .eraser {
+  padding-top: 6rem;
+}
+
+.tools .selected {
+  top: -50px;
+}
+
+.tools button:nth-child(2).selected {
+  top: -40px;
+}
+
+.tools button:nth-child(3).selected {
+  top: -105px;
+}
+
+.utils {
+  padding-top: .5rem;
+}
+
+.utils button {
+  background: none;
+  border: none;
+}
+
+.utils button img {
+  width: 30px;
+  height: auto;
+}

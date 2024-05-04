@@ -1,0 +1,10 @@
+.message {
+    color: var(--white);
+    display: flex;
+    height: 40px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: var(--dark-grey);
+}
