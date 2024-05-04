@@ -36,7 +36,7 @@ export default function CommunityPage() {
                 <div className={styles.chatProfile}>
                     <img className={styles.profileImg} src="/images/chat/capybara-img.jpeg" width={60} height={60} alt="user profile image"/>
                     <div className={styles.profileDesc}>
-                        <h1>Capibrura Johnson</h1>
+                        <h1>Capi Johnson</h1>
                         <div className={styles.text}>
                             <p>Why the dog so big?</p> 
                             <div className={styles.dot}></div>

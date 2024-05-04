@@ -2,7 +2,7 @@
 .BoundingBox {
     position: fixed; 
     width: 430px; 
-    height: 932px; 
+    height: 100vh; 
     overflow: hidden;
     z-index:-1;
 }
