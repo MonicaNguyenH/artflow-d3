@@ -1,3 +1,7 @@
+.main {
+    min-height: 100vh;
+}
+
 .GeneratingPrompt {
     position: fixed;
      /* This position caused the white border on the right

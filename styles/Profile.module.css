@@ -5,7 +5,6 @@
     max-width: 430px;
     min-height: 100vh;
     background-color: var(--black);
-
     color: var(--white);
     font-family: var(--Roboto);
 }

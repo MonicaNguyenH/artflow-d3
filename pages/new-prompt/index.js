@@ -25,22 +25,24 @@ const NewPrompt = () => {
     return (
         <>
             <HeaderArea title="New Prompt" description="Creating new prompt page"/>
-            <div className={styles.container}>
-                <div className={styles.chipsContainer}>
-                    <h1 className={styles.chipsContainerHeading}>What do you want to draw?</h1>
-                    <p className={styles.chipsContainerParagraph}>Select up to 4 categories</p>
-                    <Chips labels={labels}/>
+            <main className={`${styles.main}`}>
+                <div className={styles.container}>
+                    <div className={styles.chipsContainer}>
+                        <h1 className={styles.chipsContainerHeading}>What do you want to draw?</h1>
+                        <p className={styles.chipsContainerParagraph}>Select up to 4 categories</p>
+                        <Chips labels={labels}/>
+                    </div>
+                    <div className={styles.continueContainer}>
+                        <p className={styles.continueParagraph}>Click continue to get a prompt</p>
+                        <Link href="/generating-prompt">
+                            <button className={styles.continueButton}>Continue</button>
+                        </Link>
+                    </div>
+                    <div className={styles.footer}> 
+                        <NavBar/>
+                    </div>
                 </div>
-                <div className={styles.continueContainer}>
-                    <p className={styles.continueParagraph}>Click continue to get a prompt</p>
-                    <Link href="/generating-prompt">
-                        <button className={styles.continueButton}>Continue</button>
-                    </Link>
-                </div>
-                <div className={styles.footer}> 
-                    <NavBar/>
-                </div>
-            </div>
+            </main>
         </>
     );
 };
