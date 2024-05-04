@@ -15,7 +15,7 @@ export default function ChatRoom() {
       <main className={styles.main}>
         <div>
             <div className={styles.header}>
-                <Link href="/community-page" className={styles.returnLink}>
+                <Link className={styles.returnLink}>
                   <img className={styles.returnIcon} tabIndex={1} src="/images/return-icon.svg" width={23} height={30} alt="return icon"/>
                 </Link>
                 <div className={styles.profile} tabIndex={2}> 
