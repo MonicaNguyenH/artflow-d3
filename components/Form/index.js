@@ -10,7 +10,7 @@ export function SigninForm() {
     return (
         <div className={styles.form}>
         <h2>Sign in</h2>
-        <p className={styles.instructions}>Please enter you email address and password</p>
+        <p className={styles.instructions}>Enter your email address and password</p>
         <form className={styles.fill}>
             <div className={styles.fields}>
                 <div className={styles.input}>
@@ -56,7 +56,7 @@ export function SignupForm() {
             <Link href="/quiz-intro">
                 <GradientButton buttonText="Sign Up"/>
             </Link>
-            <p className={styles.noAccount}>Already have an account? <Link href="/signin"> Sign in</Link></p>
+            <p className={styles.noAccount}>Already have an account? <Link  href="/signin"> Sign in</Link></p>
             <GoogleButton GoogleButtonText="Sign up with Google" />
             <AppleButton AppleButtonText="Sign up with Apple" />
         </form>
