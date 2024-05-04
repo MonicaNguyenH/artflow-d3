@@ -4,7 +4,6 @@ import Link from 'next/link';
 import answers from '@/data/quiz-answers';
 import Image from 'next/image';
 import HeaderArea from '@/components/HeadArea';
-
 import styles from "@/styles/QuizSummary.module.css";
 
 export default function QuizOutro() {
@@ -44,7 +43,11 @@ export default function QuizOutro() {
       <HeaderArea title="Quiz result" description="Quiz result summary"/>
       <div className={`${styles.quizResults} ${styles.quiz}`}> 
         <nav className={`${styles.quizNav} ${styles.quizIntroNav}`}>
-          <Image src='/images/quiz/close-button.png' alt="close button" height={30} width={30} tabIndex={1}/>
+          <Link href="/home-page">
+            <button className={styles.closeBtn}>
+              <Image src='/images/quiz/close-button.png' alt="close button" height={30} width={30} tabIndex={1}/>
+            </button>
+          </Link>
         </nav>
         <div>
           {score == 0 && 
