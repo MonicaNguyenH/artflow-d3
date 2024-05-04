@@ -20,7 +20,7 @@ export default function ActivityGraph() {
                 label: 'Posts',
                 data: [0, 0, 0, 3, 2, 1, 1],
                 borderColor: 'rgba(249, 78, 155, 1)',
-                backgroundColor: 'rgba(249, 78, 155, 1)',
+                backgroundColor: 'rgba(237, 63, 179, 1)',
                 borderWidth: '1',
                 borderRadius: 5,
                 barThickness: 10
