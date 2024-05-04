@@ -49,6 +49,7 @@
   .pinkNumber {
     color: var(--rose);
   }
+
   .progress {
     box-sizing: content-box;
     background: rgba(0, 0, 0, 0.25);
@@ -180,12 +181,12 @@
     z-index: 20;
   }
   
-  .backgroundMesh {
+  .background{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
   }
   
@@ -237,6 +238,8 @@
   }
   
   .resultButton {
+    position: fixed;
+    bottom: 0;
     display: flex;
     width: 390px;
     height: 50px;

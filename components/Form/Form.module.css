@@ -50,6 +50,10 @@
     margin-left: 6px;
 }
 
+.noAccount a:hover {
+    color: var(--rose);
+}
+
 .input {
     font-size: var(--font-medium);
     display: flex;
