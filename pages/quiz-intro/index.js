@@ -1,13 +1,9 @@
 import styles from "@/styles/QuizIntro.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { useSession, signOut } from "next-auth/react";
-import { useRouter } from 'next/router';
 import HeaderArea from "@/components/HeadArea";
 
 export default function quizIntro() {
-  const router = useRouter();
-  const { data: session } = useSession()
 
   return (
     <>
@@ -42,9 +38,6 @@ export default function quizIntro() {
             Start Quiz
           </button>
         </Link>
-        {session && 
-        <button onClick={() => {signOut()}}>You Can Sign Out Here for testing only</button>
-        }
       </div>
     </>
   )

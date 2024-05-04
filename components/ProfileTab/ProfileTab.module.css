@@ -20,6 +20,7 @@
     position: relative;
     transition: transform 0.3s ease;
     transform-origin: bottom left;
+    cursor: pointer;
 }
 
 /*
@@ -39,6 +40,7 @@
     box-sizing: border-box;
     transition: transform 0.3s ease;
     transform-origin: bottom left;
+    cursor: pointer;
 }
 
 .tabContent {
@@ -54,6 +56,14 @@
     row-gap: 10px;
 }
 
-.gridContainer {
-    justify-content: space-between;
+.squareImage {
+    height: 120px;
+    width: 120px;
+    background-color: var(--white);
+}
+
+.squareImage img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }

@@ -20,6 +20,7 @@ export default function GeneratingPrompt(){
               router.push('/prompt-page');
         })();
     }, []);
+    
     return(
         <>
             <HeaderArea title="Prompt Loading page" description="Generate prompt loading/onhold page"/>
