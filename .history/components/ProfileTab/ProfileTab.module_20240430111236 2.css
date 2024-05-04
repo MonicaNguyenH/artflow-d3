@@ -1,0 +1,59 @@
+.main {
+    max-width: 100%;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: none;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background-color: var(--black);
+    border: none;
+    padding: 20px;
+    width: 190px;
+}
+
+/*
+.tab button:focus {
+    border-bottom: 2px solid var(--white);
+    box-sizing: border-box;
+    transition: 1s; 
+}
+*/
+
+.tab button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with no width */
+    height: 2px; /* Height of the border */
+    background-color: var(--white);
+    transition: width 0.3s ease; /* Transition for the width */
+}
+
+.tab button:focus::after {
+    width: 100%; /* Expand the width to 100% */
+}
+
+.tabContent {
+    width: 100%;
+}
+
+.gridContainer, 
+.likedContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 10px;
+}
+
+.gridContainer {
+    justify-content: space-between;
+}

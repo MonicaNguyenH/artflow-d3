@@ -1,0 +1,10 @@
+.main {
+    max-width: 430px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

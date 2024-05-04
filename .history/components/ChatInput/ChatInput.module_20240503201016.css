@@ -1,0 +1,73 @@
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text {
+    color: var(--white);
+    display: flex;
+    height: 40px;
+    width: fit-content;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: var(--dark-grey);
+}
+
+.reactionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.emojiContainer {
+    display: flex; 
+    width: 31px; 
+    height: 27px; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid var(--dark-grey);
+    background: var(--black);
+    margin-top: -10px;
+}
+
+.replyMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.replyText, 
+.replyDots {
+    color: var(--white);
+    display: flex;
+    height: 40px;
+    width: fit-content;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.replyText {
+    background-color: rgba(20, 20, 20, 0.70);
+    border: 1px solid var(--dark-grey);
+}
+
+.replyDots {
+    background-color: var(--dark-grey);
+    border: none;
+}

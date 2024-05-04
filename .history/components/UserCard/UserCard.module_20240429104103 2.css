@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.cardContainer {
+    font-family: "Roboto", sans-serif;
+    background-image: url("/images/purplegradient.png");
+    background-size: cover;
+    max-width: 390px;
+    height: 240px;
+    margin: 1.5rem;
+    color: var(--white);
+    border-radius: 25px;
+    padding-left: 1.5rem;
+    padding-top: 0.3rem;
+}
+
+.cardContainer p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.cardContainer h1 {
+    font-size: var(--font-large);
+    margin-top: 3.5rem;
+}
+
+.cardContainer button {
+    width: 160px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    border: solid 3px white;
+    border-radius: 30px;
+    margin-left: 180px;
+    margin-top: -40px;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--font-small-14px)
+}
+
+.triviaButton {
+    cursor: pointer;
+}
+
+.triviaButton:hover {
+    background-image: var(--gradient-rv);
+    border: solid 3px transparent;
+    background-size: fill;
+    border-radius: 30px;
+    background-size: 200px;
+    background-position: center;
+    padding: 0;
+}
