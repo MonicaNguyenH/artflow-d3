@@ -1,0 +1,14 @@
+.main {
+    background: var(--black);
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+    min-height: 930px;
+    font-family: var(--Roboto);
+    color: var(--white);
+}
+
+.header {
+    height: 110px;
+    width: 430px;
+}
