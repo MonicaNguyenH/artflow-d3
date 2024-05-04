@@ -1,0 +1,8 @@
+.main {
+    background-image: url('/images/chat/chat-room-bg.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+    min-height: 100vh;
+}
