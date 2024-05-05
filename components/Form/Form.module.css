@@ -77,3 +77,14 @@
     font-weight: 700;
     padding: .25rem .75rem;
 } 
+
+.background {
+    position: fixed;
+    top: 0;
+    left:0;
+}
+
+.fill {
+    position: relative;
+    z-index: 20;
+}
