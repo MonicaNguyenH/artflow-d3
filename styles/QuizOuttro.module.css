@@ -4,7 +4,7 @@
     color: var(--white);
     padding-left: 1rem;
     padding-right: 1rem;
-    position: relative;
+    position: absolute;
     font-family: var(--font-family);
   }
   
@@ -171,10 +171,8 @@
 /*Outtro*/
 
 .quizOutro {
-    position: relative;
     z-index: 20;
     color: var(--white);
-  
   }
   
   

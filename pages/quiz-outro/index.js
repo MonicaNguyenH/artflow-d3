@@ -3,7 +3,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import answers from '@/data/quiz-answers';
 import Image from 'next/image';
-import GradientMeshTwo from '@/components/GradientMeshTwo';
+import GradientMesh from '@/components/GradientMesh';
 import styles from "@/styles/QuizOuttro.module.css";
 import HeaderArea from '@/components/HeadArea';
 
@@ -31,6 +31,9 @@ export default function QuizOutro() {
   return (
     <>
       <HeaderArea title="Quiz Outro" description="Quiz outro/onhold page"/>
+      <div className={styles.background}>
+            <GradientMesh/>
+        </div>
       <div className={`${styles.quizOutro} ${styles.quiz}`} style={{position:'relative'}}>
         <div className={styles.textElements}>
           <div className={styles.top}>
@@ -55,22 +58,19 @@ export default function QuizOutro() {
             </div>}
           </div>
 
-          <div className={styles.bottom}>
-            {loadingDone ?  
-              <div>
-                <Link className={styles.resultButtonLink} href={{
-                    pathname: '/quiz-results',
-                    query: selectedValues
-                  }}><button className={styles.resultButton} tabIndex={1}>View My Result</button></Link>
-              </div>
-              :
-              <div className={styles.progress}>
-                <div className={styles['progress-value']}></div>
-              </div>}      
-          </div>
-        </div>
-          <div className={styles.background}>
-            <GradientMeshTwo/>
+            <div className={styles.bottom}>
+              {loadingDone ?  
+                <div>
+                  <Link className={styles.resultButtonLink} href={{
+                      pathname: '/quiz-results',
+                      query: selectedValues
+                    }}><button className={styles.resultButton} tabIndex={1}>View My Result</button></Link>
+                </div>
+                :
+                <div className={styles.progress}>
+                  <div className={styles['progress-value']}></div>
+                </div>}      
+            </div>
           </div>
         </div>
     </>
