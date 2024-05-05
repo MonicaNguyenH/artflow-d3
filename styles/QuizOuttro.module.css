@@ -1,6 +1,6 @@
 /* Global Quiz Styling */
 .quiz {
-    min-height: 932px;
+    min-height: 100vh;
     color: var(--white);
     padding-left: 1rem;
     padding-right: 1rem;
@@ -80,6 +80,8 @@
   
   .quizOutro .progress {
     width: 390px;
+    position: fixed;
+    bottom: 0;
   }
 
   /* Quiz Outtro*/

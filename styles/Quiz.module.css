@@ -1,6 +1,6 @@
 /* Global Quiz Styling */
 .quizNav {
-  max-height: 932px;
+  min-height: 100vh;
   color: var(--white);
   padding-top: 2.5rem;
   padding-left: 1rem;
@@ -40,7 +40,7 @@
 .overlay {
   position: absolute;
   background-color: var(--dark-grey);
-  top: 82%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 1rem 0 1rem;
@@ -216,7 +216,7 @@
 .overlay2 {
   position: absolute;
   background-color: var(--dark-grey);
-  top: 82%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 1rem 0 1rem;
@@ -286,7 +286,7 @@
 .overlay3 {
   position: absolute;
   background-color: var(--dark-grey);
-  top: 82%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 1rem 0 1rem;
