@@ -47,7 +47,6 @@ export default function QuizOutro() {
             <button className={styles.closeBtn}>
               <Image src='/images/quiz/close-button.png' alt="close button" height={30} width={30} tabIndex={1}/>
             </button>
-          <Image src='/images/quiz/close-button.png' alt="close button" height={30} width={30} tabIndex={1}/>
           </Link>
         </nav>
         <div>
