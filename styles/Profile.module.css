@@ -21,8 +21,13 @@
     flex-direction: column;
 }
 
-.hamburgerMenu {
-    width: 33px;
+.link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.settingGear {
+    width: 30px;
     height: auto;
     flex-shrink: 0;
     cursor: pointer;
@@ -38,7 +43,7 @@
 }
 
 .profileDesc {
-    margin-top: 50px;
+    margin-top: 60px;
     padding: 0 20px;
     width: 100%;
     display: flex;

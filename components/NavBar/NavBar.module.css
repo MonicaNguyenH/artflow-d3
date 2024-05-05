@@ -82,3 +82,7 @@
 .profileIcon {
     border-radius: 999px;
 }
+.activeProfileIcon {
+    border: 2px solid var(--white);
+    border-radius: 25px;
+}
