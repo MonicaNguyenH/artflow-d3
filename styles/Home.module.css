@@ -4,7 +4,7 @@
   align-items: center;
   padding: 6rem 0;
   max-width: 430px;
-  min-height: 932px;
+  min-height: 100vh;
   background-color: var(--black);
   justify-content: center;
 }
@@ -29,3 +29,16 @@
   text-decoration: none;
 }
 
+.container {
+  overflow: hidden;
+}
+.background {
+  position: fixed;
+  left: -1px;
+  top: 0px;
+}
+
+.logoAndButtons {
+  position: relative;
+  z-index: 20;
+}

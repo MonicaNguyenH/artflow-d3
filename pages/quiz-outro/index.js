@@ -31,9 +31,6 @@ export default function QuizOutro() {
   return (
     <>
       <HeaderArea title="Quiz Outro" description="Quiz outro/onhold page"/>
-      <div className={styles.background}>
-            <GradientMesh/>
-        </div>
       <div className={`${styles.quizOutro} ${styles.quiz}`} style={{position:'relative'}}>
         <div className={styles.textElements}>
           <div className={styles.top}>
@@ -72,7 +69,10 @@ export default function QuizOutro() {
                 </div>}      
             </div>
           </div>
-        </div>
+          <div className={styles.background}>
+            <GradientMesh/>
+          </div>
+      </div>
     </>
   );
 }

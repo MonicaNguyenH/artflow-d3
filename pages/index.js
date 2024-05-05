@@ -8,6 +8,8 @@ import HeaderArea from "@/components/HeadArea";
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";
+import GradientMesh from "@/components/GradientMesh";
+import GradientMeshTwo from "@/components/GradientMeshTwo";
 
 
 export default function Home() {
@@ -30,14 +32,19 @@ export default function Home() {
     <>
       <HeaderArea title="ArtFlow" description="The drawing prompt app"/>
       <main className={`${styles.main}`}>
-        <div>
-          <Image className={styles.logoWordmark} src="/images/logo.png" height={72} width={350} />
-          <Link href="/signin">
-            <GradientButton buttonText="Sign In"/>
-          </Link>
-          <Link href="/signup">
-            <GradientButton buttonText="Sign Up"/>
-          </Link>
+        <div className={styles.container}>
+          <div className={styles.logoAndButtons}>
+            <Image className={styles.logoWordmark} src="/images/logo.png" height={72} width={350} />
+            <Link href="/signin">
+              <GradientButton buttonText="Sign In"/>
+            </Link>
+            <Link href="/signup">
+              <GradientButton buttonText="Sign Up"/>
+            </Link>
+          </div>
+          <div className={styles.background}>
+            <GradientMesh/>
+          </div>
         </div>
       </main>
     </>
