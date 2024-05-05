@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 import HeaderArea from "@/components/HeadArea";
 import ProfileTab from "@/components/ProfileTab";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -40,7 +41,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.button}>Edit Profile</button>
+                    <Link href="/edit-profile">
+                        <button className={styles.button}>Edit Profile</button>
+                    </Link>
                     <button className={styles.button}>Add Friends</button>
                 </div>
                 <div className={styles.tab}>
