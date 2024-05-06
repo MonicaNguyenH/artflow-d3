@@ -7,6 +7,7 @@
   min-height: 100vh;
   background-color: var(--black);
   justify-content: center;
+  position: relative;
 }
 
 .main button {
@@ -29,16 +30,15 @@
   text-decoration: none;
 }
 
-.container {
-  overflow: hidden;
-}
-.background {
-  position: fixed;
-  left: -1px;
-  top: 0px;
-}
-
 .logoAndButtons {
   position: relative;
   z-index: 20;
 }
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  z-index: 1;
+}
+
