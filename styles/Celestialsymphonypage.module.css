@@ -11,6 +11,7 @@
 .Title {
   position: absolute;
   top: 200px;
+  left: 10px;
   color: var(--white);
   font-size: var(--font-large);
   font-weight: bold;
