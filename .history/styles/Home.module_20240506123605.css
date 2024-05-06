@@ -35,7 +35,6 @@
 
 .logoContainer {
   display: flex;
-  flex-direction: row;
   width: 280px;
   align-self: center;
   justify-content: center;

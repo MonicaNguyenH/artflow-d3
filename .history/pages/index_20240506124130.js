@@ -59,7 +59,7 @@ export default function Home() {
             <GradientButton buttonText="Sign Up"/>
           </Link>
           <div className={styles.background}>
-            <GradientMesh/>
+            {/**<GradientMesh/>*/}
           </div>
         </div>
       </main>

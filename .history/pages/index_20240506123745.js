@@ -51,15 +51,15 @@ export default function Home() {
           <div className={styles.logoContainer}>
             <lottie className={styles.logo} ref={lottieContainer}></lottie>
             <Image className={styles.logoWordmark} src="/lottie/ArtFlow.svg" height={72} width={350} />
+            <Link href="/signin">
+              <GradientButton buttonText="Sign In"/>
+            </Link>
+            <Link href="/signup">
+              <GradientButton buttonText="Sign Up"/>
+            </Link>
           </div>
-          <Link href="/signin">
-            <GradientButton buttonText="Sign In"/>
-          </Link>
-          <Link href="/signup">
-            <GradientButton buttonText="Sign Up"/>
-          </Link>
           <div className={styles.background}>
-            <GradientMesh/>
+            {/**<GradientMesh/>*/}
           </div>
         </div>
       </main>
