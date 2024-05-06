@@ -9,8 +9,6 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect, useState, useRef } from "react";
 import { useSession, signOut } from "next-auth/react";
 import lottie from 'lottie-web';
-import GradientMesh from "@/components/GradientMesh";
-import GradientMeshTwo from "@/components/GradientMeshTwo";
 
 export default function Home() {
   const lottieContainer = useRef(null);
@@ -47,20 +45,17 @@ export default function Home() {
     <>
       <HeaderArea title="ArtFlow" description="The drawing prompt app"/>
       <main className={`${styles.main}`}>
-        <div className={styles.contentContainer}>
+        <div>
           <div className={styles.logoContainer}>
-            <lottie className={styles.logo} ref={lottieContainer}></lottie>
-            <Image className={styles.logoWordmark} src="/images/logo.png" height={72} width={350} />
-            <Link href="/signin">
-              <GradientButton buttonText="Sign In"/>
-            </Link>
-            <Link href="/signup">
-              <GradientButton buttonText="Sign Up"/>
-            </Link>
+            <lottie ref={lottieContainer}></lottie>
+            <Image className={styles.logoWordmark} src="/images/ArtFlow.svg" height={72} width={350} />
           </div>
-          <div className={styles.background}>
-            <GradientMesh/>
-          </div>
+          <Link href="/signin">
+            <GradientButton buttonText="Sign In"/>
+          </Link>
+          <Link href="/signup">
+            <GradientButton buttonText="Sign Up"/>
+          </Link>
         </div>
       </main>
     </>

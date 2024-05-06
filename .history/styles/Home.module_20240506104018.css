@@ -4,10 +4,9 @@
   align-items: center;
   padding: 6rem 0;
   max-width: 430px;
-  min-height: 100vh;
+  min-height: 932px;
   background-color: var(--black);
   justify-content: center;
-  position: relative;
 }
 
 .contentContainer {
@@ -22,6 +21,7 @@
 .main img {
   height: auto;
   max-width: 350px;
+  margin-bottom: 3rem;
 }
 
 .main p {
@@ -37,28 +37,13 @@
   display: flex;
   width: 280px;
   align-self: center;
-  justify-content: center;
-  margin-bottom: 40px;
-  position: relative;
-  z-index: 20;
 }
 
 .logo {
   width: 100%;
   height: auto;
-  transform: scale(2.5);
-  margin-top: -50px;
 }
 
 .logoWordmark {
-  width: 200px;
+  width: 220px;
 }
-  
-.background {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-  z-index: 1;
-}
-

@@ -9,8 +9,6 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect, useState, useRef } from "react";
 import { useSession, signOut } from "next-auth/react";
 import lottie from 'lottie-web';
-import GradientMesh from "@/components/GradientMesh";
-import GradientMeshTwo from "@/components/GradientMeshTwo";
 
 export default function Home() {
   const lottieContainer = useRef(null);
@@ -50,17 +48,14 @@ export default function Home() {
         <div className={styles.contentContainer}>
           <div className={styles.logoContainer}>
             <lottie className={styles.logo} ref={lottieContainer}></lottie>
-            <Image className={styles.logoWordmark} src="/images/logo.png" height={72} width={350} />
-            <Link href="/signin">
-              <GradientButton buttonText="Sign In"/>
-            </Link>
-            <Link href="/signup">
-              <GradientButton buttonText="Sign Up"/>
-            </Link>
+            <Image className={styles.logoWordmark} src="/images/ArtFlow.svg" height={72} width={200} />
           </div>
-          <div className={styles.background}>
-            <GradientMesh/>
-          </div>
+          <Link href="/signin">
+            <GradientButton buttonText="Sign In"/>
+          </Link>
+          <Link href="/signup">
+            <GradientButton buttonText="Sign Up"/>
+          </Link>
         </div>
       </main>
     </>

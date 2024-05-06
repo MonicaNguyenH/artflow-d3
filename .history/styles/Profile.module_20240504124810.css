@@ -5,6 +5,7 @@
     max-width: 430px;
     min-height: 100vh;
     background-color: var(--black);
+
     color: var(--white);
     font-family: var(--Roboto);
 }
@@ -21,13 +22,8 @@
     flex-direction: column;
 }
 
-.link {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.settingGear {
-    width: 30px;
+.hamburgerMenu {
+    width: 33px;
     height: auto;
     flex-shrink: 0;
     cursor: pointer;
@@ -43,7 +39,7 @@
 }
 
 .profileDesc {
-    margin-top: 60px;
+    margin-top: 50px;
     padding: 0 20px;
     width: 100%;
     display: flex;
