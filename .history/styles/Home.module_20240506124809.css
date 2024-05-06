@@ -40,13 +40,9 @@
   align-self: center;
   justify-content: center;
   margin-bottom: 40px;
-}
 
-.content {
   position: relative;
   z-index: 20;
-  display: flex;
-  flex-direction: column;
 }
 
 .logo {
@@ -66,5 +62,8 @@
   left: 0px;
   height: 100vh;
   z-index: 1;
+  
+  position: relative;
+  z-index: 20;
 }
 
