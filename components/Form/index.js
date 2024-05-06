@@ -56,13 +56,13 @@ export function SignupForm() {
                     <Link href="/quiz-intro">
                         <GradientButton buttonText="Sign Up"/>
                     </Link>
-                    <p className={styles.noAccount}>Already have an account? <Link  href="/signin"> Sign in</Link></p>
+                    <p className={styles.noAccount}>Already have an account? <Link href="/signin"> Sign in</Link></p>
                     <GoogleButton GoogleButtonText="Sign up with Google" />
                     <AppleButton AppleButtonText="Sign up with Apple" />
                 </form>
-                <div className={styles.background}>
+                {/* <div className={styles.background}>
                     <GradientMesh/>
-                </div>
+                </div> */}
 
          </div>
     )

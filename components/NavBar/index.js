@@ -56,7 +56,7 @@ export default function NavBar() {
                     <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' ? styles.activeProfileIcon : ''}>
                         <Link className={styles.link} href="profile"> 
                             <img className={`${styles.profileIcon} ${styles.icons}`} 
-                                src="/images/profile-icon.png"
+                                src={session?.user.image ? session?.user.image : "/images/profile-icon.png"}
                                 alt="Profile Icon"  
                                 width="25" height="25"/> 
                         </Link>

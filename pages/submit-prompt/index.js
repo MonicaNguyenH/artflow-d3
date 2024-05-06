@@ -30,7 +30,7 @@ export default function SubmitPrompt() {
 
   return (
     
-    <>
+    <main className={styles.main}>
       <nav className={styles.nav}>
         <div className={styles.downloadButton}>
           <button tabIndex={1} onClick={handleSaveDrawing}>
@@ -87,6 +87,6 @@ export default function SubmitPrompt() {
           </div>
         </div>
       </div>
-    </>
+    </main>
   )
 }
