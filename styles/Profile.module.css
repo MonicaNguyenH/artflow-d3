@@ -61,6 +61,7 @@
 
 .userName {
     font-size: var(--font-medium);
+    color: var(--rose);
 }
 
 .account, 
