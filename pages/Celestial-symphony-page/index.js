@@ -1,7 +1,21 @@
 import styles from '@/styles/Celestialsymphonypage.module.css';
+import Link from 'next/link';
 
 export default function Celestialsymphonypage() {
     return (
+<>
+    <main className={styles.main}>
+        <nav className={styles.nav}>
+        <Link href="/home-page">
+                <img alt="arrow" src='./images/back-arrow.png' width={40} height={50}/>
+            </Link>
+            <p>Celestial Symphony</p>
+        </nav>
+        <p className={styles.Title}>Celestial <br/> Symphony</p>
+        <div className={styles.titlePic}>
+            <img src="/images/celestial.jpg" width={430} height={250}/>
+            <div className={styles.overlay}></div>
+        </div>
         <div className={styles.container}>
             <div><img src="/images/image1.jpg" width={110} height={110}/></div>
             <div><img src="/images/image2.jpg" width={110} height={110}/></div>
@@ -18,5 +32,8 @@ export default function Celestialsymphonypage() {
             <div><img src="/images/image13.jpg" width={110} height={110}/></div>
             <div><img src="/images/image14.jpg" width={110} height={110}/></div>
         </div>
+    </main>
+</>
     )
+
 }
