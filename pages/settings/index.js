@@ -1,8 +1,10 @@
 import styles from "@/styles/Settings.module.css";
 import Link from 'next/link';
 import { useState } from "react";
+import { useSession } from "next-auth/react";
 
 export default function Settings() {
+    const { data: session } = useSession();
     const [lightMode, setLightMode] = useState(false);
 
     const toggleLightMode = () => {
@@ -196,13 +198,19 @@ export default function Settings() {
                                         width="18" height="13" alt="Next Arrow Icon" />
                                 </div>
                             </li>
+                            
                             <li>
+                            <Link className={styles.signOut} href={{
+                                    pathname: '/',
+                                    query: {signOut: 'true'}
+                                }}>
                                  <div className={styles.supportSignOut}>
                                     <img 
                                         src={lightMode ? "/images/Settings/sign-out-black.svg" : "/images/Settings/sign-out.svg"}
                                         width="20" height="20" alt="Sign Out Icon"></img>
                                     <p>Sign out</p>
                                 </div>
+                            </Link>
                             </li>
                             <li>
                                  <div className={styles.supportDeleteAccount}>
