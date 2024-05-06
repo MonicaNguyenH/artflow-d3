@@ -14,7 +14,6 @@ export default function Celestialsymphonypage() {
         <p className={styles.Title}>Celestial <br/> Symphony</p>
         <div className={styles.titlePic}>
             <img src="/images/celestial.jpg" width={430} height={250}/>
-            <div className={styles.overlay}></div>
         </div>
         <div className={styles.container}>
             <div><img src="/images/image1.jpg" width={110} height={110}/></div>
