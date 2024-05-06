@@ -22,9 +22,9 @@ export default function SignIn() {
         <div className={styles.signin}>
           <SigninForm />
         </div>
-        <div className={styles.background}>
+        {/* <div className={styles.background}>
           <GradientMesh/>
-        </div>
+        </div> */}
       </div>
     </>
   )
