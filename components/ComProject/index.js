@@ -13,13 +13,12 @@ export default function ComProject() {
                     </div>
                 </div>
                 <div className={styles.projectPic}>
-                    {/*<img src="/images/gradient_1.png" alt="Gradient 1"/>*/}
                     <div className={styles.prompt}>
                         <p>A playful dog</p>
                     </div>
                     <div className={styles.date}>
                         <p>
-                            Mar 30
+                            May 17
                         </p>
                     </div>
                 </div>

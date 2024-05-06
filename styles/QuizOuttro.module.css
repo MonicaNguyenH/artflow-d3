@@ -1,10 +1,10 @@
 /* Global Quiz Styling */
 .quiz {
-    min-height: 932px;
+    min-height: 100vh;
     color: var(--white);
     padding-left: 1rem;
     padding-right: 1rem;
-    position: relative;
+    position: absolute;
     font-family: var(--font-family);
   }
   
@@ -49,6 +49,7 @@
   .pinkNumber {
     color: var(--rose);
   }
+
   .progress {
     box-sizing: content-box;
     background: rgba(0, 0, 0, 0.25);
@@ -79,6 +80,8 @@
   
   .quizOutro .progress {
     width: 390px;
+    position: fixed;
+    bottom: 0;
   }
 
   /* Quiz Outtro*/
@@ -168,10 +171,8 @@
 /*Outtro*/
 
 .quizOutro {
-    position: relative;
     z-index: 20;
     color: var(--white);
-  
   }
   
   
@@ -180,13 +181,12 @@
     z-index: 20;
   }
   
-  .backgroundMesh {
+  .background{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 100vh;
+    z-index:-1;
   }
   
   .outtro1 {
@@ -237,6 +237,8 @@
   }
   
   .resultButton {
+    position: fixed;
+    bottom: 0;
     display: flex;
     width: 390px;
     height: 50px;

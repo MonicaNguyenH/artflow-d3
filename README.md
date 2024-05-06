@@ -7,6 +7,11 @@
 - Jumi Pham
 
 ## Description 
-- The app is designed to inspire users to draw every day and generate drawing prompts.
+- The app is designed to inspire users to practice their creativity daily by drawing from generated prompts.
 
-## Package Installed 
+## Packages Installed 
+- chart.js
+- next-auth
+- openai
+- react-chartjs-2
+- react-sketch-canvas

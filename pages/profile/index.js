@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 import HeaderArea from "@/components/HeadArea";
 import ProfileTab from "@/components/ProfileTab";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -16,9 +17,11 @@ export default function Home() {
         </header>
         <main className={`${styles.main}`}>
             <div className={styles.banner}>
-                <img className={styles.hamburgerMenu} src="/images/hamburger-menu.svg" alt="hamburger icon"/>
-                <div className={styles.avatar}>                    
-                    <img className={styles.avatar} src={session?.user.image ? session?.user.image : "/images/dog-profile-img.jpeg"} alt="profile image"/>
+                <Link className={styles.link} href="/settings">
+                    <img className={styles.settingGear} src="/images/setting-gear.svg" alt="setting icon" />
+                </Link>
+                <div className={styles.avatar}>
+                    <img className={styles.avatar} src={session?.user.image ? session?.user.image : "/images/dog-profile-img.jpeg"} alt="dog profile image"/>
                 </div>
             </div>            
             <div className={styles.profileDesc}>
@@ -40,7 +43,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.button}>Edit Profile</button>
+                    <Link href="/edit-profile">
+                        <button className={styles.button}>Edit Profile</button>
+                    </Link>
                     <button className={styles.button}>Add Friends</button>
                 </div>
                 <div className={styles.tab}>

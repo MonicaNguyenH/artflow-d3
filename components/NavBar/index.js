@@ -39,7 +39,7 @@ export default function NavBar() {
                     <li className={styles.navBarIcons}>
                         <div className={styles.circleBehindPlus}></div>
                         <Link className={styles.link} href="/new-prompt"> 
-                            <img className={`${styles.plusIcon}`} src="/images/plus-icon.png"
+                            <img className={`${styles.plusIcon}`} src="/images/plusicon1.png"
                                 alt="Create Post Icon" 
                                 width="60" 
                                 height="60"/>
@@ -48,13 +48,13 @@ export default function NavBar() {
                     <li onClick ={() => handleIconClick('chat')} className={activeIcon === 'chat' ? styles.active : ''}>
                         <Link className={styles.link} href="/community-page"> 
                             <img className={`${styles.chatIcon} ${styles.icons}`} 
-                                src={activeIcon === 'chat' || router.pathname == "/chat" ? "/images/chat-active-icon.png" : "/images/chat-icon.png"}  
+                                src={activeIcon === 'chat' || router.pathname == "/community-page" ? "/images/chat-active-icon.png" : "/images/chat-icon.png"}  
                                 alt="Chat Icon" 
                                 width="25" height="25"/> 
                         </Link>
                     </li>
-                    <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' ? styles.active : ''}>
-                        <Link className={styles.link} href="/profile"> 
+                    <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' ? styles.activeProfileIcon : ''}>
+                        <Link className={styles.link} href="profile"> 
                             <img className={`${styles.profileIcon} ${styles.icons}`} 
                                 src={session?.user.image ? session?.user.image : "/images/profile-icon.png"}
                                 alt="Profile Icon"  
@@ -66,4 +66,4 @@ export default function NavBar() {
         </div>
         </>
     )
-}
+} 

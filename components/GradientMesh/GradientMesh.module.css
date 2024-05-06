@@ -1,117 +1,289 @@
-/* GradientMesh.module.css */
-.gradientMesh {
-    position: fixed;
+
+  .grainyContainer {
+    opacity: 0.4;
+    height: 100vh;
+    width: 430px;
+  }
+
+  .gradientMesh {
+    position: fixed; 
+    width: 430px; 
+    height: 100vh; 
+    overflow: hidden;
+    z-index:-1;
+  }
+  .backgroundBox {
+    position: absolute;
     width: 100%;
     height: 100%;
-    margin-top: -915px;
-    margin-left: -16px;
-    opacity: 0.8;
-  }
-  
-  #noise {
-    width: 100%;
-    height:100%;
-  }
-  .grainyContainer {
-    background-color: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDMwIiBoZWlnaHQ9IjkzMiIgdmlld0JveD0iMCAwIDQzMCA5MzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MzAiIGhlaWdodD0iOTMyIiBmaWxsPSIjRDlEOUQ5Ii8+Cjwvc3ZnPgo=");
+    margin: 0;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
   }
 
-.gradientShape {
-  max-width: 220px;
-  max-height: 500px;
-  text-align: center;
-}
-.Shape1,
-.Shape2,
-.Shape3,
-.Shape5,
-.Shape7,
-.Shape9 {
-  position: relative;
-  z-index: 10;
-  filter: blur(50px);
-  animation: one 10s infinite;
-}
-
-.Shape2,
-.Shape4,
-.Shape6,
-.Shape8 {
-    position: relative;
-    z-index: 10;
+  .Shape1,
+  .Shape2,
+  .Shape3,
+  .Shape4,
+  .Shape5,
+  .Shape6,
+  .Shape7,
+  .Shape8,
+  .Shape9,
+  .Shape10 {
+    position: absolute;
     filter: blur(50px);
+    
+  }
+  .Shape1 {
+   transform: rotate(59.042deg); 
+   top: 710px;
+   left: -7px;
+   animation: one 10s infinite;
+  }
+
+  @keyframes one {
+    0% {
+        left: -7px;
+        top: 710px; 
+    }
+    25% {
+        left: 67.24px;
+        top: 619.72px;
+    }
+    50% {
+        left: 90px;
+        top: 759.78px;
+    }
+
+    100% {
+        left: -7px;
+        top: 710px;
+    }
+}
+
+  .Shape2 {
+    transform: rotate(59.042deg); 
+    top: 461px;
     animation: two 10s infinite;
-}
-
-
-.Shape1 {
-  transform: rotate(50deg);
-  flex-shrink: 0; 
-  margin-top: -300px;
-  opacity: 0.9;
-  z-index: 3;
-}
-
-.Shape2 {
-  transform: rotate(-22.796deg);
-  flex-shrink: 0; 
-  margin: -510px 66px 156px 48px;
-  opacity: 0.6;
-}
-
-.Shape3 {
-  transform: rotate(59.042deg);
-  flex-shrink: 0; 
-  margin: -462px 225px 46px 190px;
-  opacity: 0.9;
-}
-
-.Shape4 {
-  transform: rotate(59.042deg);
-  flex-shrink: 0; 
-  margin-top: -200px;
-  opacity: 0.9;
-}
-
-.Shape5 {
-  z-index: 9;
-  margin: -420px 36px -20px 20px;
-}
-
-.Shape6 {
-    margin-top: -115px;
-    margin-left: 50px;
-    opacity: 0.5;
-}
-.Shape7 {
-    transform: rotate(-22.796deg);
-    flex-shrink: 0; 
-    margin-top: -520px;
-    margin-left: 40px;
-    opacity: 0.5;
-}
-.Shape8{
-    margin-top: -100px;
-    z-index: 4;
-    opacity: 0.5;
-   
-}
-
-.Shape9 {
-  margin-left: 90px;
-}
-@keyframes one {
-    0%{left: 0px; top: 0px;}
-    25%{left: -0px; top: 70px;}
-    50%{left: 20px; top: 90px;}
-    75%{left: 50px; top: 90px;}
-    100%{left: 0px; top: 0px;}
   }
-
   @keyframes two {
-    0%{left: 0px; top: 0px;}
-    25%{left: 50px; top: 10px;}
-    50%{left: 60px; top: 50px;}
-    75%{left: 50px; top: 100px;}
-    100%{left: 0px; top: 0px;}
+    0% {
+        top: 461px; 
+    }
+    25% {
+        left: -100px;
+        top: 700px;
+    }
+    50% {
+        left: -52px;
+        top: 637px;
+    }
+
+    100% {
+        top: 461px;
+    }
+}
+
+  .Shape3 {
+    top: 510px;
+    left: 49px;
+    animation: three 10s infinite;
   }
+
+  @keyframes three {
+    0% {
+        top: 510px; 
+        left: 49px;
+    }
+    25% {
+        left: 100px;
+        top: 571px;
+    }
+    50% {
+        left: 71px;
+        top: 711px;
+    }
+
+    100% {
+      top: 510px; 
+      left: 49px;
+    }
+}
+
+  .Shape4 {
+    top: 776px;
+    left: 0px;
+    animation: four 10s infinite;
+  }
+  @keyframes four {
+    0% {
+        top: 776px; 
+        left: 0px;
+    }
+    25% {
+        left: 180.69px;
+        top: 502.78px;
+    }
+    50% {
+        left: 0px;
+        top: 471px;
+    }
+
+    100% {
+      top: 776px; 
+      left: 160px;
+    }
+}
+
+  .Shape5 {
+    transform: rotate(-22.796deg); 
+    top: 619px;
+    left: 100px;
+    animation: five 10s infinite;
+  }
+  @keyframes five {
+    0% {
+        top: 619px; 
+        left: 67.24px;
+    }
+    25% {
+        left: 28.69px;
+        top: 600px;
+    }
+    50% {
+        left: 200px;
+        top: 571px;
+    }
+
+    100% {
+      top: 619px; 
+      left: 67.24px;
+    }
+}
+ .Shape6 {
+  transform: rotate(59.042deg); 
+  top: 609.99px;
+  left: 7.69px;
+  animation: six 10s infinite;
+ }
+ @keyframes six {
+  0% {
+      top: 609.99px; 
+      left: 7.69px;
+  }
+  25% {
+      left: 7.69px;
+      top: 608.99px;
+  }
+  50% {
+      left: 10px;
+      top: 621px;
+  }
+
+  100% {
+    top: 609.99px; 
+    left: 7.69px;
+  }
+}
+ .Shape7 {
+  top: 461px;
+  left: -197px;
+  animation: seven 10s infinite;
+ }
+ @keyframes seven {
+  0% {
+      top: 461px; 
+      left: -197px;
+  }
+  25% {
+      left: -70px;
+      top: 640px;
+  }
+  50% {
+      left: 0px;
+      top: 608px;
+  }
+
+  100% {
+    top: 461px; 
+    left: -197px;
+  }
+}
+ .Shape8 {
+  top: 510px;
+  left: 49px;
+  animation: eight 10s infinite;
+ }
+ @keyframes eight {
+  0% {
+      top: 510px; 
+      left: 49px;
+  }
+  25% {
+      left: 0px;
+      top: 640px;
+  }
+  50% {
+      left: 0px;
+      top: 587px;
+  }
+
+  100% {
+    top: 510px; 
+    left: 49px;
+  }
+}
+
+ .Shape9 {
+  top: 776px;
+  left: -82px;
+  animation: nine 10s infinite;
+ }
+ @keyframes nine {
+  0% {
+      top: 776px; 
+      left: -82px;
+  }
+  25% {
+      left: 0px;
+      top: 659.78px;
+  }
+  50% {
+      left: 170px;
+      top: 600px;
+  }
+
+  100% {
+    top: 776px; 
+    left: -82px;
+  }
+}
+
+
+ .Shape10 {
+  transform: rotate(-22.796deg); 
+  top: 719px;
+  left: 167.94px;
+  animation: ten 10s infinite;
+ }
+ @keyframes ten {
+  0% {
+      top: 719px; 
+      left: 167.94px;
+  }
+  25% {
+      left: 0px;
+      top: 636px;
+  }
+  50% {
+      left: 130px;
+      top: 600px;
+  }
+
+  100% {
+      top: 719px; 
+      left: 167.94px;
+  }
+}

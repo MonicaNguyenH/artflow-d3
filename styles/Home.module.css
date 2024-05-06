@@ -4,9 +4,10 @@
   align-items: center;
   padding: 6rem 0;
   max-width: 430px;
-  min-height: 932px;
+  min-height: 100vh;
   background-color: var(--black);
   justify-content: center;
+  position: relative;
 }
 
 .contentContainer {
@@ -38,6 +39,8 @@
   align-self: center;
   justify-content: center;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 20;
 }
 
 .logo {
@@ -50,3 +53,12 @@
 .logoWordmark {
   width: 200px;
 }
+  
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  z-index: 1;
+}
+

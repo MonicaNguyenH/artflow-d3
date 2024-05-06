@@ -18,6 +18,10 @@
     margin-bottom: 1rem;
 }
 
+.socialButton:hover {
+    border: 1px solid var(--rose);
+}
+
 .socialContainer {
    font-size: var(--font-regular-figma);
    font-family: var(--font-family);

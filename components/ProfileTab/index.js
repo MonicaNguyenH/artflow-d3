@@ -16,13 +16,7 @@ export default function ProfileTab() {
     }, [])
 
     return (
-    <>
-    <Link href={{
-                    pathname: '/',
-                    query: {signOut: 'true'}
-                }}>
-                Sign Out
-                </Link>
+      <>
         <div className={styles.main}> 
             <div className={styles.tab}>
                 <button

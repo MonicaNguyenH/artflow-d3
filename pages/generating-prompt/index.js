@@ -17,37 +17,42 @@ export default function GeneratingPrompt(){
               const data = await response.json();
               console.log(data);
               localStorage.setItem('Prompt', data);
-              router.push('/prompt-page');
+              setTimeout(() => {
+                router.push('/prompt-page');
+            }, 2500);
         })();
     }, []);
     
     return(
         <>
             <HeaderArea title="Prompt Loading page" description="Generate prompt loading/onhold page"/>
-            <div className={styles.GeneratingPrompt}>
-                <div>
-                    <GradientMeshTwo/>
-                </div>
-                <div className={styles.ElementsBox}>
-                    <div className={styles.GenerateElements}>
-                        <div className={styles.loadingDots}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div>
-                            <h1 className={styles.GenerateHeading}>
-                                Curating your next masterpiece
-                            </h1>
-                        </div>
-                        <div className={`${styles.loadingDots} ${styles.alignRight}`}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+            <main className={`${styles.main}`}>
+                <div className={styles.GeneratingPrompt}>
+                    <div>
+                        <GradientMeshTwo/>
+                    </div>
+                    <div className={styles.ElementsBox}>
+                        <div className={styles.GenerateElements}>
+                            <div className={styles.loadingDots}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div>
+                                <h1 className={styles.GenerateHeading}>
+                                    Curating your next masterpiece
+                                </h1>
+                            </div>
+                            <div className={`${styles.loadingDots} ${styles.alignRight}`}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
+            
         </>
     )
 }

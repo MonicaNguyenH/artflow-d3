@@ -25,7 +25,7 @@ export default function ChatRoom() {
                 <img className={styles.hamburgerIcon} tabIndex={3} src="/images/hamburger-menu.svg" width={33} height={22} alt="hamburger icon"/>
             </div>
             <div className={styles.chatContainer}>
-                <p className={styles.date}>Feb 26 1:38 AM</p>
+                <p className={styles.date}>May 17 1:38 AM</p>
                 <div className={styles.projectContainer}>
                     <ComProject/>
                 </div>

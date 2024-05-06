@@ -221,4 +221,4 @@ const ActivityTracking = () => {
   );
 };
 
-export default ActivityTracking;
+export default ActivityTracking; 

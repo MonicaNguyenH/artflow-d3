@@ -3,6 +3,7 @@ import { SignupForm } from "@/components/Form";
 import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 import HeaderArea from "@/components/HeadArea";
+import GradientMesh from "@/components/GradientMesh";
 
 export default function SignUp() {
   const { data: session } = useSession()
@@ -19,6 +20,9 @@ export default function SignUp() {
       <div className={styles.auth}>
         <div className={styles.signin}>
           <SignupForm />
+        </div>
+        <div className={styles.background}>
+          <GradientMesh/>
         </div>
       </div>
     </>

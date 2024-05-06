@@ -82,3 +82,12 @@
 .profileIcon {
     border-radius: 999px;
 }
+.activeProfileIcon {
+    border: 2px solid var(--white);
+    border-radius: 28px;
+    width: 28px;
+    height: 28px;
+    display:flex;
+    justify-content: center;
+}
+
