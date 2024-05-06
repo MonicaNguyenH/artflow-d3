@@ -4,8 +4,6 @@
 .titlePic {
     width: 390px;
     height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 20px;
     border-radius: 20px;
 }
