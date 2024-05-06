@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0;
+  max-width: 430px;
+  min-height: 932px;
+  background-color: var(--black);
+  justify-content: center;
+}
+
+.main button {
+  margin-bottom: 1rem;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  margin-bottom: 3rem;
+}
+
+.main p {
+  color: white;
+  font-size: 1rem;
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.logoContainer {
+  display: flex;
+  width: 280px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.logoWordmark {
+  width: 100px;
+}

@@ -109,7 +109,7 @@
     font-size: var(--font-regular-figma);
     font-weight: bold;
     color: var(--white);
-    background: linear-gradient(var(--black), var(--black)) padding-box,
+    background: linear-gradient(var(--dark-grey), var(--dark-grey)) padding-box,
               var(--gradient-rv) border-box;
     border: 1px solid transparent;
     border-radius: 25px;
