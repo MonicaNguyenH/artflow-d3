@@ -1,4 +1,5 @@
 import styles from './ThemeCards.module.css';
+import Link from 'next/link';
 
 export default function ThemeCards() {
   return (
@@ -14,8 +15,10 @@ export default function ThemeCards() {
                 <div className={styles.overlay}></div>
             </div>
             <div className={styles.card3}>
-                <p className={styles.cardTitle}>Celestial Symphony</p>
-                <div className={styles.overlay}></div>
+                <Link href="/celestial-symphony">
+                    <p className={styles.cardTitle}>Celestial Symphony</p>
+                    <div className={styles.overlay}></div>             
+                </Link>
             </div>
             <div className={styles.card4}>
                 <p className={styles.cardTitle}>Enchanted Forest</p>
