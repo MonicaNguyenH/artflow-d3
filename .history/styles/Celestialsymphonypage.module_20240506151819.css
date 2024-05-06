@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .titlePic {
@@ -17,7 +16,6 @@
   display: flex; 
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .titlePic img {
@@ -29,7 +27,7 @@
 
 .Title {
   position: absolute;
-  top: 140px;
+  top: 250px;
   left: 40px;
   color: var(--white);
   font-size: var(--font-large);
@@ -69,7 +67,6 @@
 }
 
 .nav {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -94,4 +91,5 @@
 .footer {
   position: fixed;
   bottom: 0;
+  align-self: center;
 }

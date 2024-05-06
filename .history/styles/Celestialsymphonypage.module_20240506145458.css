@@ -1,23 +1,18 @@
 .main {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
 .titlePic {
   width: 100%;
   padding: 20px;
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
   border-radius: 20px;
 
   display: flex; 
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .titlePic img {
@@ -29,33 +24,16 @@
 
 .Title {
   position: absolute;
-  top: 140px;
-  left: 40px;
+  top: 200px;
   color: var(--white);
   font-size: var(--font-large);
   font-weight: bold;
-  margin: 0;
-  z-index: 999;
-}
-
-.overlay {
-  width: 390px;
-  height: 240px;
-  border-radius: 25px;
-  background: rgb(20, 20, 20, .2);
-  position: absolute;
-  z-index: 99;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  column-gap: 15px;
-  row-gap: 10px;
-  padding: 0 20px;
-  margin-bottom: 170px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); 
+  row-gap: 5px;
 }
   
 .container div {
@@ -63,13 +41,11 @@
 }
   
 .container img {
-  width: 120px; 
+  max-width: 100%; 
   height: 120px;
-  align-self: flex-start;
 }
 
 .nav {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -89,9 +65,4 @@
 .nav img {
   width: 18px;
   height: 30px;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
 }

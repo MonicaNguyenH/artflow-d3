@@ -13,9 +13,9 @@ export default function celestialSymphony() {
             <p>Celestial Symphony</p>
         </nav>
         <div className={styles.titlePic}>
-            <p className={styles.Title}>Celestial <br/> Symphony</p>
             <img src="/images/celestial.jpg" width={430} height={250}/>
             <div className={styles.overlay}></div>
+            <p className={styles.Title}>Celestial <br/> Symphony</p>
         </div>
         <div className={styles.container}>
             <div><img src="/images/image1.jpg" width={110} height={110}/></div>

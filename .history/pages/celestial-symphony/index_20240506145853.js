@@ -1,6 +1,5 @@
 import styles from '@/styles/Celestialsymphonypage.module.css';
 import Link from 'next/link';
-import NavBar from '@/components/NavBar';
 
 export default function celestialSymphony() {
     return (
@@ -13,9 +12,10 @@ export default function celestialSymphony() {
             <p>Celestial Symphony</p>
         </nav>
         <div className={styles.titlePic}>
+            <div className={styles.overlay}>
+                <img src="/images/celestial.jpg" width={430} height={250}/>
+            </div>
             <p className={styles.Title}>Celestial <br/> Symphony</p>
-            <img src="/images/celestial.jpg" width={430} height={250}/>
-            <div className={styles.overlay}></div>
         </div>
         <div className={styles.container}>
             <div><img src="/images/image1.jpg" width={110} height={110}/></div>
@@ -32,9 +32,6 @@ export default function celestialSymphony() {
             <div><img src="/images/image12.jpg" width={110} height={110}/></div>
             <div><img src="/images/image13.jpg" width={110} height={110}/></div>
             <div><img src="/images/image14.jpg" width={110} height={110}/></div>
-        </div>
-        <div className={styles.footer}>
-            <NavBar/>
         </div>
     </main>
 </>

@@ -17,7 +17,6 @@
   display: flex; 
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .titlePic img {
@@ -25,11 +24,12 @@
   height: 240px;
   object-fit: cover;
   border-radius: 25px;
+  position: relative;
 }
 
 .Title {
   position: absolute;
-  top: 140px;
+  top: 250px;
   left: 40px;
   color: var(--white);
   font-size: var(--font-large);

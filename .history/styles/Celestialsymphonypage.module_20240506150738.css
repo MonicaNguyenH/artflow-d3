@@ -1,9 +1,5 @@
 .main {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .titlePic {
@@ -12,12 +8,12 @@
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
   border-radius: 20px;
 
   display: flex; 
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .titlePic img {
@@ -29,7 +25,7 @@
 
 .Title {
   position: absolute;
-  top: 140px;
+  top: 250px;
   left: 40px;
   color: var(--white);
   font-size: var(--font-large);
@@ -49,13 +45,12 @@
 
 .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   column-gap: 15px;
   row-gap: 10px;
-  padding: 0 20px;
-  margin-bottom: 170px;
 }
   
 .container div {
@@ -65,11 +60,10 @@
 .container img {
   width: 120px; 
   height: 120px;
-  align-self: flex-start;
+  object-fit: cover;
 }
 
 .nav {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -89,9 +83,4 @@
 .nav img {
   width: 18px;
   height: 30px;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
 }
