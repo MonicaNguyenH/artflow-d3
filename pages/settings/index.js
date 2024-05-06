@@ -26,17 +26,18 @@ export default function Settings() {
                 </div>
 
                 <div className={styles.container}>
-                    <div className={`${styles.profileEdit} ${styles.link} ${lightMode ? styles['light-theme-profile-edit'] : styles['profileEdit']}`}
-                        href="/edit-profile" >
+                    <div className={`${styles.profileEdit} ${styles.link} ${lightMode ? styles['light-theme-profile-edit'] : styles['profileEdit']}`}>
                             <img src="/images/profile-icon.png" width="50" height="50" alt="Profile Icon" />
                         
                             <div className={styles.name}>
                                 <h2>Dog Smith</h2>
                                 <p>@dogsmith123</p>
                             </div>
+                            <Link href="/edit-profile">
                             <img 
                             src={lightMode ? "/images/Settings/next-button-black.svg" : "/images/next-arrow.svg" } 
-                            width="18" height="13" alt="Next Arrow Icon" />
+                            width="18" height="13" alt="Next Arrow Icon" href="/edit-profile" />
+                            </Link>
                     </div>  
 
                     <div className={`${styles.customization} ${lightMode ? styles['light-theme-customization'] : styles['customization']}`}>
