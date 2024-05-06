@@ -33,7 +33,7 @@ export default function Home() {
       <HeaderArea title="ArtFlow" description="The drawing prompt app"/>
       <main className={`${styles.main}`}>
         <div className={styles.container}>
-          <div className={styles.logoAndButtons}>
+          <div className={styles.logoContainer}>
             <Image className={styles.logoWordmark} src="/images/logo.png" height={72} width={350} />
             <Link href="/signin">
               <GradientButton buttonText="Sign In"/>
