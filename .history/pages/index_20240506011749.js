@@ -6,25 +6,12 @@ import Link from "next/link";
 import GradientButton from "@/components/GradientButton";
 import HeaderArea from "@/components/HeadArea";
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";
 import lottie from 'lottie-web';
 
+
 export default function Home() {
-  const lottieContainer = useRef(null);
-
-  useEffect(() => {
-    const anim = lottie.loadAnimation({
-      container: lottieContainer.current,
-      loop: true,
-      rerender: "svg",
-      autoplay: true,
-      path: '/lottie/artflow_logo_lottie 2.json' 
-    });
-
-    return () => anim.destroy();
-  }, []);
-
   const { data: session } = useSession()
   const [signedOut, setSignedOut] = useState(false);
   const searchParams = useSearchParams();
@@ -40,16 +27,12 @@ export default function Home() {
       }
     }
   }, [searchParams]);
-
   return (
     <>
       <HeaderArea title="ArtFlow" description="The drawing prompt app"/>
       <main className={`${styles.main}`}>
-        <div className={styles.contentContainer}>
-          <div className={styles.logoContainer}>
-            <lottie className={styles.logo} ref={lottieContainer}></lottie>
-            <Image className={styles.logoWordmark} src="/images/ArtFlow.svg" height={72} width={200} />
-          </div>
+        <div>
+          <Image className={styles.logoWordmark} src="/images/ArtFlow.svg" height={72} width={350} />
           <Link href="/signin">
             <GradientButton buttonText="Sign In"/>
           </Link>

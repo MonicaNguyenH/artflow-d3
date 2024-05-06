@@ -14,15 +14,12 @@ export default function Home() {
   const lottieContainer = useRef(null);
 
   useEffect(() => {
-    const anim = lottie.loadAnimation({
-      container: lottieContainer.current,
+    lottie.loadAnimation({
+      renderer: 'svg',
       loop: true,
-      rerender: "svg",
       autoplay: true,
       path: '/lottie/artflow_logo_lottie 2.json' 
     });
-
-    return () => anim.destroy();
   }, []);
 
   const { data: session } = useSession()
@@ -45,11 +42,9 @@ export default function Home() {
     <>
       <HeaderArea title="ArtFlow" description="The drawing prompt app"/>
       <main className={`${styles.main}`}>
-        <div className={styles.contentContainer}>
-          <div className={styles.logoContainer}>
-            <lottie className={styles.logo} ref={lottieContainer}></lottie>
-            <Image className={styles.logoWordmark} src="/images/ArtFlow.svg" height={72} width={200} />
-          </div>
+        <div>
+        <lottie ref={lottieContainer}></lottie>
+          <Image className={styles.logoWordmark} src="/images/ArtFlow.svg" height={72} width={350} />
           <Link href="/signin">
             <GradientButton buttonText="Sign In"/>
           </Link>

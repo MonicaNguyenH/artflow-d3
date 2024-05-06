@@ -45,7 +45,7 @@ export default function Home() {
     <>
       <HeaderArea title="ArtFlow" description="The drawing prompt app"/>
       <main className={`${styles.main}`}>
-        <div className={styles.contentContainer}>
+        <div>
           <div className={styles.logoContainer}>
             <lottie className={styles.logo} ref={lottieContainer}></lottie>
             <Image className={styles.logoWordmark} src="/images/ArtFlow.svg" height={72} width={200} />

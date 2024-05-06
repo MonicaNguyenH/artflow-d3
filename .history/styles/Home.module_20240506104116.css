@@ -21,6 +21,7 @@
 .main img {
   height: auto;
   max-width: 350px;
+  margin-bottom: 3rem;
 }
 
 .main p {
@@ -36,15 +37,12 @@
   display: flex;
   width: 280px;
   align-self: center;
-  justify-content: center;
-  margin-bottom: 40px;
 }
 
 .logo {
   width: 100%;
   height: auto;
-  transform: scale(2.5);
-  margin-top: -50px;
+  transform: scale(3);
 }
 
 .logoWordmark {

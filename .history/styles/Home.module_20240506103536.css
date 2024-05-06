@@ -9,18 +9,15 @@
   justify-content: center;
 }
 
-.contentContainer {
-  display: flex;
-  flex-direction: column;
-}
-
 .main button {
   margin-bottom: 1rem;
 }
 
 .main img {
+  width: 100%;
   height: auto;
   max-width: 350px;
+  margin-bottom: 3rem;
 }
 
 .main p {
@@ -35,18 +32,8 @@
 .logoContainer {
   display: flex;
   width: 280px;
-  align-self: center;
-  justify-content: center;
-  margin-bottom: 40px;
 }
 
 .logo {
-  width: 100%;
-  height: auto;
-  transform: scale(2.5);
-  margin-top: -50px;
-}
-
-.logoWordmark {
-  width: 200px;
+  flex-shrink: 0;
 }
