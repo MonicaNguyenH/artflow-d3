@@ -6,7 +6,7 @@ const GradientMesh = () => {
   return (
     <div className={styles.gradientMesh}>
         <div className={styles.backgrou}>
-            <div  className={styles.grainyContainer}>
+            {/*<div  className={styles.grainyContainer}>
                 <svg width="430" height="100vh" viewBox="0 0 430 950" fill="none" fillOpacity="0.4" xmlns="http://www.w3.org/2000/svg">
                     <filter id="grainy">
                         <feTurbulence 
@@ -16,7 +16,7 @@ const GradientMesh = () => {
                     </filter>
                     <path d="M430 0H0V932H430V0Z" fill="#ffffff" filter="url(#grainy)"/> 
                 </svg>
-            </div>
+                </div>*/}
             <div className={styles.Shape1}>
                 <svg width="305" height="260" viewBox="0 0 305 260" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M277.556 239.17C250.917 321.123 226.084 266.978 116.756 254.313C126.477 245.209 132.125 227.726 76.9501 230.629C7.98198 234.258 24.582 186.557 9.97431 136.712C-4.63341 86.8658 -7.77549 46.7121 47.5296 14.7642C102.835 -17.1838 106.784 9.90511 161.552 45.7859C216.321 81.6667 219.446 61.3814 272.046 113.599C324.646 165.816 304.195 157.218 277.556 239.17Z"
