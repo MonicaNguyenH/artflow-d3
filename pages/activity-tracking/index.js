@@ -100,7 +100,7 @@ const ActivityTracking = () => {
                                 <h1>67%</h1>
                                 <p>Art gallery visitors are suggested to have 
                                     <br/>
-                                    <span> better mental health </span>
+                                    <span> better mental health. </span>
                                 </p>
                                 <Link href="/health-graph">
                                     <button> Learn more 
@@ -205,8 +205,8 @@ const ActivityTracking = () => {
                                     </svg> 
                                 </div>
                                 <div className={styles.entriesText}>
-                                    <h2>0 entry</h2>
-                                    <p>Your current entry</p>
+                                    <h2>0 entries</h2>
+                                    <p>Your current entries</p>
                                 </div>
                             </div>
                         </div>

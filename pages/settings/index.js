@@ -28,11 +28,11 @@ export default function Settings() {
                 <div className={styles.container}>
                     <div className={`${styles.profileEdit} ${styles.link} ${lightMode ? styles['light-theme-profile-edit'] : styles['profileEdit']}`}
                         href="/edit-profile" >
-                            <img src="/images/profile-icon.png" width="50" height="50" alt="Profile Icon" />
+                            <img src={session?.user.image ? session?.user.image : "/images/dog-profile-img.jpeg"}  width="50" height="50" alt="Profile Icon" />
                         
                             <div className={styles.name}>
-                                <h2>Dog Smith</h2>
-                                <p>@dogsmith123</p>
+                                <h2>{session?.user.name ? session?.user.name : "Dog Smith"}</h2>
+                                <p>@{session?.user.email ? session?.user.email.split('@')[0] : "dogsmith123"}</p>
                             </div>
                             <img 
                             src={lightMode ? "/images/Settings/next-button-black.svg" : "/images/next-arrow.svg" } 

@@ -15,3 +15,4 @@
 - openai
 - react-chartjs-2
 - react-sketch-canvas
+- lottie-web

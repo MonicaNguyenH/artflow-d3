@@ -11,6 +11,7 @@ import { useSession, signOut } from "next-auth/react";
 import lottie from 'lottie-web';
 import GradientMesh from "@/components/GradientMesh";
 import GradientMeshTwo from "@/components/GradientMeshTwo";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   const lottieContainer = useRef(null);
