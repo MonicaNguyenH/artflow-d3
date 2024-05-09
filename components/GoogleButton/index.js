@@ -6,7 +6,7 @@ export default function GoogleButton({GoogleButtonText}) {
 
     return (
         <div className={styles.socialContainer}>
-            <button className={styles.socialButton} onClick={() => signIn()}>
+            <button type="button" className={styles.socialButton} onClick={() => signIn()}>
                 <img className={styles.googleIcon} src="/images/google-icon.png" alt="Google Logo" width="50" height="50"/>
                 {GoogleButtonText}
             </button>
