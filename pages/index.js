@@ -8,7 +8,7 @@ import HeaderArea from "@/components/HeadArea";
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState, useRef } from "react";
 import { useSession, signOut } from "next-auth/react";
-import lottie from 'lottie-web';
+// import lottie from 'lottie-web';
 import GradientMesh from "@/components/GradientMesh";
 import GradientMeshTwo from "@/components/GradientMeshTwo";
 import dynamic from "next/dynamic";
@@ -17,6 +17,7 @@ export default function Home() {
   const lottieContainer = useRef(null);
 
   useEffect(() => {
+    import('lottie-web').then((lottie) => {
     const anim = lottie.loadAnimation({
       container: lottieContainer.current,
       loop: true,
@@ -26,6 +27,7 @@ export default function Home() {
     });
 
     return () => anim.destroy();
+  });
   }, []);
 
   const { data: session } = useSession()
@@ -51,8 +53,8 @@ export default function Home() {
         <div className={styles.contentContainer}>
           <div className={styles.content}>
             <div className={styles.logoContainer}>
-              <lottie className={styles.logo} ref={lottieContainer}></lottie>
-              <Image className={styles.logoWordmark} src="/lottie/ArtFlow.svg" height={72} width={350} />
+              <lottie className={styles.logo} ref={lottieContainer}></lottie> 
+              <Image className={styles.logoWordmark} src="/lottie/ArtFlow.svg" alt="logo wordmark" height={72} width={350} />
             </div>
             <Link href="/signin">
               <GradientButton buttonText="Sign In"/>
