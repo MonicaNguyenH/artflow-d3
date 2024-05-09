@@ -54,6 +54,10 @@
     border-radius: 10px;
 }
 
+.profileEdit img {
+    border-radius: 100px;
+}
+
 .name {
     width: 70%;
 }

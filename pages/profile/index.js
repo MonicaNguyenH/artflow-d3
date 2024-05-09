@@ -21,7 +21,7 @@ export default function Home() {
                     <img className={styles.settingGear} src="/images/setting-gear.svg" alt="setting icon" />
                 </Link>
                 <div className={styles.avatar}>
-                    <img className={styles.avatar} src={session?.user.image ? session?.user.image : "/images/dog-profile-img.jpeg"} alt="dog profile image"/>
+                    <img className={styles.avatar} src={session?.user.image ? session?.user.image : "/images/dog-profile-img.jpeg"} alt="profile image"/>
                 </div>
             </div>            
             <div className={styles.profileDesc}>

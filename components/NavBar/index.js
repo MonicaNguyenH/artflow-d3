@@ -53,8 +53,8 @@ export default function NavBar() {
                                 width="25" height="25"/> 
                         </Link>
                     </li>
-                    <li onClick ={() => handleIconClick('home')} className={activeIcon === 'home' ? styles.activeProfileIcon : ''}>
-                        <Link className={styles.link} href="profile"> 
+                    <li onClick ={() => handleIconClick('profile')} className={activeIcon === 'profile' ? styles.activeProfileIcon : ''}>
+                        <Link className={styles.link} href="/profile"> 
                             <img className={`${styles.profileIcon} ${styles.icons}`} 
                                 src={session?.user.image ? session?.user.image : "/images/profile-icon.png"}
                                 alt="Profile Icon"  
