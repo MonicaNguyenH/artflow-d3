@@ -189,7 +189,7 @@ export default function Settings() {
                             <li>
                                 <div className={styles.supportHelpCenter}>
                                     <img src="/images/Settings/help-center.svg" width="20" height="20" alt="Help Center Icon"></img>
-                                    <p>Help Center</p>
+                                    <p>Our Team</p>
                                     <img 
                                         src={lightMode ? "/images/Settings/next-button-black.svg" : "/images/next-arrow.svg"}
                                         width="18" height="13" alt="Next Arrow Icon" />
