@@ -7,6 +7,7 @@
     min-height: 932px;
     max-width: 430px;
     color: var(--white);
+    position: relative;
 }
 
 .header {
@@ -191,6 +192,21 @@
 .supportDeleteAccount p {
     color: red;
 }
+.supportSignOut {
+    background: none;
+    border: none;
+    margin: 0;
+    justify-content: flex-start;
+    width: fit-content;
+    outline: none;
+    margin-left: 32px;
+}
+.supportSignOut p {
+    width: auto;
+    color: var(--white);
+    margin-left: 13px;
+}
+
 /* Toggle Switch Styles */
 .switch {
     position: relative;

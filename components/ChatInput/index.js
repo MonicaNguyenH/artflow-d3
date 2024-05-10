@@ -22,11 +22,11 @@ export default function ChatInput() {
     <div className={styles.messageContainer}>
       <div className={styles.message}>
         <div className={styles.text}>
-          <p>It looks like Doberdude alot</p>
+          <p>U like my drawing</p>
         </div>
         <div className={styles.reactionText}>
           <div className={styles.text}>
-            <p>Send it to him?</p>
+            <p>I'm so proud of it</p>
           </div>
           <div className={styles.emojiContainer} tabIndex={6}>
             <img className={styles.emoji} src="/images/chat/heart-emoji-ios.png" width={11} height={11} alt="heart emoji reaction"/>

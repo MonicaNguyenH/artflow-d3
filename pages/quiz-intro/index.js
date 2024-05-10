@@ -33,11 +33,13 @@ export default function quizIntro() {
           <p className={`${styles.quizParagraphText}`}>Get ready to brush up on your art knowledge with Art Trivia Fun! </p>
           <p className={`${styles.quizParagraphText}`}>Explore famous artists, iconic paintings, and unexpected facts in a quiz that celebrates creativity. </p>
         </div>
-        <Link className={`${styles.quizStartButton}`} href={'/quiz-question-1'}>
-          <button className={styles.startQuiz} tabIndex={2}>
-            Start Quiz
-          </button>
-        </Link>
+        <div className={styles.buttonContainer}>
+          <Link className={`${styles.quizStartButton}`} href={'/quiz-question-1'}>
+            <button className={styles.startQuiz} tabIndex={2}>
+              Start Quiz
+            </button>
+          </Link>
+        </div>
       </div>
     </>
   )

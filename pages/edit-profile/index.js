@@ -1,30 +1,37 @@
 import styles from '@/styles/Editprofile.module.css';
 import Link from 'next/link';
 import { useSession } from "next-auth/react";
+import { useState } from 'react';
+import SignOutOverlay from '@/components/SignOutOverlay';
 
 export default function Editprofile() {
     const { data: session } = useSession();
+    const [signOut, setSignOut] = useState(false);
+    const handleCancel = () => {
+        setSignOut(false);
+    }
     return (
     <main className={styles.main}>
+        <SignOutOverlay promptActiveProp={signOut} onCancel={handleCancel} />        
         <nav className={styles.nav}>
             <Link href="/profile">
-                <img alt="arrow" src='./images/back-arrow.png' width={40} height={50}/>
+                <img alt="back arrow" src='./images/back-arrow.png' width={40} height={50}/>
             </Link>
             <p>Edit Profile</p>
         </nav>
         <div className={styles.container}>
             <div className={styles.pfp}>
                 <p>Profile Picture</p>
-                <img className={styles.pfpImg} alt="dog" src={session?.user.image ? session?.user.image : "/images/dogpfp.jpg"} width={100} height={100}/>
-                <img className={styles.camera} alt="camera" src='./images/camera-icon.png' width={100} height={100}/>
+                <img className={styles.pfpImg} alt="profile image" src={session?.user.image ? session?.user.image : "/images/dogpfp.jpg"} width={100} height={100}/>
+                <img className={styles.camera} alt="camera icon" src='./images/camera-icon.png' width={100} height={100}/>
             </div>
             <hr className={styles.line}/>
             <div className={styles.coverpic}>
                 <p>Cover Picture</p>
                 <div className={styles.imgContainer}>
-                    <img className={styles.cover} alt="otherdog" src='./images/dog-profile-banner.png' width={550} height={320}/>
+                    <img className={styles.cover} alt="banner image" src='./images/dog-profile-banner.png' width={550} height={320}/>
                 </div>
-                <img className={styles.camera2} alt="camera" src='./images/camera-icon.png' width={100} height={100}/>
+                <img className={styles.camera2} alt="camera icon" src='./images/camera-icon.png' width={100} height={100}/>
             </div>
             <div className={styles.dataContainer}>
                 <div className={styles.userData}>
@@ -66,12 +73,9 @@ export default function Editprofile() {
                 </div>
             </div>
             <div className={styles.buttonContainer}>
-                <Link className={styles.signOut} href={{
-                    pathname: '/',
-                    query: {signOut: 'true'}
-                    }}>
-                    <button>Sign Out</button>
-                </Link>
+                <div className={styles.signOut}>
+                    <button onClick={() => {setSignOut(!signOut)}}>Sign Out</button>
+                </div>
             </div>
         </div>
     </main>

@@ -126,17 +126,22 @@
     margin: 30px 10px 30px 30px;
   }
 
+  .buttonContainer {
+    padding-top: 235.7px;
+    padding-bottom: 52px;
+    position: fixed;
+    bottom: 0;
+  }
+
   .quizStartButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    bottom: 0;
   }
   
   .startQuiz {
     display: flex;
-    width: 390px;
+    width: 400px;
     height: 50px;
     padding: 8px 24px;
     justify-content: center;
@@ -148,8 +153,6 @@
     background-color: var(--rose);
     color: var(--white);
     font-weight: bold;
-    margin-top: 235.7px;
-    margin-bottom: 52px;
     cursor: pointer;
     transition: background-color 3s;
     font-size: var(--font-small-14px);
