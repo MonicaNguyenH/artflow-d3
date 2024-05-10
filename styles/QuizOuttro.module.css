@@ -79,7 +79,7 @@
   }
   
   .quizOutro .progress {
-    width: 390px;
+    width: 395px;
     position: fixed;
     bottom: 0;
   }
@@ -240,7 +240,7 @@
     position: fixed;
     bottom: 0;
     display: flex;
-    width: 390px;
+    width: 400px;
     height: 50px;
     padding: 8px 24px;
     justify-content: center;
