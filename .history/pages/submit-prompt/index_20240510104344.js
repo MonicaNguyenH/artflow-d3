@@ -69,10 +69,10 @@ export default function SubmitPrompt() {
               <p>All</p>
             </div>
             <div className={styles.contactItem}>
-              <Link href="/chat-room">
+              <Link href="/chat-room" width={40} height={40}>
                 <Image src="/images/cat.png" width={100} height={100} alt="user contact"></Image>
               </Link>
-              <p style={{margin: "12px 0 13px 0"}}>Cat</p>
+              <p style={{margin: "13px 0 15px 0"}}>Cat</p>
             </div>
             <div className={styles.contactItem}>
               <Image src="/images/capi.png" width={100} height={100} alt="user contact"></Image>

@@ -90,7 +90,6 @@
     flex-direction: column;
     color: var(--white);
     padding: 1rem;
-    margin-bottom: 52px;
 }
 
 .messageContainer h6 {
@@ -98,6 +97,8 @@
   margin: 0;
   padding-bottom: 1rem;
   padding: 1rem;
+  margin-bottom: 56px;
+
 }
 
 .contactsContainer {
@@ -117,6 +118,5 @@
 .contactItem img {
     height: 40px;
     width: 40px;
-    border-radius: 50px;
 }
 

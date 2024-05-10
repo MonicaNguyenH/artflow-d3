@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   padding: 1rem;
-  margin-top: 120px;
 }
 
 .drawingContainer {
@@ -30,11 +29,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 430px;
-  height: 110px;
-  background-color: var(--black-header);
-  position: fixed;
-  padding: 60px 20px 20px 20px;
 }
 
 .nav button {
@@ -90,22 +84,19 @@
     flex-direction: column;
     color: var(--white);
     padding: 1rem;
-    margin-bottom: 52px;
 }
 
 .messageContainer h6 {
-  font-size: var(--font-medium);
-  margin: 0;
-  padding-bottom: 1rem;
-  padding: 1rem;
+    font-size: var(--font-medium);
+    margin: 0;
+    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .contactsContainer {
-  display: flex;
-  gap: 1.5rem;
-  padding: 0 1rem;
-  width: 380px;
-  overflow-y: hidden;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 1rem;
 }
 
 .contactItem {
@@ -117,6 +108,4 @@
 .contactItem img {
     height: 40px;
     width: 40px;
-    border-radius: 50px;
 }
-

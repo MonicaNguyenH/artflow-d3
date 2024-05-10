@@ -72,7 +72,7 @@ export default function SubmitPrompt() {
               <Link href="/chat-room">
                 <Image src="/images/cat.png" width={100} height={100} alt="user contact"></Image>
               </Link>
-              <p style={{margin: "12px 0 13px 0"}}>Cat</p>
+              <p>Cat</p>
             </div>
             <div className={styles.contactItem}>
               <Image src="/images/capi.png" width={100} height={100} alt="user contact"></Image>
@@ -87,11 +87,11 @@ export default function SubmitPrompt() {
               <p>Nugget</p>
             </div>
             <div className={styles.contactItem}>
-              <Image src="/images/racoon.jpeg" width={100} height={100} alt="user contact"></Image>
+              <Image src="/images/nugget.png" width={100} height={100} alt="user contact"></Image>
               <p>Raco...</p>
             </div>
             <div className={styles.contactItem}>
-              <Image src="/images/dobe.jpeg" width={100} height={100} alt="user contact"></Image>
+              <Image src="/images/nugget.png" width={100} height={100} alt="user contact"></Image>
               <p>Dobe...</p>
             </div>
           </div>
