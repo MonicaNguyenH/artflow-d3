@@ -1,0 +1,36 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 110px;
+    padding: 50px 20px 0 20px;
+    gap: 94px;
+}
+
+.nav p {
+    color: var(--white);
+    font-size: var(--font-medium);
+    font-weight: bold;
+    margin: 0;
+    align-self: center;
+}
+
+.nav img {
+    width: 18px;
+    height: 30px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+  

@@ -187,7 +187,7 @@ export default function Settings() {
                     <ul>
                             <li><h3>SUPPORT</h3></li>
                             <li>
-                                <Link href="/our-team" className={styles.hyperlink}>
+                                <Link href="/our-team">
                                     <div className={styles.supportHelpCenter}>
                                         <img src="/images/Settings/help-center.svg" width="20" height="20" alt="Help Center Icon"></img>
                                         <p className={styles.ourTeam}>Our Team</p>

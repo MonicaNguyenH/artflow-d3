@@ -166,12 +166,8 @@
 
 .ourTeam {
     text-decoration: none;
+    color: inherit;
     font-size: inherit;
-    color: var(--white);
-}
-
-.hyperlink {
-    text-decoration: none;
 }
 
 .customizationLightMode {

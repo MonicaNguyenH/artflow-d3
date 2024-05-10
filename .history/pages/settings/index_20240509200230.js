@@ -187,10 +187,10 @@ export default function Settings() {
                     <ul>
                             <li><h3>SUPPORT</h3></li>
                             <li>
-                                <Link href="/our-team" className={styles.hyperlink}>
+                                <Link href="/our-team">
                                     <div className={styles.supportHelpCenter}>
                                         <img src="/images/Settings/help-center.svg" width="20" height="20" alt="Help Center Icon"></img>
-                                        <p className={styles.ourTeam}>Our Team</p>
+                                        <p>Our Team</p>
                                         <img 
                                             src={lightMode ? "/images/Settings/next-button-black.svg" : "/images/next-arrow.svg"}
                                             width="18" height="13" alt="Next Arrow Icon" />

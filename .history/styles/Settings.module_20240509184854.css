@@ -162,18 +162,8 @@
     font-size: var(--font-medium-16px);
     margin-left: 10px;
     padding: 0;
+    margin-bottom: 10px;
 }
-
-.ourTeam {
-    text-decoration: none;
-    font-size: inherit;
-    color: var(--white);
-}
-
-.hyperlink {
-    text-decoration: none;
-}
-
 .customizationLightMode {
     width: 327px;
     display:flex;
@@ -184,7 +174,6 @@
     margin-right: 32px;
     height: 40px;
 }
-
 .customizationLightMode p {
     font-size: var(--font-medium-16px);
     margin-left: 10px;
@@ -192,7 +181,6 @@
     padding: 0;
     margin-bottom: 10px;
 }
-
 .supportSignOut p,
 .supportDeleteAccount p {
     width: 87.5%;
@@ -201,11 +189,9 @@
     padding: 0;
     margin-bottom: 10px;
 }
-
 .supportDeleteAccount p {
     color: red;
 }
-
 .supportSignOut {
     background: none;
     border: none;
@@ -215,7 +201,6 @@
     outline: none;
     margin-left: 32px;
 }
-
 .supportSignOut p {
     width: auto;
     color: var(--white);

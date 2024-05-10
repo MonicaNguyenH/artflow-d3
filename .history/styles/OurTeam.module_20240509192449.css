@@ -1,0 +1,46 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    padding: 50px 20px 0 20px;
+    background-color: var(--black-header);
+}
+
+.nav p {
+    font-size: var(--font-medium);
+    font-weight: bold;
+    margin: 0;
+    align-self: center;
+}
+
+.nav img {
+    width: 18px;
+    height: 30px;
+    margin-left: 28.32px;
+}
+
+.title {
+    color: var(--white);
+}
+
+.doneButton {
+    color: var(--light-blue);
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+  

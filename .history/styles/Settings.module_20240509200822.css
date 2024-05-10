@@ -170,10 +170,6 @@
     color: var(--white);
 }
 
-.hyperlink {
-    text-decoration: none;
-}
-
 .customizationLightMode {
     width: 327px;
     display:flex;

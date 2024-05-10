@@ -1,0 +1,101 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--black);
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    padding: 50px 20px 0 20px;
+    background-color: var(--black-header);
+    position: fixed;
+}
+
+.nav p {
+    font-size: var(--font-medium);
+    font-weight: bold;
+    margin: 0;
+    align-self: center;
+}
+
+.nav img {
+    width: 18px;
+    height: 30px;
+    margin-right: 28.32px;
+}
+
+.title {
+    color: var(--white);
+}
+
+.doneButton {
+    color: var(--light-blue);
+    cursor: pointer;
+}
+
+.container {
+    margin: 40px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.profile {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    font-family: var(--Roboto);
+}
+
+.profileImg {
+    width: 100px;
+    height: 100px;
+}
+
+.profileImg img {
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileContent h1, 
+.profileContent h2,
+.profileContent p {
+    margin: 0;
+}
+
+.profileContent h1 {
+    color: var(--rose);
+    font-size: var(--font-medium);
+}
+
+.profileContent h2 {
+    color: var(--light-blue);
+    font-size: var(--font-small-14px);
+    font-weight: 0;
+    margin-bottom: 1rem;
+}
+
+.profileContent p {
+    color: var(--white);
+    font-size: var(--font-regular-figma);
+}
+
