@@ -53,7 +53,7 @@ export default function NavBar() {
                                 width="25" height="25"/> 
                         </Link>
                     </li>
-                    <li onClick ={() => handleIconClick('profile')} className={activeIcon === 'profile' ? styles.activeProfileIcon : ''}>
+                    <li onClick ={() => handleIconClick('profile')} className={activeIcon === 'profile' || router.pathname == "/profile" ? styles.activeProfileIcon : styles.Test}>
                         <Link className={styles.link} href="/profile"> 
                             <img className={`${styles.profileIcon} ${styles.icons}`} 
                                 src={session?.user.image ? session?.user.image : "/images/profile-icon.png"}

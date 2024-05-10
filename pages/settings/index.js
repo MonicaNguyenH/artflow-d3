@@ -2,9 +2,14 @@ import styles from "@/styles/Settings.module.css";
 import Link from 'next/link';
 import { useState } from "react";
 import { useSession } from "next-auth/react";
+import SignOutOverlay from "@/components/SignOutOverlay";
 
 export default function Settings() {
     const { data: session } = useSession();
+    const [signOut, setSignOut] = useState(false);
+    const handleCancel = () => {
+        setSignOut(false);
+    }
     const [lightMode, setLightMode] = useState(false);
 
     const toggleLightMode = () => {
@@ -14,6 +19,7 @@ export default function Settings() {
     return (
         <>
             <div className={`${styles.main} ${lightMode ? styles['light-theme'] : styles['main']}`}>
+                <SignOutOverlay promptActiveProp={signOut} onCancel={handleCancel} />  
                 <div className={`${styles.header} ${lightMode ? styles['light-theme-header'] : styles['header']}`}>
                     <Link className={styles.link} href="/profile">
                         <img className={styles.backButton} 
@@ -200,17 +206,14 @@ export default function Settings() {
                             </li>
                             
                             <li>
-                            <Link className={styles.signOut} href={{
-                                    pathname: '/',
-                                    query: {signOut: 'true'}
-                                }}>
-                                 <div className={styles.supportSignOut}>
+                            <div className={styles.signOut}>
+                                 <button onClick={() => {setSignOut(!signOut)}} className={styles.supportSignOut}>
                                     <img 
                                         src={lightMode ? "/images/Settings/sign-out-black.svg" : "/images/Settings/sign-out.svg"}
                                         width="20" height="20" alt="Sign Out Icon"></img>
                                     <p>Sign out</p>
-                                </div>
-                            </Link>
+                                </button>
+                            </div>
                             </li>
                             <li>
                                  <div className={styles.supportDeleteAccount}>

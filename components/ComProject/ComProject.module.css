@@ -9,7 +9,8 @@
     width: 200px;
     height: 200px;
     border-radius: 25px;
-    background-image: url("/images/profile/profile-img-1.png");
+    /* background-image: url("/images/profile/profile-img-1.png"); */
+    background-color: #fff;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -27,7 +28,7 @@
 
 
 .prompt {
-    height: 20px;
+    height: auto;
     width: fit-content;
     background-color: var(--black);
     border-radius: 25px;
@@ -39,6 +40,11 @@
     justify-content: center;
     align-items: center;
     align-self: flex-start;
+}
+
+.prompt p {
+    margin: 0;
+    white-space: nowrap;
 }
 
 .date {
