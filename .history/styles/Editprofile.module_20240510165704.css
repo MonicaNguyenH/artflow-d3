@@ -1,0 +1,151 @@
+.main {
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    margin-bottom: 42px;
+    margin-top: 140px;
+}
+
+.pfp p {
+    color: white;
+    margin-left: 20px;
+    font-size: var(font-medium-16px);
+    font-weight: bold;
+}
+
+.pfp img {
+    border-radius: 100px;
+    margin-left: 160px;
+}
+
+.camera {
+    position: relative;
+    bottom: 30px;
+    left: 65px;
+    width: 35px;
+    height: 35px;
+}
+
+.line {
+    border-color: var(--medium-grey);
+    margin-top: -20px;
+}
+
+.coverpic {
+   margin-left: 20.5px;
+   color: var(--white);
+   font-size: var(font-medium-16px);
+   font-weight: bold;
+}
+
+.imgContainer {
+    height: 190px;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 390px;
+}
+
+.cover {
+    width: 390px;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.camera2 {
+    position: relative;
+    bottom: 20px;
+    left: 340px;
+    width: 35px;
+    height: 35px;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    margin-left: 20.5px;
+    color: var(--white);
+    background-color: var(--dark-grey);
+    border-radius: 25px;
+    padding: 0.7rem 1.8rem;
+}
+
+.userData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerDiv {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.userData img {
+    width: 8px;
+    height: 14px;
+}
+
+.userData a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.greyText {
+    color: var(--light-grey);
+}
+
+.bioText {
+    text-align: right;
+    width: 200px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top:  1.5rem;
+}
+
+.signOut button {
+    border: none;
+    background-color: var(--dark-grey);
+    color: red;
+    padding: 1rem;
+    width: 390px;
+    border-radius: 80px;
+    font-size: var(--font-medium-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 430px;
+    height: 110px;
+    background-color: var(--black-header);
+    position: fixed;
+}
+
+.nav p {
+    color: var(--white);
+    font-size: var(--font-medium);
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+.nav img {
+    width: 18px;
+    height: 30px;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
