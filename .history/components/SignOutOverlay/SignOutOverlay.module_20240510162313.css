@@ -1,0 +1,73 @@
+.backgroundOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay2 {
+  border: solid 2px var(--rose);
+  color: var(--white);
+  background-color: var(--dark-grey);
+  border-radius: 25px;
+  z-index: 9999;
+  width: 100%;
+  max-width: 390px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+}
+
+.overlay2 img {
+  width: 350px;
+  height: 210px;
+  align-self: center;
+  margin: 34px 0 25px 0;
+}
+
+.overlay2 h3 {
+  margin: 0;
+  font-size: var(--font-large-30px);
+}
+
+.overlay2 p {
+  font-size: var(--font-regular-figma);
+  margin: 0 0 10px 0;
+}
+
+.overlay2 button {
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 160px;
+  font-size: var(--font-regular-figma);
+  font-weight: bold;
+}
+
+.overlay2 button:active {
+  background-color: var(--grey);
+} 
+
+.buttons {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+button.signOut {
+    color: red;
+}
