@@ -284,11 +284,6 @@ input:checked + .slider:before {
     max-width: 430px;
     color: var(--black);
 }
-
-.light-theme-profile-edit {
-    color: var(--black);
-}
-
 .light-theme-profile-edit,
 .light-theme-customization ul,
 .light-theme-privacy-security ul,

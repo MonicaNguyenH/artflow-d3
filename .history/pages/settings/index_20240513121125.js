@@ -34,7 +34,7 @@ export default function Settings() {
                 </div>
 
                 <div className={styles.container}>
-                    <Link href="/edit-profile" className={styles.hyperlink}>
+                    <Link href="/edit-profile">
                         <div className={`${styles.profileEdit} ${styles.link} ${lightMode ? styles['light-theme-profile-edit'] : styles['profileEdit']}`} tabIndex={2}>
                                 <img src={session?.user.image ? session?.user.image : "/images/dog-profile-img.jpeg"}  width="50" height="50" alt="Profile Icon" />
                             

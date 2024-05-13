@@ -34,19 +34,18 @@ export default function Settings() {
                 </div>
 
                 <div className={styles.container}>
-                    <Link href="/edit-profile" className={styles.hyperlink}>
-                        <div className={`${styles.profileEdit} ${styles.link} ${lightMode ? styles['light-theme-profile-edit'] : styles['profileEdit']}`} tabIndex={2}>
-                                <img src={session?.user.image ? session?.user.image : "/images/dog-profile-img.jpeg"}  width="50" height="50" alt="Profile Icon" />
-                            
-                                <div className={styles.name}>
-                                    <h2>{session?.user.name ? session?.user.name : "Dog Smith"}</h2>
-                                    <p>@{session?.user.email ? session?.user.email.split('@')[0] : "dogsmith123"}</p>
-                                </div>
-                                <img 
-                                src={lightMode ? "/images/Settings/next-button-black.svg" : "/images/next-arrow.svg" } 
-                                width="18" height="13" alt="Next Arrow Icon" />
-                        </div> 
-                    </Link> 
+                    <div className={`${styles.profileEdit} ${styles.link} ${lightMode ? styles['light-theme-profile-edit'] : styles['profileEdit']}`}
+                        href="/edit-profile" tabIndex={2}>
+                            <img src={session?.user.image ? session?.user.image : "/images/dog-profile-img.jpeg"}  width="50" height="50" alt="Profile Icon" />
+                        
+                            <div className={styles.name}>
+                                <h2>{session?.user.name ? session?.user.name : "Dog Smith"}</h2>
+                                <p>@{session?.user.email ? session?.user.email.split('@')[0] : "dogsmith123"}</p>
+                            </div>
+                            <img 
+                            src={lightMode ? "/images/Settings/next-button-black.svg" : "/images/next-arrow.svg" } 
+                            width="18" height="13" alt="Next Arrow Icon" />
+                    </div>  
 
                     <div className={`${styles.customization} ${lightMode ? styles['light-theme-customization'] : styles['customization']}`}>
                         <ul>
