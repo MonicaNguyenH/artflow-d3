@@ -49,7 +49,7 @@ const ActivityTracking = () => {
         <div className={styles.main}>
             <div className={styles.header}>
                 <div className={styles.headerElements}>
-                <h1> Today </h1>
+                <h3> Today </h3>
                 <div className={styles.calendar}>
                     {daysOfWeek}
                 </div>
@@ -116,12 +116,12 @@ const ActivityTracking = () => {
                         {/*Gradient Mesh card*/}
                     </div>
                     <div className={styles.activityContributes}>
-                        <h2>Activity Tracker</h2>
+                        <h2 className={styles.sectionHeader}>Activity Tracker</h2>
                         <div className={styles.activityGraph}>
                             <ActivityGraph/>
                         </div>
                         <div className={styles.streaks}>
-                            <h2>Streaks</h2>
+                            <h2 className={styles.sectionHeader}>Streaks</h2>
                             <div className={styles.streakCard} tabIndex={2}>
                                 <div className={styles.Shape7}>
                                     <svg width="200" height="100" viewBox="0 0 289 130" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +167,7 @@ const ActivityTracking = () => {
                         </div>
 
                         <div className={styles.entries}>
-                            <h2>Entries</h2>
+                            <h2 className={styles.sectionHeader}>Entries</h2>
                             <div className={styles.entriesCard} tabIndex={3}>
                                 <div className={styles.Shape7}>
                                     <svg width="200" height="100" viewBox="0 0 289 130" fill="none" xmlns="http://www.w3.org/2000/svg">
