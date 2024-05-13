@@ -33,7 +33,7 @@ export default function FeaturedPrompt() {
                 <img src="/images/cabin2.jpg" width={110} height={110} alt="user drawing entry"/>
               </div>
               <div className={styles.cabin03}>
-                <img src="/images/cabin3.jpg" width={110} height={110} alt="user drawing entry"/>
+                <img src="/images/cabin03.jpg" width={110} height={110} alt="user drawing entry"/>
               </div>
             </div>
             <div className={styles.secondrow}>

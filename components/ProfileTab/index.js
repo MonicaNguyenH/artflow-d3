@@ -34,6 +34,7 @@ export default function ProfileTab() {
                 {activeTab === 1 && 
                     <div className={styles.gridContainer}>
                         {drawing && <div className={styles.squareImage}><img className={styles.img} src={drawing} alt="profile image"/></div>}
+                        <img className={styles.squareImage} src="/images/profile/kenny.png" alt="profile image"/>
                         <img className={styles.img} src="/images/profile/profile-img-1.png" alt="profile image"/>
                         <img className={styles.img} src="/images/profile/profile-img-2.png" alt="profile image"/>
                         <img className={styles.img} src="/images/profile/profile-img-3.png" alt="profile image"/>
