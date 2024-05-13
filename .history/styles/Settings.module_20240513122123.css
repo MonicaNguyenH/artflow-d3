@@ -146,10 +146,6 @@
     cursor: pointer;
 }
 
-.supportSignOut {
-    color: var(--white);
-}
-
 .customizationLanguage p,
 .customizationNofications p,
 .privacySecurityPasscode p,

@@ -146,10 +146,6 @@
     cursor: pointer;
 }
 
-.supportSignOut {
-    color: var(--white);
-}
-
 .customizationLanguage p,
 .customizationNofications p,
 .privacySecurityPasscode p,
@@ -290,7 +286,7 @@ input:checked + .slider:before {
 }
 
 .light-theme-profile-edit,
-.light-theme-support p {
+.light-theme-support {
     color: var(--black);
 }
 

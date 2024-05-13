@@ -212,8 +212,7 @@ export default function Settings() {
                             
                             <li>
                             <div className={styles.signOut} tabIndex={18}>
-                                 <button onClick={() => {setSignOut(!signOut)}}
-                                className={`${styles.supportSignOut} ${lightMode ? styles['light-theme-support'] : styles['supportSignOut']}`}>
+                                 <button onClick={() => {setSignOut(!signOut)}} className={`${styles.supportSignOut} ${styles['light-theme-support']}`}>
                                     <img 
                                         src={lightMode ? "/images/Settings/sign-out-black.svg" : "/images/Settings/sign-out.svg"}
                                         width="20" height="20" alt="Sign Out Icon"></img>
