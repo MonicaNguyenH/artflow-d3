@@ -93,6 +93,6 @@
 } */
 
 .activeProfileIcon img {
-    border: 2px solid var(--white);
+    border: 3px solid var(--white);
 }
 
