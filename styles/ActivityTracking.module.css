@@ -8,10 +8,16 @@
     min-height: 100vh;
 }
 
+.sectionHeader {
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
 .body {
     min-height: 932px;
     margin-bottom: 150px;
 }
+
 .header {
     width: 430px;
     height: 170px; 
@@ -20,6 +26,7 @@
     display: flex;
     justify-content: center;
 }
+
 .headerElements {
     display: flex;
     flex-direction: column;
@@ -29,7 +36,7 @@
     margin: 63px 45px 10px 45px;
 }
 
-.headerElements h1 {
+.headerElements h3 {
     font-size: var( --font-medium);
     margin: 0;
     padding: 0;
