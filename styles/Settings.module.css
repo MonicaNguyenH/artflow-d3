@@ -177,7 +177,7 @@
 
 .customizationLightMode {
     width: 327px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -191,7 +191,6 @@
     margin-left: 10px;
     width: 72%;
     padding: 0;
-    margin-bottom: 10px;
 }
 
 .supportSignOut p,
@@ -300,4 +299,8 @@ input:checked + .slider:before {
 .signOut {
     text-decoration: none;
     color: var(--white);
+}
+
+.signOut img {
+    margin-left: -3px;
 }
