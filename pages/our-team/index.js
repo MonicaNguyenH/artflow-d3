@@ -21,7 +21,7 @@ export default function celestialSymphony() {
                 <div className={styles.profileContent}>
                     <h1>Shirin Forouzan</h1>
                     <h2>Designer/Developer</h2>
-                    <p>As an art history lover and designer, Shirin came up with the Artflow concept to inspire artists to practice daily & beat their creative block. Shirin also loves to play video games and play guitar in her free time.</p>
+                    <p>As an art history lover and designer, Shirin came up with the ArtFlow concept to inspire artists to practice daily & beat their creative block. Shirin also loves to play video games and play guitar in her free time.</p>
                 </div>
             </div>
             <div className={styles.profile}>
