@@ -1,13 +1,15 @@
 import styles from './UserCard.module.css';
 import Link from 'next/link';
+import { useSession } from "next-auth/react";
 
 export default function UserCard() {
+  const { data: session } = useSession();
   return (
     <>
         <div className={styles.cardContainer}>
           <div className={styles.promptCardBG}>
             <div className={styles.text}>
-              <h1>Hello, Dog!</h1> 
+              <h1>Hello, {session?.user.name ? session?.user.name.split(" ")[0] : 'Dog'}!</h1> 
               <p>0 Entries</p>
               <p>0 Day Streak</p>
               <Link href="/quiz-intro">
